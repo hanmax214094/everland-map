@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     L.Icon.Default.imagePath = 'vendor/leaflet/images/';
 
     const isMobile = () => window.innerWidth <= 768;
 
     const map = L.map('map', {
-        attributionControl: false // We will add it manually
+        attributionControl: false
     }).setView([37.295, 127.204], 15);
     let marker = null;
     let userLocationMarker = null;
@@ -14,17 +13,23 @@ document.addEventListener('DOMContentLoaded', () => {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // Add attribution control in the correct corner based on device
-    L.control.attribution({ 
-        position: isMobile() ? 'topright' : 'bottomright' 
+    const attributionControl = L.control.attribution({
+        position: isMobile() ? 'topright' : 'bottomright'
     }).addTo(map);
+
+    const updateAttributionPosition = () => {
+        attributionControl.setPosition(isMobile() ? 'topright' : 'bottomright');
+    };
 
     const LocateControl = L.Control.extend({
         options: { position: 'topleft' },
-        onAdd: function (map) {
+        onAdd: function (mapInstance) {
             const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom leaflet-control-locate');
             container.innerHTML = '<a href="#" title="我的位置"></a>';
-            container.onclick = (e) => { e.preventDefault(); map.locate({ setView: true, maxZoom: 16 }); };
+            container.onclick = (e) => {
+                e.preventDefault();
+                mapInstance.locate({ setView: true, maxZoom: 16 });
+            };
             return container;
         }
     });
@@ -33,13 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
     map.on('locationfound', (e) => {
         const radius = e.accuracy / 2;
         if (userLocationMarker) map.removeLayer(userLocationMarker);
-        userLocationMarker = L.circle(e.latlng, radius).addTo(map);
+        userLocationMarker = L.circle(e.latlng, radius, {
+            color: '#2c7be5',
+            fillColor: '#60a5fa',
+            fillOpacity: 0.25
+        }).addTo(map);
         userLocationMarker.bindPopup(`您在這裡 (誤差約 ${radius.toFixed(0)} 公尺)`).openPopup();
     });
 
     map.on('locationerror', (e) => {
         let message = '無法取得您的位置。';
-
         switch (e.code) {
             case e.PERMISSION_DENIED: {
                 const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
@@ -56,8 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
             case e.TIMEOUT:
                 message = '定位逾時，請確認定位服務狀態後再試一次。';
                 break;
+            default:
+                break;
         }
-
         alert(`定位錯誤：${message}`);
     });
 
@@ -66,56 +75,134 @@ document.addEventListener('DOMContentLoaded', () => {
     const listContent = document.getElementById('list-content');
     const searchBox = document.getElementById('search-box');
     const filterButtonsContainer = document.getElementById('filter-buttons');
+    const dragHandle = listControls.querySelector('.drag-handle');
+    const headerLocateButton = document.querySelector('[data-action="locate"]');
 
     const mobileListToggle = document.createElement('button');
+    mobileListToggle.type = 'button';
     mobileListToggle.id = 'mobile-list-toggle';
     mobileListToggle.innerHTML = '&#9776;';
+    mobileListToggle.setAttribute('aria-label', '展開設施列表');
+    mobileListToggle.setAttribute('aria-controls', 'facility-list');
+    mobileListToggle.setAttribute('aria-expanded', 'false');
+    mobileListToggle.hidden = !isMobile();
+
+    const mobileBackdrop = document.createElement('div');
+    mobileBackdrop.className = 'mobile-backdrop';
+
+    document.body.appendChild(mobileBackdrop);
     document.body.appendChild(mobileListToggle);
+
+    const refreshMapSize = () => {
+        requestAnimationFrame(() => map.invalidateSize());
+    };
+
+    const applyMobileState = (isOpen) => {
+        facilityList.classList.toggle('open', isOpen);
+        facilityList.setAttribute('aria-hidden', (!isOpen).toString());
+        document.body.classList.toggle('list-open', isOpen);
+        mobileBackdrop.classList.toggle('visible', isOpen);
+        mobileListToggle.innerHTML = isOpen ? '&times;' : '&#9776;';
+        mobileListToggle.setAttribute('aria-label', isOpen ? '關閉設施列表' : '展開設施列表');
+        mobileListToggle.setAttribute('aria-expanded', isOpen.toString());
+        refreshMapSize();
+    };
+
+    const resetDesktopState = () => {
+        facilityList.classList.remove('open');
+        facilityList.setAttribute('aria-hidden', 'false');
+        document.body.classList.remove('list-open');
+        mobileBackdrop.classList.remove('visible');
+        mobileListToggle.innerHTML = '&#9776;';
+        mobileListToggle.setAttribute('aria-expanded', 'false');
+        mobileListToggle.setAttribute('aria-label', '展開設施列表');
+        refreshMapSize();
+    };
 
     const toggleFacilityList = (forceState) => {
         if (!isMobile()) return;
-
-        let isOpen;
-        if (typeof forceState === 'boolean') {
-            facilityList.classList.toggle('open', forceState);
-            isOpen = forceState;
-        } else {
-            isOpen = facilityList.classList.toggle('open');
-        }
-
-        mobileListToggle.innerHTML = isOpen ? '&times;' : '&#9776;';
+        const shouldOpen = typeof forceState === 'boolean'
+            ? forceState
+            : !facilityList.classList.contains('open');
+        applyMobileState(shouldOpen);
     };
+
+    if (dragHandle) {
+        dragHandle.setAttribute('role', 'button');
+        dragHandle.setAttribute('tabindex', '0');
+        dragHandle.setAttribute('aria-label', '開啟或關閉設施列表');
+
+        dragHandle.addEventListener('click', (event) => {
+            event.stopPropagation();
+            toggleFacilityList();
+        });
+
+        dragHandle.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleFacilityList();
+            }
+        });
+    }
 
     mobileListToggle.addEventListener('click', () => toggleFacilityList());
-    listControls.addEventListener('click', (e) => {
-        if (isMobile() && e.target.id === 'list-controls') {
-            toggleFacilityList(); // Allow handle to toggle, not just open
-        }
+    mobileBackdrop.addEventListener('click', () => toggleFacilityList(false));
+
+    searchBox.addEventListener('focus', () => {
+        if (isMobile()) toggleFacilityList(true);
     });
 
-    searchBox.addEventListener('focus', () => toggleFacilityList(true));
+    filterButtonsContainer.addEventListener('focusin', () => {
+        if (isMobile()) toggleFacilityList(true);
+    });
+
+    listContent.addEventListener('focusin', () => {
+        if (isMobile()) toggleFacilityList(true);
+    });
+
+    headerLocateButton?.addEventListener('click', (event) => {
+        event.preventDefault();
+        map.locate({ setView: true, maxZoom: 16 });
+        if (isMobile()) toggleFacilityList(false);
+    });
 
     const zoneMap = {
-        '01': '環球集市 (Global Fair)', '02': '美洲冒險 (American Adventure)', '03': '魔術天地 (Magic Land)',
-        '05': '歐洲冒險 (European Adventure)', '06': '動物王國 (Zootopia)', '12': '週邊設施 (Perimeter Facilities)', '99': '服務設施 (Services)'
+        '01': '環球集市 (Global Fair)',
+        '02': '美洲冒險 (American Adventure)',
+        '03': '魔術天地 (Magic Land)',
+        '05': '歐洲冒險 (European Adventure)',
+        '06': '動物王國 (Zootopia)',
+        '12': '週邊設施 (Perimeter Facilities)',
+        '99': '服務設施 (Services)'
     };
     const zoneClassMap = {
-        '環球集市 (Global Fair)': 'zone-gf', '美洲冒險 (American Adventure)': 'zone-aa', '魔術天地 (Magic Land)': 'zone-ml',
-        '歐洲冒險 (European Adventure)': 'zone-ea', '動物王國 (Zootopia)': 'zone-zt'
+        '環球集市 (Global Fair)': 'zone-gf',
+        '美洲冒險 (American Adventure)': 'zone-aa',
+        '魔術天地 (Magic Land)': 'zone-ml',
+        '歐洲冒險 (European Adventure)': 'zone-ea',
+        '動物王國 (Zootopia)': 'zone-zt'
     };
     const categorySortOrder = [
-        '環球集市 (Global Fair)', '美洲冒險 (American Adventure)', '魔術天地 (Magic Land)', '歐洲冒險 (European Adventure)',
-        '動物王國 (Zootopia)', '週邊設施 (Perimeter Facilities)', '服務設施 (Services)'
+        '環球集市 (Global Fair)',
+        '美洲冒險 (American Adventure)',
+        '魔術天地 (Magic Land)',
+        '歐洲冒險 (European Adventure)',
+        '動物王國 (Zootopia)',
+        '週邊設施 (Perimeter Facilities)',
+        '服務設施 (Services)'
     ];
 
-    fetch('./all_facilt.json').then(response => response.json()).then(data => {
-        const categorizedFacilities = processData(data);
-        renderList(categorizedFacilities);
-        renderFilterButtons(categorizedFacilities);
-    }).catch(error => {
-        console.error('Error fetching data:', error);
-        listContent.innerHTML = '<p>無法載入設施資料。</p>';
-    });
+    fetch('./all_facilt.json')
+        .then(response => response.json())
+        .then(data => {
+            const categorizedFacilities = processData(data);
+            renderList(categorizedFacilities);
+            renderFilterButtons(categorizedFacilities);
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            listContent.innerHTML = '<p>無法載入設施資料。</p>';
+        });
 
     function processData(facilities) {
         const groupedByCategory = {};
@@ -123,17 +210,21 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!facilt.locList || facilt.locList.length === 0) return;
             const category = zoneMap[facilt.zoneKindCd] || '其他 (Others)';
             if (!groupedByCategory[category]) groupedByCategory[category] = {};
-            let name = facilt.faciltNameCN || `${facilt.faciltNameEng} (${facilt.faciltName})`;
+            const name = facilt.faciltNameCN || `${facilt.faciltNameEng} (${facilt.faciltName})`;
             if (!groupedByCategory[category][name]) {
-                groupedByCategory[category][name] = { name: name, locations: [] };
+                groupedByCategory[category][name] = { name, locations: [] };
             }
             facilt.locList.forEach(loc => {
-                groupedByCategory[category][name].locations.push({ coords: [parseFloat(loc.latud), parseFloat(loc.lgtud)] });
+                groupedByCategory[category][name].locations.push({
+                    coords: [parseFloat(loc.latud), parseFloat(loc.lgtud)]
+                });
             });
         });
         const finalGrouped = {};
         for (const category in groupedByCategory) {
-            finalGrouped[category] = Object.values(groupedByCategory[category]).sort((a, b) => a.name.localeCompare(b.name, 'zh-Hant'));
+            finalGrouped[category] = Object.values(groupedByCategory[category]).sort((a, b) =>
+                a.name.localeCompare(b.name, 'zh-Hant')
+            );
         }
         return finalGrouped;
     }
@@ -141,7 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderList(categorizedFacilities) {
         listContent.innerHTML = '';
         const sortedCategories = Object.keys(categorizedFacilities).sort((a, b) => {
-            const orderA = categorySortOrder.indexOf(a), orderB = categorySortOrder.indexOf(b);
+            const orderA = categorySortOrder.indexOf(a);
+            const orderB = categorySortOrder.indexOf(b);
             return (orderA === -1 ? 99 : orderA) - (orderB === -1 ? 99 : orderB);
         });
         sortedCategories.forEach(category => {
@@ -151,22 +243,38 @@ document.addEventListener('DOMContentLoaded', () => {
             if (zoneClass) categoryHeader.classList.add(zoneClass);
             categoryHeader.classList.add('category-header');
             categoryHeader.setAttribute('data-category', category);
+            categoryHeader.setAttribute('role', 'button');
+            categoryHeader.setAttribute('tabindex', '0');
+            categoryHeader.setAttribute('aria-expanded', 'true');
+
             const ul = document.createElement('ul');
             ul.setAttribute('data-category', category);
+            ul.setAttribute('role', 'list');
+            ul.setAttribute('aria-hidden', 'false');
+
             categorizedFacilities[category].forEach(facilt => {
                 const li = document.createElement('li');
                 li.textContent = facilt.name;
+                li.setAttribute('role', 'listitem');
+                li.setAttribute('tabindex', '0');
+                li.dataset.name = facilt.name;
                 if (zoneClass) li.classList.add(zoneClass);
                 if (facilt.locations.length > 1) {
                     li.classList.add('has-sublist');
+                    li.setAttribute('aria-expanded', 'false');
                     const subUl = document.createElement('ul');
                     subUl.classList.add('sub-list', 'collapsed');
+                    subUl.setAttribute('role', 'list');
+                    subUl.setAttribute('aria-hidden', 'true');
                     facilt.locations.forEach((loc, index) => {
                         const subLi = document.createElement('li');
                         subLi.textContent = `地點 ${index + 1}`;
                         subLi.setAttribute('data-lat', loc.coords[0]);
                         subLi.setAttribute('data-lng', loc.coords[1]);
                         subLi.setAttribute('data-parent-name', facilt.name);
+                        subLi.setAttribute('role', 'listitem');
+                        subLi.setAttribute('tabindex', '0');
+                        subLi.dataset.fullName = `${facilt.name} 地點 ${index + 1}`;
                         if (zoneClass) subLi.classList.add(zoneClass);
                         subUl.appendChild(subLi);
                     });
@@ -180,33 +288,52 @@ document.addEventListener('DOMContentLoaded', () => {
             listContent.appendChild(categoryHeader);
             listContent.appendChild(ul);
         });
+        updateCategoryVisibility();
     }
 
     function renderFilterButtons(categorizedFacilities) {
         filterButtonsContainer.innerHTML = '';
         const handleFilterClick = (clickedBtn) => {
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-            clickedBtn.classList.add('active');
-            const filterCategory = clickedBtn.getAttribute('data-filter');
-            document.querySelectorAll('[data-category]').forEach(el => {
-                el.style.display = (filterCategory === 'all' || el.getAttribute('data-category') === filterCategory) ? '' : 'none';
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-pressed', 'false');
             });
+            clickedBtn.classList.add('active');
+            clickedBtn.setAttribute('aria-pressed', 'true');
+            const filterCategory = clickedBtn.getAttribute('data-filter');
+            document.querySelectorAll('.category-header').forEach(header => {
+                const category = header.getAttribute('data-category');
+                const relatedList = header.nextElementSibling;
+                const shouldShow = filterCategory === 'all' || category === filterCategory;
+                header.style.display = shouldShow ? '' : 'none';
+                header.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
+                if (relatedList) {
+                    relatedList.style.display = shouldShow ? '' : 'none';
+                    relatedList.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
+                }
+            });
+            refreshMapSize();
         };
+
         const btnAll = document.createElement('button');
         btnAll.textContent = '全部顯示';
         btnAll.classList.add('filter-btn', 'active');
         btnAll.setAttribute('data-filter', 'all');
+        btnAll.setAttribute('aria-pressed', 'true');
         btnAll.addEventListener('click', () => handleFilterClick(btnAll));
         filterButtonsContainer.appendChild(btnAll);
+
         const sortedCategories = Object.keys(categorizedFacilities).sort((a, b) => {
-             const orderA = categorySortOrder.indexOf(a), orderB = categorySortOrder.indexOf(b);
-             return (orderA === -1 ? 99 : orderA) - (orderB === -1 ? 99 : orderB);
+            const orderA = categorySortOrder.indexOf(a);
+            const orderB = categorySortOrder.indexOf(b);
+            return (orderA === -1 ? 99 : orderA) - (orderB === -1 ? 99 : orderB);
         });
         sortedCategories.forEach(category => {
             const btn = document.createElement('button');
             btn.textContent = category.split(' ')[0];
             btn.classList.add('filter-btn');
             btn.setAttribute('data-filter', category);
+            btn.setAttribute('aria-pressed', 'false');
             const zoneClass = zoneClassMap[category] || '';
             if (zoneClass) btn.classList.add(zoneClass);
             btn.addEventListener('click', () => handleFilterClick(btn));
@@ -214,23 +341,74 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    searchBox.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
-        document.querySelectorAll('#list-content > ul > li').forEach(li => {
-            const name = li.firstChild.textContent.toLowerCase();
-            li.style.display = name.includes(searchTerm) ? '' : 'none';
-        });
+    const updateCategoryVisibility = () => {
         document.querySelectorAll('#list-content > ul').forEach(ul => {
             const allHidden = [...ul.children].every(li => li.style.display === 'none');
             const header = ul.previousElementSibling;
-            if (header && header.tagName === 'H3') header.style.display = allHidden ? 'none' : '';
+            if (header && header.tagName === 'H3') {
+                header.style.display = allHidden ? 'none' : '';
+                header.setAttribute('aria-hidden', allHidden ? 'true' : 'false');
+            }
+            ul.setAttribute('aria-hidden', allHidden ? 'true' : 'false');
         });
+    };
+
+    searchBox.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+        document.querySelectorAll('#list-content > ul > li').forEach(li => {
+            const name = (li.dataset.name || '').toLowerCase();
+            let shouldShow = name.includes(searchTerm);
+            if (!shouldShow && li.classList.contains('has-sublist')) {
+                const subItems = [...li.querySelectorAll('.sub-list li')];
+                shouldShow = subItems.some(subLi => (subLi.dataset.fullName || '').toLowerCase().includes(searchTerm));
+                if (shouldShow) {
+                    li.classList.add('expanded');
+                    const sublist = li.querySelector('.sub-list');
+                    if (sublist) {
+                        sublist.classList.remove('collapsed');
+                        sublist.setAttribute('aria-hidden', 'false');
+                    }
+                    li.setAttribute('aria-expanded', 'true');
+                }
+            }
+            li.style.display = shouldShow || !searchTerm ? '' : 'none';
+            if (!searchTerm && li.classList.contains('has-sublist')) {
+                li.classList.remove('expanded');
+                const sublist = li.querySelector('.sub-list');
+                if (sublist) {
+                    sublist.classList.add('collapsed');
+                    sublist.setAttribute('aria-hidden', 'true');
+                }
+                li.setAttribute('aria-expanded', 'false');
+            }
+        });
+        updateCategoryVisibility();
     });
+
+    const focusFacility = (targetLi) => {
+        const lat = targetLi.getAttribute('data-lat');
+        const lng = targetLi.getAttribute('data-lng');
+        if (lat && lng) {
+            let name = targetLi.getAttribute('data-parent-name') || targetLi.dataset.name || targetLi.textContent.trim();
+            if (targetLi.getAttribute('data-parent-name')) name += ` - ${targetLi.textContent.trim()}`;
+            if (marker) map.removeLayer(marker);
+            map.setView([lat, lng], 18);
+            marker = L.marker([lat, lng]).addTo(map).bindPopup(name).openPopup();
+            if (isMobile()) toggleFacilityList(false);
+        }
+    };
 
     listContent.addEventListener('click', (e) => {
         if (e.target.classList.contains('category-header')) {
-            e.target.classList.toggle('collapsed');
-            e.target.nextElementSibling.classList.toggle('collapsed');
+            const header = e.target;
+            const relatedList = header.nextElementSibling;
+            const isCollapsed = header.classList.toggle('collapsed');
+            const shouldExpand = !isCollapsed;
+            if (relatedList) {
+                relatedList.classList.toggle('collapsed', !shouldExpand);
+                relatedList.setAttribute('aria-hidden', (!shouldExpand).toString());
+            }
+            header.setAttribute('aria-expanded', shouldExpand.toString());
             return;
         }
         const targetLi = e.target.closest('li');
@@ -238,18 +416,61 @@ document.addEventListener('DOMContentLoaded', () => {
         if (targetLi.classList.contains('has-sublist') && e.target.closest('.sub-list') === null) {
             targetLi.classList.toggle('expanded');
             const sublist = targetLi.querySelector('.sub-list');
-            if (sublist) sublist.classList.toggle('collapsed');
+            if (sublist) {
+                const isExpanded = !sublist.classList.toggle('collapsed');
+                sublist.setAttribute('aria-hidden', (!isExpanded).toString());
+                targetLi.setAttribute('aria-expanded', isExpanded.toString());
+            }
             return;
         }
-        const lat = targetLi.getAttribute('data-lat');
-        const lng = targetLi.getAttribute('data-lng');
-        if (lat && lng) {
-            let name = targetLi.getAttribute('data-parent-name') || targetLi.textContent;
-            if (targetLi.getAttribute('data-parent-name')) name += ` - ${targetLi.textContent}`;
-            if (marker) map.removeLayer(marker);
-            map.setView([lat, lng], 18);
-            marker = L.marker([lat, lng]).addTo(map).bindPopup(name).openPopup();
-            if (isMobile()) toggleFacilityList(false);
+        focusFacility(targetLi);
+    });
+
+    listContent.addEventListener('keydown', (e) => {
+        if ((e.key === 'Enter' || e.key === ' ') && (e.target.classList.contains('category-header') || e.target.closest('li'))) {
+            e.preventDefault();
+            e.target.click();
         }
     });
+
+    mobileListToggle.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            toggleFacilityList(false);
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && facilityList.classList.contains('open') && isMobile()) {
+            toggleFacilityList(false);
+        }
+    });
+
+    let previousMobileState = isMobile();
+    if (previousMobileState) {
+        applyMobileState(false);
+        mobileListToggle.hidden = false;
+    } else {
+        resetDesktopState();
+        mobileListToggle.hidden = true;
+    }
+
+    const handleResize = () => {
+        const currentlyMobile = isMobile();
+        updateAttributionPosition();
+        if (currentlyMobile !== previousMobileState) {
+            previousMobileState = currentlyMobile;
+            if (currentlyMobile) {
+                mobileListToggle.hidden = false;
+                applyMobileState(false);
+            } else {
+                mobileListToggle.hidden = true;
+                resetDesktopState();
+            }
+        } else if (currentlyMobile) {
+            facilityList.setAttribute('aria-hidden', (!facilityList.classList.contains('open')).toString());
+        }
+        refreshMapSize();
+    };
+
+    window.addEventListener('resize', handleResize);
 });
