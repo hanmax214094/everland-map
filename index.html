@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everland 互動地圖</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <header>
+          <h1>Everland 互動地圖</h1>
+          <p>
+            這個工具會載入 Everland 園區地圖 PDF，並將地圖上的文字標註整理成
+            可搜尋的清單。點選設施名稱後，地圖會自動捲動並標出相對位置。
+          </p>
+        </header>
+
+        <section class="loader">
+          <h2>載入 PDF</h2>
+          <p class="helper-text">
+            預設會載入官方中文版地圖。如需離線使用，可按下方按鈕選擇本機
+            PDF 檔。
+          </p>
+          <div class="loader-controls">
+            <button id="reloadDefault" type="button" class="primary-button">
+              載入官方地圖
+            </button>
+            <label class="upload-button">
+              <input id="pdfFileInput" type="file" accept="application/pdf" />
+              <span>載入本機 PDF</span>
+            </label>
+            <details class="url-loader">
+              <summary>使用自訂網址</summary>
+              <div class="url-form">
+                <input
+                  id="pdfUrlInput"
+                  type="url"
+                  placeholder="輸入 PDF URL"
+                  spellcheck="false"
+                />
+                <button id="loadFromUrl" type="button">載入</button>
+              </div>
+              <p class="note">
+                若來源網站未開放 CORS，瀏覽器可能會擋下請求。
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section class="facility-search">
+          <h2>搜尋設施</h2>
+          <input
+            id="searchInput"
+            class="search-box"
+            type="search"
+            placeholder="輸入設施名稱或關鍵字"
+          />
+        </section>
+
+        <section class="facility-list-section">
+          <h2>設施清單</h2>
+          <p class="helper-text">
+            清單內容會依照地圖中的文字自動生成，僅顯示長度兩個字以上的標籤。
+          </p>
+          <div id="facilityList" class="facility-list" aria-live="polite"></div>
+        </section>
+      </aside>
+
+      <main class="map-panel">
+        <div class="map-toolbar">
+          <div class="status" id="statusMessage">準備載入地圖…</div>
+          <div class="zoom-controls">
+            <button id="zoomOut" type="button" aria-label="縮小">−</button>
+            <span id="zoomLevel" class="zoom-level">100%</span>
+            <button id="zoomIn" type="button" aria-label="放大">＋</button>
+          </div>
+        </div>
+        <div id="mapViewport" class="map-viewport">
+          <div id="mapContainer" class="map-container">
+            <canvas id="pdfCanvas" aria-hidden="true"></canvas>
+            <div id="textLayer" class="text-layer" aria-hidden="true"></div>
+            <div id="highlightLayer" class="highlight-layer"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.min.js" integrity="sha512-kxgxN6FlMpsJtHwiuXt8n+xusLIDKcsG5Gs6w9ekP3snXTqE5QVOPnoUcwm7t7YAGq+ry7F81kD+bBZ5udAo8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.worker.min.js" integrity="sha512-w0d6JTWT++YUANveBqqT/fdU5EHhONCoY1kfY0nSV4WJSOhO3w+z9icR4beZEZph7j86Khd4Ib8DYPJAfggFng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
