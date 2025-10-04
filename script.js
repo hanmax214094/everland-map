@@ -1,289 +1,301 @@
-const LOCAL_PDF_URL = "./chnt_everland.pdf";
-const REMOTE_PDF_URL = "https://www.everland.com/static/files/chnt_everland.pdf";
-const MIN_LABEL_LENGTH = 2;
-const SCALE_STEP = 0.2;
-const MIN_SCALE = 0.6;
-const MAX_SCALE = 2.6;
+(() => {
+  const LOCAL_PDF_URL = "./chnt_everland.pdf";
+  const REMOTE_PDF_URL = "https://www.everland.com/static/files/chnt_everland.pdf";
+  const MIN_LABEL_LENGTH = 2;
+  const SCALE_STEP = 0.2;
+  const MIN_SCALE = 0.6;
+  const MAX_SCALE = 2.6;
 
-pdfjsLib.GlobalWorkerOptions.workerSrc =
-  "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.worker.min.js";
-
-const elements = {
-  canvas: document.getElementById("pdfCanvas"),
-  textLayer: document.getElementById("textLayer"),
-  highlightLayer: document.getElementById("highlightLayer"),
-  facilityList: document.getElementById("facilityList"),
-  searchInput: document.getElementById("searchInput"),
-  status: document.getElementById("statusMessage"),
-  reloadDefault: document.getElementById("reloadDefault"),
-  pdfFileInput: document.getElementById("pdfFileInput"),
-  pdfUrlInput: document.getElementById("pdfUrlInput"),
-  loadFromUrl: document.getElementById("loadFromUrl"),
-  zoomIn: document.getElementById("zoomIn"),
-  zoomOut: document.getElementById("zoomOut"),
-  zoomLevel: document.getElementById("zoomLevel"),
-  mapContainer: document.getElementById("mapContainer"),
-};
-
-let pdfDoc = null;
-let currentScale = 1.4;
-let currentPage = null;
-let viewport = null;
-let facilityIndex = new Map();
-let orderedFacilityNames = [];
-let activeFacility = null;
-async function loadPdf(source, options = {}) {
-  const { label, fallback } = options;
-  const sourceLabel = label || "地圖";
-  try {
-    elements.status.textContent = `正在載入${sourceLabel}…`;
-    facilityIndex.clear();
-    orderedFacilityNames = [];
-    renderFacilityList([]);
-    clearHighlights();
-
-    pdfDoc = await pdfjsLib.getDocument(source).promise;
-    await renderCurrentScale();
-    elements.status.textContent = `已載入${sourceLabel}，可搜尋或點選左側清單。`;
-  } catch (error) {
-    console.error(error);
-    if (fallback) {
-      const fallbackLabel = fallback.label || "其他來源";
-      elements.status.textContent = `載入${sourceLabel}失敗：${error.message}。改用${fallbackLabel}…`;
-      const nextOptions = {
-        label: fallback.label,
-        fallback: fallback.fallback,
-      };
-      return loadPdf(fallback.source, nextOptions);
+  const pdfjsLib = window.pdfjsLib;
+  if (!pdfjsLib) {
+    console.error("PDF.js 尚未載入，無法初始化互動地圖。");
+    const statusElement = document.getElementById("statusMessage");
+    if (statusElement) {
+      statusElement.textContent = "無法載入 PDF.js，請重新整理頁面或檢查網路。";
     }
-    const hint =
-      source === REMOTE_PDF_URL
-        ? "（可能是原始網站暫時無法連線或需要透過代理）"
-        : "（請確認來源是否支援跨來源存取，或改用本機檔案）";
-    elements.status.textContent = `載入失敗：${error.message} ${hint}`;
-    throw error;
-  }
-}
-
-function loadDefaultPdf() {
-  return loadPdf(LOCAL_PDF_URL, {
-    label: "內建 PDF",
-    fallback: {
-      source: REMOTE_PDF_URL,
-      label: "官方線上 PDF",
-      fallback: null,
-    },
-  }).catch(() => {
-    // 兩個來源都失敗時，維持當前錯誤訊息即可。
-  });
-}
-
-async function renderCurrentScale() {
-  if (!pdfDoc) return;
-  currentPage = await pdfDoc.getPage(1);
-  viewport = currentPage.getViewport({ scale: currentScale });
-  await renderPage();
-}
-
-async function renderPage() {
-  const context = elements.canvas.getContext("2d");
-  elements.canvas.width = viewport.width;
-  elements.canvas.height = viewport.height;
-  elements.canvas.style.width = `${viewport.width}px`;
-  elements.canvas.style.height = `${viewport.height}px`;
-  elements.textLayer.style.width = `${viewport.width}px`;
-  elements.textLayer.style.height = `${viewport.height}px`;
-  elements.highlightLayer.style.width = `${viewport.width}px`;
-  elements.highlightLayer.style.height = `${viewport.height}px`;
-
-  await currentPage.render({
-    canvasContext: context,
-    viewport,
-  }).promise;
-
-  await buildFacilityIndex();
-  updateZoomLabel();
-}
-
-async function buildFacilityIndex() {
-  const textContent = await currentPage.getTextContent({ normalizeWhitespace: true });
-  elements.textLayer.innerHTML = "";
-
-  const textLayerRenderTask = pdfjsLib.renderTextLayer({
-    textContent,
-    container: elements.textLayer,
-    viewport,
-    textDivs: [],
-    enhanceTextSelection: false,
-  });
-
-  await textLayerRenderTask.promise;
-
-  facilityIndex.clear();
-
-  const textDivs = Array.from(elements.textLayer.querySelectorAll("span"));
-  const containerRect = elements.textLayer.getBoundingClientRect();
-
-  for (const div of textDivs) {
-    const label = div.textContent.trim();
-    if (!label || label.length < MIN_LABEL_LENGTH) continue;
-
-    const rect = div.getBoundingClientRect();
-    const box = {
-      left: rect.left - containerRect.left,
-      top: rect.top - containerRect.top,
-      width: rect.width,
-      height: rect.height,
-    };
-
-    if (!facilityIndex.has(label)) {
-      facilityIndex.set(label, []);
-    }
-    facilityIndex.get(label).push(box);
-  }
-
-  orderedFacilityNames = Array.from(facilityIndex.keys()).sort((a, b) =>
-    a.localeCompare(b, "zh-Hant", { sensitivity: "base" })
-  );
-
-  renderFacilityList(orderedFacilityNames);
-}
-
-function renderFacilityList(entries) {
-  elements.facilityList.innerHTML = "";
-
-  if (!entries.length) {
-    const emptyState = document.createElement("div");
-    emptyState.className = "empty-state";
-    emptyState.textContent = "目前沒有可顯示的標籤。";
-    elements.facilityList.append(emptyState);
     return;
   }
 
-  const fragment = document.createDocumentFragment();
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.worker.min.js";
 
-  for (const name of entries) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "facility-item" + (name === activeFacility ? " active" : "");
-    button.textContent = name;
-    button.title = name;
-    button.addEventListener("click", () => {
-      handleFacilitySelect(name);
+  const elements = {
+    canvas: document.getElementById("pdfCanvas"),
+    textLayer: document.getElementById("textLayer"),
+    highlightLayer: document.getElementById("highlightLayer"),
+    facilityList: document.getElementById("facilityList"),
+    searchInput: document.getElementById("searchInput"),
+    status: document.getElementById("statusMessage"),
+    reloadDefault: document.getElementById("reloadDefault"),
+    pdfFileInput: document.getElementById("pdfFileInput"),
+    pdfUrlInput: document.getElementById("pdfUrlInput"),
+    loadFromUrl: document.getElementById("loadFromUrl"),
+    zoomIn: document.getElementById("zoomIn"),
+    zoomOut: document.getElementById("zoomOut"),
+    zoomLevel: document.getElementById("zoomLevel"),
+    mapContainer: document.getElementById("mapContainer"),
+  };
+
+  let pdfDoc = null;
+  let currentScale = 1.4;
+  let currentPage = null;
+  let viewport = null;
+  let facilityIndex = new Map();
+  let orderedFacilityNames = [];
+  let activeFacility = null;
+  async function loadPdf(source, options = {}) {
+    const { label, fallback } = options;
+    const sourceLabel = label || "地圖";
+    try {
+      elements.status.textContent = `正在載入${sourceLabel}…`;
+      facilityIndex.clear();
+      orderedFacilityNames = [];
+      renderFacilityList([]);
+      clearHighlights();
+
+      pdfDoc = await pdfjsLib.getDocument(source).promise;
+      await renderCurrentScale();
+      elements.status.textContent = `已載入${sourceLabel}，可搜尋或點選左側清單。`;
+    } catch (error) {
+      console.error(error);
+      if (fallback) {
+        const fallbackLabel = fallback.label || "其他來源";
+        elements.status.textContent = `載入${sourceLabel}失敗：${error.message}。改用${fallbackLabel}…`;
+        const nextOptions = {
+          label: fallback.label,
+          fallback: fallback.fallback,
+        };
+        return loadPdf(fallback.source, nextOptions);
+      }
+      const hint =
+        source === REMOTE_PDF_URL
+          ? "（可能是原始網站暫時無法連線或需要透過代理）"
+          : "（請確認來源是否支援跨來源存取，或改用本機檔案）";
+      elements.status.textContent = `載入失敗：${error.message} ${hint}`;
+      throw error;
+    }
+  }
+
+  function loadDefaultPdf() {
+    return loadPdf(LOCAL_PDF_URL, {
+      label: "內建 PDF",
+      fallback: {
+        source: REMOTE_PDF_URL,
+        label: "官方線上 PDF",
+        fallback: null,
+      },
+    }).catch(() => {
+      // 兩個來源都失敗時，維持當前錯誤訊息即可。
     });
-    fragment.append(button);
   }
 
-  elements.facilityList.append(fragment);
-}
-
-function handleFacilitySelect(name) {
-  activeFacility = name;
-  renderFacilityList(currentFilteredFacilities());
-
-  const boxes = facilityIndex.get(name);
-  if (!boxes || !boxes.length) {
-    elements.status.textContent = `找不到「${name}」的座標。`;
-    return;
+  async function renderCurrentScale() {
+    if (!pdfDoc) return;
+    currentPage = await pdfDoc.getPage(1);
+    viewport = currentPage.getViewport({ scale: currentScale });
+    await renderPage();
   }
 
-  showHighlights(boxes);
-  elements.status.textContent = `已標出「${name}」。`;
-}
+  async function renderPage() {
+    const context = elements.canvas.getContext("2d");
+    elements.canvas.width = viewport.width;
+    elements.canvas.height = viewport.height;
+    elements.canvas.style.width = `${viewport.width}px`;
+    elements.canvas.style.height = `${viewport.height}px`;
+    elements.textLayer.style.width = `${viewport.width}px`;
+    elements.textLayer.style.height = `${viewport.height}px`;
+    elements.highlightLayer.style.width = `${viewport.width}px`;
+    elements.highlightLayer.style.height = `${viewport.height}px`;
 
-function showHighlights(boxes) {
-  clearHighlights();
+    await currentPage.render({
+      canvasContext: context,
+      viewport,
+    }).promise;
 
-  const fragment = document.createDocumentFragment();
-  boxes.forEach((box, index) => {
-    const marker = document.createElement("div");
-    marker.className = "highlight-box";
-    marker.style.left = `${box.left}px`;
-    marker.style.top = `${box.top}px`;
-    marker.style.width = `${box.width}px`;
-    marker.style.height = `${box.height}px`;
-    fragment.append(marker);
+    await buildFacilityIndex();
+    updateZoomLabel();
+  }
 
-    if (index === 0) {
-      scrollToBox(box);
+  async function buildFacilityIndex() {
+    const textContent = await currentPage.getTextContent({ normalizeWhitespace: true });
+    elements.textLayer.innerHTML = "";
+
+    const textLayerRenderTask = pdfjsLib.renderTextLayer({
+      textContent,
+      container: elements.textLayer,
+      viewport,
+      textDivs: [],
+      enhanceTextSelection: false,
+    });
+
+    await textLayerRenderTask.promise;
+
+    facilityIndex.clear();
+
+    const textDivs = Array.from(elements.textLayer.querySelectorAll("span"));
+    const containerRect = elements.textLayer.getBoundingClientRect();
+
+    for (const div of textDivs) {
+      const label = div.textContent.trim();
+      if (!label || label.length < MIN_LABEL_LENGTH) continue;
+
+      const rect = div.getBoundingClientRect();
+      const box = {
+        left: rect.left - containerRect.left,
+        top: rect.top - containerRect.top,
+        width: rect.width,
+        height: rect.height,
+      };
+
+      if (!facilityIndex.has(label)) {
+        facilityIndex.set(label, []);
+      }
+      facilityIndex.get(label).push(box);
     }
-  });
 
-  elements.highlightLayer.append(fragment);
-}
+    orderedFacilityNames = Array.from(facilityIndex.keys()).sort((a, b) =>
+      a.localeCompare(b, "zh-Hant", { sensitivity: "base" })
+    );
 
-function clearHighlights() {
-  elements.highlightLayer.innerHTML = "";
-}
-
-function scrollToBox(box) {
-  const container = elements.mapContainer;
-  const targetLeft = Math.max(box.left + box.width / 2 - container.clientWidth / 2, 0);
-  const targetTop = Math.max(box.top + box.height / 2 - container.clientHeight / 2, 0);
-
-  container.scrollTo({
-    left: targetLeft,
-    top: targetTop,
-    behavior: "smooth",
-  });
-}
-
-function currentFilteredFacilities() {
-  const query = elements.searchInput.value.trim();
-  if (!query) return orderedFacilityNames;
-  const normalizedQuery = query.toLocaleLowerCase();
-  return orderedFacilityNames.filter((name) =>
-    name.toLocaleLowerCase().includes(normalizedQuery)
-  );
-}
-
-function updateZoomLabel() {
-  elements.zoomLevel.textContent = `${Math.round(currentScale * 100)}%`;
-}
-
-function applySearchFilter() {
-  const entries = currentFilteredFacilities();
-  renderFacilityList(entries);
-  if (!entries.includes(activeFacility)) {
-    clearHighlights();
-    activeFacility = null;
+    renderFacilityList(orderedFacilityNames);
   }
-}
 
-function changeScale(delta) {
-  const nextScale = Math.min(Math.max(currentScale + delta, MIN_SCALE), MAX_SCALE);
-  if (nextScale === currentScale) return;
-  currentScale = nextScale;
-  renderCurrentScale();
-}
+  function renderFacilityList(entries) {
+    elements.facilityList.innerHTML = "";
 
-elements.reloadDefault.addEventListener("click", () => {
+    if (!entries.length) {
+      const emptyState = document.createElement("div");
+      emptyState.className = "empty-state";
+      emptyState.textContent = "目前沒有可顯示的標籤。";
+      elements.facilityList.append(emptyState);
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+
+    for (const name of entries) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "facility-item" + (name === activeFacility ? " active" : "");
+      button.textContent = name;
+      button.title = name;
+      button.addEventListener("click", () => {
+        handleFacilitySelect(name);
+      });
+      fragment.append(button);
+    }
+
+    elements.facilityList.append(fragment);
+  }
+
+  function handleFacilitySelect(name) {
+    activeFacility = name;
+    renderFacilityList(currentFilteredFacilities());
+
+    const boxes = facilityIndex.get(name);
+    if (!boxes || !boxes.length) {
+      elements.status.textContent = `找不到「${name}」的座標。`;
+      return;
+    }
+
+    showHighlights(boxes);
+    elements.status.textContent = `已標出「${name}」。`;
+  }
+
+  function showHighlights(boxes) {
+    clearHighlights();
+
+    const fragment = document.createDocumentFragment();
+    boxes.forEach((box, index) => {
+      const marker = document.createElement("div");
+      marker.className = "highlight-box";
+      marker.style.left = `${box.left}px`;
+      marker.style.top = `${box.top}px`;
+      marker.style.width = `${box.width}px`;
+      marker.style.height = `${box.height}px`;
+      fragment.append(marker);
+
+      if (index === 0) {
+        scrollToBox(box);
+      }
+    });
+
+    elements.highlightLayer.append(fragment);
+  }
+
+  function clearHighlights() {
+    elements.highlightLayer.innerHTML = "";
+  }
+
+  function scrollToBox(box) {
+    const container = elements.mapContainer;
+    const targetLeft = Math.max(box.left + box.width / 2 - container.clientWidth / 2, 0);
+    const targetTop = Math.max(box.top + box.height / 2 - container.clientHeight / 2, 0);
+
+    container.scrollTo({
+      left: targetLeft,
+      top: targetTop,
+      behavior: "smooth",
+    });
+  }
+
+  function currentFilteredFacilities() {
+    const query = elements.searchInput.value.trim();
+    if (!query) return orderedFacilityNames;
+    const normalizedQuery = query.toLocaleLowerCase();
+    return orderedFacilityNames.filter((name) =>
+      name.toLocaleLowerCase().includes(normalizedQuery)
+    );
+  }
+
+  function updateZoomLabel() {
+    elements.zoomLevel.textContent = `${Math.round(currentScale * 100)}%`;
+  }
+
+  function applySearchFilter() {
+    const entries = currentFilteredFacilities();
+    renderFacilityList(entries);
+    if (!entries.includes(activeFacility)) {
+      clearHighlights();
+      activeFacility = null;
+    }
+  }
+
+  function changeScale(delta) {
+    const nextScale = Math.min(Math.max(currentScale + delta, MIN_SCALE), MAX_SCALE);
+    if (nextScale === currentScale) return;
+    currentScale = nextScale;
+    renderCurrentScale();
+  }
+
+  elements.reloadDefault.addEventListener("click", () => {
+    loadDefaultPdf();
+  });
+
+  elements.pdfFileInput.addEventListener("change", (event) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    const fileUrl = URL.createObjectURL(file);
+    loadPdf({ url: fileUrl }, { label: file.name || "上傳的 PDF" }).catch(() => {});
+  });
+
+  elements.loadFromUrl.addEventListener("click", () => {
+    const url = elements.pdfUrlInput.value.trim();
+    if (!url) return;
+    loadPdf(url, { label: "自訂網址" }).catch(() => {});
+  });
+
+  elements.searchInput.addEventListener("input", applySearchFilter);
+
+  elements.zoomIn.addEventListener("click", () => changeScale(SCALE_STEP));
+
+  elements.zoomOut.addEventListener("click", () => changeScale(-SCALE_STEP));
+
+  window.addEventListener("resize", () => {
+    if (!viewport) return;
+    // Re-render at the current scale to keep coordinate mapping accurate.
+    renderCurrentScale();
+  });
+
   loadDefaultPdf();
-});
-
-elements.pdfFileInput.addEventListener("change", (event) => {
-  const file = event.target.files?.[0];
-  if (!file) return;
-  const fileUrl = URL.createObjectURL(file);
-  loadPdf({ url: fileUrl }, { label: file.name || "上傳的 PDF" }).catch(() => {});
-});
-
-elements.loadFromUrl.addEventListener("click", () => {
-  const url = elements.pdfUrlInput.value.trim();
-  if (!url) return;
-  loadPdf(url, { label: "自訂網址" }).catch(() => {});
-});
-
-elements.searchInput.addEventListener("input", applySearchFilter);
-
-elements.zoomIn.addEventListener("click", () => changeScale(SCALE_STEP));
-
-elements.zoomOut.addEventListener("click", () => changeScale(-SCALE_STEP));
-
-window.addEventListener("resize", () => {
-  if (!viewport) return;
-  // Re-render at the current scale to keep coordinate mapping accurate.
-  renderCurrentScale();
-});
-
-loadDefaultPdf();
+})();
