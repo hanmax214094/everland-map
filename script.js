@@ -37,7 +37,29 @@ document.addEventListener('DOMContentLoaded', () => {
         userLocationMarker.bindPopup(`您在這裡 (誤差約 ${radius.toFixed(0)} 公尺)`).openPopup();
     });
 
-    map.on('locationerror', (e) => { alert(e.message); });
+    map.on('locationerror', (e) => {
+        let message = '無法取得您的位置。';
+
+        switch (e.code) {
+            case e.PERMISSION_DENIED: {
+                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+                if (isIOS) {
+                    message = '請在「設定 > Safari > 位置」允許此網站使用定位功能，或在頁面重新載入後允許定位權限。';
+                } else {
+                    message = '請允許此網站使用定位功能。';
+                }
+                break;
+            }
+            case e.POSITION_UNAVAILABLE:
+                message = '目前的定位服務不可用，請確認已開啟定位或稍後再試。';
+                break;
+            case e.TIMEOUT:
+                message = '定位逾時，請確認定位服務狀態後再試一次。';
+                break;
+        }
+
+        alert(`定位錯誤：${message}`);
+    });
 
     const facilityList = document.querySelector('.facility-list');
     const listControls = document.getElementById('list-controls');
