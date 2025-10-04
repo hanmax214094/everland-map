@@ -349,11 +349,14 @@ li.has-sublist > .sub-list {
     box-shadow: var(--shadow-soft);
     min-height: 480px;
     background: var(--surface);
+    display: flex;
 }
 
 #map {
     height: 100%;
     width: 100%;
+    flex: 1 1 auto;
+    min-height: inherit;
 }
 
 .leaflet-control-locate a {
