@@ -1,4 +1,5 @@
-const DEFAULT_PDF_URL = "https://www.everland.com/static/files/chnt_everland.pdf";
+const LOCAL_PDF_URL = "./chnt_everland.pdf";
+const REMOTE_PDF_URL = "https://www.everland.com/static/files/chnt_everland.pdf";
 const MIN_LABEL_LENGTH = 2;
 const SCALE_STEP = 0.2;
 const MIN_SCALE = 0.6;
@@ -31,28 +32,50 @@ let viewport = null;
 let facilityIndex = new Map();
 let orderedFacilityNames = [];
 let activeFacility = null;
-let lastSource = DEFAULT_PDF_URL;
-
-async function loadPdf(source) {
+async function loadPdf(source, options = {}) {
+  const { label, fallback } = options;
+  const sourceLabel = label || "地圖";
   try {
-    elements.status.textContent = "載入地圖中…";
+    elements.status.textContent = `正在載入${sourceLabel}…`;
     facilityIndex.clear();
     orderedFacilityNames = [];
     renderFacilityList([]);
     clearHighlights();
 
     pdfDoc = await pdfjsLib.getDocument(source).promise;
-    lastSource = source;
     await renderCurrentScale();
-    elements.status.textContent = "完成載入，可搜尋或點選左側清單。";
+    elements.status.textContent = `已載入${sourceLabel}，可搜尋或點選左側清單。`;
   } catch (error) {
     console.error(error);
+    if (fallback) {
+      const fallbackLabel = fallback.label || "其他來源";
+      elements.status.textContent = `載入${sourceLabel}失敗：${error.message}。改用${fallbackLabel}…`;
+      const nextOptions = {
+        label: fallback.label,
+        fallback: fallback.fallback,
+      };
+      return loadPdf(fallback.source, nextOptions);
+    }
     const hint =
-      source === DEFAULT_PDF_URL
+      source === REMOTE_PDF_URL
         ? "（可能是原始網站暫時無法連線或需要透過代理）"
-        : "（請確認網址是否支援跨來源存取，或改用本機檔案）";
+        : "（請確認來源是否支援跨來源存取，或改用本機檔案）";
     elements.status.textContent = `載入失敗：${error.message} ${hint}`;
+    throw error;
   }
+}
+
+function loadDefaultPdf() {
+  return loadPdf(LOCAL_PDF_URL, {
+    label: "內建 PDF",
+    fallback: {
+      source: REMOTE_PDF_URL,
+      label: "官方線上 PDF",
+      fallback: null,
+    },
+  }).catch(() => {
+    // 兩個來源都失敗時，維持當前錯誤訊息即可。
+  });
 }
 
 async function renderCurrentScale() {
@@ -235,20 +258,20 @@ function changeScale(delta) {
 }
 
 elements.reloadDefault.addEventListener("click", () => {
-  loadPdf(DEFAULT_PDF_URL);
+  loadDefaultPdf();
 });
 
 elements.pdfFileInput.addEventListener("change", (event) => {
   const file = event.target.files?.[0];
   if (!file) return;
   const fileUrl = URL.createObjectURL(file);
-  loadPdf({ url: fileUrl });
+  loadPdf({ url: fileUrl }, { label: file.name || "上傳的 PDF" }).catch(() => {});
 });
 
 elements.loadFromUrl.addEventListener("click", () => {
   const url = elements.pdfUrlInput.value.trim();
   if (!url) return;
-  loadPdf(url);
+  loadPdf(url, { label: "自訂網址" }).catch(() => {});
 });
 
 elements.searchInput.addEventListener("input", applySearchFilter);
@@ -263,4 +286,4 @@ window.addEventListener("resize", () => {
   renderCurrentScale();
 });
 
-loadPdf(DEFAULT_PDF_URL);
+loadDefaultPdf();
