@@ -15,10 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         onAdd: function (map) {
             const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom leaflet-control-locate');
             container.innerHTML = '<a href="#" title="我的位置"></a>';
-            container.onclick = (e) => {
-                e.preventDefault();
-                map.locate({ setView: true, maxZoom: 16 });
-            };
+            container.onclick = (e) => { e.preventDefault(); map.locate({ setView: true, maxZoom: 16 }); };
             return container;
         }
     });
@@ -33,56 +30,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
     map.on('locationerror', (e) => { alert(e.message); });
 
+    const facilityList = document.querySelector('.facility-list');
     const listContent = document.getElementById('list-content');
     const searchBox = document.getElementById('search-box');
     const filterButtonsContainer = document.getElementById('filter-buttons');
 
+    // --- RWD Mobile Logic ---
+    const isMobile = () => window.innerWidth <= 768;
+
+    const mobileListToggle = document.createElement('button');
+    mobileListToggle.id = 'mobile-list-toggle';
+    mobileListToggle.innerHTML = '&#9776;'; // Hamburger icon
+    document.body.appendChild(mobileListToggle);
+
+    const toggleFacilityList = (forceState) => {
+        if (isMobile()) {
+            facilityList.classList.toggle('open', forceState);
+            mobileListToggle.innerHTML = facilityList.classList.contains('open') ? '&times;' : '&#9776;';
+        }
+    };
+
+    mobileListToggle.addEventListener('click', () => toggleFacilityList());
+    document.getElementById('list-controls').addEventListener('click', (e) => {
+        if (isMobile() && e.target.id === 'list-controls') {
+            toggleFacilityList(true); // Open list if handle is tapped
+        }
+    });
+    // --- End RWD ---
+
     const zoneMap = {
-        '01': '環球集市 (Global Fair)',
-        '02': '美洲冒險 (American Adventure)',
-        '03': '魔術天地 (Magic Land)',
-        '05': '歐洲冒險 (European Adventure)',
-        '06': '動物王國 (Zootopia)',
-        '12': '週邊設施 (Perimeter Facilities)',
-        '99': '服務設施 (Services)'
+        '01': '環球集市 (Global Fair)', '02': '美洲冒險 (American Adventure)', '03': '魔術天地 (Magic Land)',
+        '05': '歐洲冒險 (European Adventure)', '06': '動物王國 (Zootopia)', '12': '週邊設施 (Perimeter Facilities)', '99': '服務設施 (Services)'
     };
-
     const zoneClassMap = {
-        '環球集市 (Global Fair)': 'zone-gf',
-        '美洲冒險 (American Adventure)': 'zone-aa',
-        '魔術天地 (Magic Land)': 'zone-ml',
-        '歐洲冒險 (European Adventure)': 'zone-ea',
-        '動物王國 (Zootopia)': 'zone-zt'
+        '環球集市 (Global Fair)': 'zone-gf', '美洲冒險 (American Adventure)': 'zone-aa', '魔術天地 (Magic Land)': 'zone-ml',
+        '歐洲冒險 (European Adventure)': 'zone-ea', '動物王國 (Zootopia)': 'zone-zt'
     };
-
     const categorySortOrder = [
-        '環球集市 (Global Fair)',
-        '美洲冒險 (American Adventure)',
-        '魔術天地 (Magic Land)',
-        '歐洲冒險 (European Adventure)',
-        '動物王國 (Zootopia)',
-        '週邊設施 (Perimeter Facilities)',
-        '服務設施 (Services)'
+        '環球集市 (Global Fair)', '美洲冒險 (American Adventure)', '魔術天地 (Magic Land)', '歐洲冒險 (European Adventure)',
+        '動物王國 (Zootopia)', '週邊設施 (Perimeter Facilities)', '服務設施 (Services)'
     ];
 
-    fetch('./all_facilt.json')
-        .then(response => response.json())
-        .then(data => {
-            const categorizedFacilities = processData(data);
-            renderList(categorizedFacilities);
-            renderFilterButtons(categorizedFacilities);
-        })
-        .catch(error => {
-            console.error('Error fetching or parsing facility data:', error);
-            listContent.innerHTML = '<p>無法載入設施資料。</p>';
-        });
+    fetch('./all_facilt.json').then(response => response.json()).then(data => {
+        const categorizedFacilities = processData(data);
+        renderList(categorizedFacilities);
+        renderFilterButtons(categorizedFacilities);
+    }).catch(error => {
+        console.error('Error fetching data:', error);
+        listContent.innerHTML = '<p>無法載入設施資料。</p>';
+    });
 
     function processData(facilities) {
         const groupedByCategory = {};
         facilities.forEach(facilt => {
             if (!facilt.locList || facilt.locList.length === 0) return;
-            const zoneCode = facilt.zoneKindCd;
-            const category = zoneMap[zoneCode] || '其他 (Others)';
+            const category = zoneMap[facilt.zoneKindCd] || '其他 (Others)';
             if (!groupedByCategory[category]) groupedByCategory[category] = {};
             let name = facilt.faciltNameCN || `${facilt.faciltNameEng} (${facilt.faciltName})`;
             if (!groupedByCategory[category][name]) {
@@ -102,8 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderList(categorizedFacilities) {
         listContent.innerHTML = '';
         const sortedCategories = Object.keys(categorizedFacilities).sort((a, b) => {
-            const orderA = categorySortOrder.indexOf(a);
-            const orderB = categorySortOrder.indexOf(b);
+            const orderA = categorySortOrder.indexOf(a), orderB = categorySortOrder.indexOf(b);
             return (orderA === -1 ? 99 : orderA) - (orderB === -1 ? 99 : orderB);
         });
         sortedCategories.forEach(category => {
@@ -161,8 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnAll.addEventListener('click', () => handleFilterClick(btnAll));
         filterButtonsContainer.appendChild(btnAll);
         const sortedCategories = Object.keys(categorizedFacilities).sort((a, b) => {
-             const orderA = categorySortOrder.indexOf(a);
-             const orderB = categorySortOrder.indexOf(b);
+             const orderA = categorySortOrder.indexOf(a), orderB = categorySortOrder.indexOf(b);
              return (orderA === -1 ? 99 : orderA) - (orderB === -1 ? 99 : orderB);
         });
         sortedCategories.forEach(category => {
@@ -186,42 +186,33 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('#list-content > ul').forEach(ul => {
             const allHidden = [...ul.children].every(li => li.style.display === 'none');
             const header = ul.previousElementSibling;
-            if (header && header.tagName === 'H3') {
-                header.style.display = allHidden ? 'none' : '';
-            }
+            if (header && header.tagName === 'H3') header.style.display = allHidden ? 'none' : '';
         });
     });
 
     listContent.addEventListener('click', (e) => {
-        // Handle category header clicks first
         if (e.target.classList.contains('category-header')) {
             e.target.classList.toggle('collapsed');
             e.target.nextElementSibling.classList.toggle('collapsed');
             return;
         }
-
         const targetLi = e.target.closest('li');
         if (!targetLi) return;
-
-        // Handle expanding/collapsing a sublist
         if (targetLi.classList.contains('has-sublist') && e.target.closest('.sub-list') === null) {
             targetLi.classList.toggle('expanded');
             const sublist = targetLi.querySelector('.sub-list');
             if (sublist) sublist.classList.toggle('collapsed');
             return;
         }
-
-        // Handle focusing the map
         const lat = targetLi.getAttribute('data-lat');
         const lng = targetLi.getAttribute('data-lng');
         if (lat && lng) {
             let name = targetLi.getAttribute('data-parent-name') || targetLi.textContent;
-            if (targetLi.getAttribute('data-parent-name')) {
-                name += ` - ${targetLi.textContent}`;
-            }
+            if (targetLi.getAttribute('data-parent-name')) name += ` - ${targetLi.textContent}`;
             if (marker) map.removeLayer(marker);
             map.setView([lat, lng], 18);
             marker = L.marker([lat, lng]).addTo(map).bindPopup(name).openPopup();
+            if (isMobile()) toggleFacilityList(false); // Auto-close list on mobile
         }
     });
 });
