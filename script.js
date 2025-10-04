@@ -2,12 +2,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     L.Icon.Default.imagePath = 'vendor/leaflet/images/';
 
-    const map = L.map('map').setView([37.295, 127.204], 15);
+    const isMobile = () => window.innerWidth <= 768;
+
+    const map = L.map('map', {
+        attributionControl: false // We will add it manually
+    }).setView([37.295, 127.204], 15);
     let marker = null;
     let userLocationMarker = null;
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add attribution control in the correct corner based on device
+    L.control.attribution({ 
+        position: isMobile() ? 'topright' : 'bottomright' 
     }).addTo(map);
 
     const LocateControl = L.Control.extend({
@@ -31,32 +40,29 @@ document.addEventListener('DOMContentLoaded', () => {
     map.on('locationerror', (e) => { alert(e.message); });
 
     const facilityList = document.querySelector('.facility-list');
+    const listControls = document.getElementById('list-controls');
     const listContent = document.getElementById('list-content');
     const searchBox = document.getElementById('search-box');
     const filterButtonsContainer = document.getElementById('filter-buttons');
 
-    // --- RWD Mobile Logic ---
-    const isMobile = () => window.innerWidth <= 768;
-
     const mobileListToggle = document.createElement('button');
     mobileListToggle.id = 'mobile-list-toggle';
-    mobileListToggle.innerHTML = '&#9776;'; // Hamburger icon
+    mobileListToggle.innerHTML = '&#9776;';
     document.body.appendChild(mobileListToggle);
 
     const toggleFacilityList = (forceState) => {
         if (isMobile()) {
-            facilityList.classList.toggle('open', forceState);
-            mobileListToggle.innerHTML = facilityList.classList.contains('open') ? '&times;' : '&#9776;';
+            const isOpen = facilityList.classList.toggle('open', forceState);
+            mobileListToggle.innerHTML = isOpen ? '&times;' : '&#9776;';
         }
     };
 
     mobileListToggle.addEventListener('click', () => toggleFacilityList());
-    document.getElementById('list-controls').addEventListener('click', (e) => {
+    listControls.addEventListener('click', (e) => {
         if (isMobile() && e.target.id === 'list-controls') {
-            toggleFacilityList(true); // Open list if handle is tapped
+            toggleFacilityList(); // Allow handle to toggle, not just open
         }
     });
-    // --- End RWD ---
 
     const zoneMap = {
         '01': '環球集市 (Global Fair)', '02': '美洲冒險 (American Adventure)', '03': '魔術天地 (Magic Land)',
@@ -212,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (marker) map.removeLayer(marker);
             map.setView([lat, lng], 18);
             marker = L.marker([lat, lng]).addTo(map).bindPopup(name).openPopup();
-            if (isMobile()) toggleFacilityList(false); // Auto-close list on mobile
+            if (isMobile()) toggleFacilityList(false);
         }
     });
 });
