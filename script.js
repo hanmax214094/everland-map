@@ -73,10 +73,17 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(mobileListToggle);
 
     const toggleFacilityList = (forceState) => {
-        if (isMobile()) {
-            const isOpen = facilityList.classList.toggle('open', forceState);
-            mobileListToggle.innerHTML = isOpen ? '&times;' : '&#9776;';
+        if (!isMobile()) return;
+
+        let isOpen;
+        if (typeof forceState === 'boolean') {
+            facilityList.classList.toggle('open', forceState);
+            isOpen = forceState;
+        } else {
+            isOpen = facilityList.classList.toggle('open');
         }
+
+        mobileListToggle.innerHTML = isOpen ? '&times;' : '&#9776;';
     };
 
     mobileListToggle.addEventListener('click', () => toggleFacilityList());
@@ -85,6 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleFacilityList(); // Allow handle to toggle, not just open
         }
     });
+
+    searchBox.addEventListener('focus', () => toggleFacilityList(true));
 
     const zoneMap = {
         '01': '環球集市 (Global Fair)', '02': '美洲冒險 (American Adventure)', '03': '魔術天地 (Magic Land)',
