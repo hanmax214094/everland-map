@@ -9,6 +9,36 @@ document.addEventListener('DOMContentLoaded', () => {
     let marker = null;
     let userLocationMarker = null;
 
+    const locateOptions = {
+        setView: true,
+        maxZoom: 16,
+        enableHighAccuracy: true,
+        timeout: 15000
+    };
+    let hasFallbackAttempted = false;
+
+    const showUserLocation = (latlng, accuracy = 0) => {
+        const normalizedAccuracy = Number.isFinite(accuracy) && accuracy > 0 ? accuracy : 0;
+        const radius = normalizedAccuracy / 2;
+        const circleRadius = radius || 25;
+        const popupMessage = radius
+            ? `您在這裡 (誤差約 ${radius.toFixed(0)} 公尺)`
+            : '您在這裡';
+
+        if (userLocationMarker) map.removeLayer(userLocationMarker);
+        userLocationMarker = L.circle(latlng, circleRadius, {
+            color: '#2c7be5',
+            fillColor: '#60a5fa',
+            fillOpacity: 0.25
+        }).addTo(map);
+        userLocationMarker.bindPopup(popupMessage).openPopup();
+    };
+
+    const triggerLocate = () => {
+        hasFallbackAttempted = false;
+        map.locate(locateOptions);
+    };
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
@@ -28,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             container.innerHTML = '<a href="#" title="我的位置"></a>';
             container.onclick = (e) => {
                 e.preventDefault();
-                mapInstance.locate({ setView: true, maxZoom: 16 });
+                triggerLocate();
             };
             return container;
         }
@@ -36,20 +66,17 @@ document.addEventListener('DOMContentLoaded', () => {
     map.addControl(new LocateControl());
 
     map.on('locationfound', (e) => {
-        const radius = e.accuracy / 2;
-        if (userLocationMarker) map.removeLayer(userLocationMarker);
-        userLocationMarker = L.circle(e.latlng, radius, {
-            color: '#2c7be5',
-            fillColor: '#60a5fa',
-            fillOpacity: 0.25
-        }).addTo(map);
-        userLocationMarker.bindPopup(`您在這裡 (誤差約 ${radius.toFixed(0)} 公尺)`).openPopup();
+        showUserLocation(e.latlng, e.accuracy);
     });
 
-    map.on('locationerror', (e) => {
+    const getLocationErrorMessage = (code, isFallback = false) => {
+        const PERMISSION_DENIED = 1;
+        const POSITION_UNAVAILABLE = 2;
+        const TIMEOUT = 3;
         let message = '無法取得您的位置。';
-        switch (e.code) {
-            case e.PERMISSION_DENIED: {
+
+        switch (code) {
+            case PERMISSION_DENIED: {
                 const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
                 if (isIOS) {
                     message = '請在「設定 > Safari > 位置」允許此網站使用定位功能，或在頁面重新載入後允許定位權限。';
@@ -58,16 +85,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 break;
             }
-            case e.POSITION_UNAVAILABLE:
-                message = '目前的定位服務不可用，請確認已開啟定位或稍後再試。';
+            case POSITION_UNAVAILABLE:
+                message = isFallback
+                    ? '目前無法透過裝置的定位服務取得位置，請確認裝置有良好訊號並已開啟定位功能。'
+                    : '目前的定位服務不可用，請確認已開啟定位或稍後再試。';
                 break;
-            case e.TIMEOUT:
+            case TIMEOUT:
                 message = '定位逾時，請確認定位服務狀態後再試一次。';
                 break;
             default:
                 break;
         }
-        alert(`定位錯誤：${message}`);
+
+        return message;
+    };
+
+    const attemptFallbackGeolocation = (originalError) => {
+        if (hasFallbackAttempted || !navigator.geolocation) {
+            alert(`定位錯誤：${getLocationErrorMessage(originalError.code)}`);
+            return;
+        }
+
+        hasFallbackAttempted = true;
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const latlng = L.latLng(position.coords.latitude, position.coords.longitude);
+                const accuracy = position.coords.accuracy ?? 0;
+                showUserLocation(latlng, accuracy);
+                if (locateOptions.setView) {
+                    const targetZoom = locateOptions.maxZoom ?? map.getZoom();
+                    map.setView(latlng, targetZoom);
+                }
+            },
+            (fallbackError) => {
+                alert(`定位錯誤：${getLocationErrorMessage(fallbackError.code, true)}`);
+            },
+            {
+                enableHighAccuracy: true,
+                timeout: 20000,
+                maximumAge: 0
+            }
+        );
+    };
+
+    map.on('locationerror', (e) => {
+        attemptFallbackGeolocation(e);
     });
 
     const facilityList = document.querySelector('.facility-list');
@@ -162,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     headerLocateButton?.addEventListener('click', (event) => {
         event.preventDefault();
-        map.locate({ setView: true, maxZoom: 16 });
+        triggerLocate();
         if (isMobile()) toggleFacilityList(false);
     });
 
