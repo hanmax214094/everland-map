@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     L.Icon.Default.imagePath = 'vendor/leaflet/images/';
 
     const isMobile = () => window.innerWidth <= 768;
+    const isIOSDevice = () => /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
     const map = L.map('map', {
         attributionControl: false
@@ -34,8 +35,32 @@ document.addEventListener('DOMContentLoaded', () => {
         userLocationMarker.bindPopup(popupMessage).openPopup();
     };
 
+    const handleGeolocationSuccess = (position) => {
+        const latlng = L.latLng(position.coords.latitude, position.coords.longitude);
+        const accuracy = position.coords.accuracy ?? 0;
+        showUserLocation(latlng, accuracy);
+        if (locateOptions.setView) {
+            const targetZoom = locateOptions.maxZoom ?? map.getZoom();
+            map.setView(latlng, targetZoom);
+        }
+    };
+
     const triggerLocate = () => {
         hasFallbackAttempted = false;
+        if (navigator.geolocation && isIOSDevice()) {
+            navigator.geolocation.getCurrentPosition(
+                handleGeolocationSuccess,
+                (error) => {
+                    alert(`定位錯誤：${getLocationErrorMessage(error.code)}`);
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 20000,
+                    maximumAge: 0
+                }
+            );
+            return;
+        }
         map.locate(locateOptions);
     };
 
@@ -77,8 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         switch (code) {
             case PERMISSION_DENIED: {
-                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-                if (isIOS) {
+                if (isIOSDevice()) {
                     message = '請在「設定 > Safari > 位置」允許此網站使用定位功能，或在頁面重新載入後允許定位權限。';
                 } else {
                     message = '請允許此網站使用定位功能。';
@@ -109,13 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hasFallbackAttempted = true;
         navigator.geolocation.getCurrentPosition(
             (position) => {
-                const latlng = L.latLng(position.coords.latitude, position.coords.longitude);
-                const accuracy = position.coords.accuracy ?? 0;
-                showUserLocation(latlng, accuracy);
-                if (locateOptions.setView) {
-                    const targetZoom = locateOptions.maxZoom ?? map.getZoom();
-                    map.setView(latlng, targetZoom);
-                }
+                handleGeolocationSuccess(position);
             },
             (fallbackError) => {
                 alert(`定位錯誤：${getLocationErrorMessage(fallbackError.code, true)}`);
