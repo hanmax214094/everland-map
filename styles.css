@@ -382,6 +382,15 @@ h1 {
     box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
 }
 
+li.has-sublist {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: start;
+    padding-right: 14px;
+}
+
 li.has-sublist::before {
     content: '';
     width: 0;
@@ -392,6 +401,10 @@ li.has-sublist::before {
     margin-left: 4px;
     display: inline-block;
     transition: transform 0.2s ease;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: center;
+    margin-top: 2px;
 }
 
 li.has-sublist.expanded::before {
@@ -399,9 +412,19 @@ li.has-sublist.expanded::before {
 }
 
 li.has-sublist > .sub-list {
-    margin-top: 10px;
-    padding-left: 22px;
+    grid-column: 2;
+    margin-top: 0;
+    padding-left: 18px;
     border-left: 1px dashed rgba(148, 163, 184, 0.4);
+    width: 100%;
+}
+
+li.has-sublist > .facility-item-row {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
 }
 
 li.has-sublist.is-active::before {
