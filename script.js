@@ -173,6 +173,121 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(mobileBackdrop);
     document.body.appendChild(mobileListToggle);
 
+    const menuModal = document.createElement('div');
+    menuModal.id = 'menu-modal';
+    menuModal.className = 'menu-modal';
+    menuModal.setAttribute('aria-hidden', 'true');
+    menuModal.innerHTML = `
+        <div class="menu-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="menu-modal-title">
+            <button type="button" class="menu-modal__close" aria-label="關閉菜單視窗">&times;</button>
+            <div class="menu-modal__header">
+                <p class="menu-modal__subtitle">餐點菜單</p>
+                <h2 id="menu-modal-title" class="menu-modal__title"></h2>
+            </div>
+            <div class="menu-modal__body">
+                <div class="menu-modal__list" role="list"></div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(menuModal);
+
+    const menuModalClose = menuModal.querySelector('.menu-modal__close');
+    const menuModalTitle = menuModal.querySelector('.menu-modal__title');
+    const menuModalBody = menuModal.querySelector('.menu-modal__body');
+    const menuModalList = menuModal.querySelector('.menu-modal__list');
+
+    let previousFocusedElement = null;
+
+    const formatMenuName = (menuItem) => {
+        const candidates = [menuItem?.menuDescrtCN, menuItem?.menuDescrtEng, menuItem?.menuDescrt];
+        return candidates.find(text => typeof text === 'string' && text.trim().length > 0)?.trim() || '餐點';
+    };
+
+    const formatMenuPrice = (price) => {
+        if (typeof price !== 'number' || Number.isNaN(price)) return '';
+        return price.toLocaleString('zh-TW');
+    };
+
+    const createMenuCard = (menuItem) => {
+        const card = document.createElement('article');
+        card.className = 'menu-card';
+        card.setAttribute('role', 'listitem');
+
+        if (menuItem?.menuImagUrl) {
+            const img = document.createElement('img');
+            img.className = 'menu-card__image';
+            img.src = menuItem.menuImagUrl;
+            img.alt = `${formatMenuName(menuItem)} 圖片`;
+            img.loading = 'lazy';
+            card.appendChild(img);
+        }
+
+        const content = document.createElement('div');
+        content.className = 'menu-card__content';
+
+        const title = document.createElement('h4');
+        title.className = 'menu-card__title';
+        title.textContent = formatMenuName(menuItem);
+        content.appendChild(title);
+
+        const englishName = typeof menuItem?.menuDescrtEng === 'string' ? menuItem.menuDescrtEng.trim() : '';
+        if (englishName && englishName !== title.textContent) {
+            const subtitle = document.createElement('p');
+            subtitle.className = 'menu-card__subtitle';
+            subtitle.textContent = englishName;
+            content.appendChild(subtitle);
+        }
+
+        const priceValue = formatMenuPrice(menuItem?.menuPrice);
+        if (priceValue) {
+            const price = document.createElement('p');
+            price.className = 'menu-card__price';
+            price.textContent = `價格：${priceValue}`;
+            content.appendChild(price);
+        }
+
+        card.appendChild(content);
+        return card;
+    };
+
+    const showMenuModal = (facility, triggerElement = null) => {
+        if (!facility?.menuList || facility.menuList.length === 0) return;
+        previousFocusedElement = triggerElement instanceof HTMLElement ? triggerElement : document.activeElement;
+        menuModalTitle.textContent = facility.name;
+        menuModalList.innerHTML = '';
+        facility.menuList.forEach(menuItem => {
+            menuModalList.appendChild(createMenuCard(menuItem));
+        });
+        if (menuModalBody) {
+            menuModalBody.scrollTop = 0;
+        }
+        menuModal.classList.add('visible');
+        menuModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('menu-modal-open');
+        menuModalClose.focus({ preventScroll: true });
+    };
+
+    const hideMenuModal = () => {
+        if (!menuModal.classList.contains('visible')) return;
+        menuModal.classList.remove('visible');
+        menuModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('menu-modal-open');
+        if (previousFocusedElement && typeof previousFocusedElement.focus === 'function') {
+            previousFocusedElement.focus({ preventScroll: true });
+        }
+    };
+
+    menuModalClose.addEventListener('click', (event) => {
+        event.stopPropagation();
+        hideMenuModal();
+    });
+
+    menuModal.addEventListener('click', (event) => {
+        if (event.target === menuModal) {
+            hideMenuModal();
+        }
+    });
+
     const refreshMapSize = () => {
         requestAnimationFrame(() => map.invalidateSize());
     };
@@ -291,14 +406,25 @@ document.addEventListener('DOMContentLoaded', () => {
             const category = zoneMap[facilt.zoneKindCd] || '其他 (Others)';
             if (!groupedByCategory[category]) groupedByCategory[category] = {};
             const name = `${facilt.faciltNameCN}/${facilt.faciltNameEng} (${facilt.faciltName})`;
+            const sanitizedMenu = Array.isArray(facilt.menuList)
+                ? facilt.menuList.filter(item => item && (item.menuDescrtCN || item.menuDescrtEng || item.menuDescrt))
+                : [];
+            const hasMenuData = sanitizedMenu.length > 0;
+
             if (!groupedByCategory[category][name]) {
                 groupedByCategory[category][name] = {
                     name,
                     locations: [],
-                    isRestaurant: facilt.faciltCateKindCd === '04'
+                    isRestaurant: facilt.faciltCateKindCd === '04',
+                    menuList: hasMenuData ? sanitizedMenu : []
                 };
-            } else if (facilt.faciltCateKindCd === '04') {
-                groupedByCategory[category][name].isRestaurant = true;
+            } else {
+                if (facilt.faciltCateKindCd === '04') {
+                    groupedByCategory[category][name].isRestaurant = true;
+                }
+                if (hasMenuData) {
+                    groupedByCategory[category][name].menuList = sanitizedMenu;
+                }
             }
             facilt.locList.forEach(loc => {
                 groupedByCategory[category][name].locations.push({
@@ -340,12 +466,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const createFacilityListItem = (facilt) => {
                 const li = document.createElement('li');
-                li.textContent = facilt.name;
                 li.setAttribute('role', 'listitem');
                 li.setAttribute('tabindex', '0');
                 li.dataset.name = facilt.name;
                 li.dataset.fullName = facilt.name;
                 if (zoneClass) li.classList.add(zoneClass);
+
+                const itemRow = document.createElement('div');
+                itemRow.className = 'facility-item-row';
+
+                const hasMenu = facilt.isRestaurant && Array.isArray(facilt.menuList) && facilt.menuList.length > 0;
+                if (hasMenu) {
+                    li.classList.add('has-menu');
+                    const menuButton = document.createElement('button');
+                    menuButton.type = 'button';
+                    menuButton.className = 'menu-trigger';
+                    menuButton.setAttribute('aria-label', `查看${facilt.name}菜單`);
+                    menuButton.title = '查看菜單';
+                    menuButton.innerHTML = '<span class="sr-only">查看菜單</span>';
+                    menuButton.addEventListener('click', (event) => {
+                        event.stopPropagation();
+                        showMenuModal(facilt, event.currentTarget);
+                    });
+                    itemRow.appendChild(menuButton);
+                }
+
+                const nameSpan = document.createElement('span');
+                nameSpan.className = 'facility-item-name';
+                nameSpan.textContent = facilt.name;
+                itemRow.appendChild(nameSpan);
+
+                li.appendChild(itemRow);
                 if (facilt.locations.length > 1) {
                     li.classList.add('has-sublist');
                     li.setAttribute('aria-expanded', 'false');
@@ -546,7 +697,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     listContent.addEventListener('keydown', (e) => {
-        if ((e.key === 'Enter' || e.key === ' ') && (e.target.classList.contains('category-header') || e.target.closest('li'))) {
+        if (e.key !== 'Enter' && e.key !== ' ') return;
+        if (e.target.closest('.menu-trigger')) return;
+        if (e.target.classList.contains('category-header') || e.target.closest('li')) {
             e.preventDefault();
             e.target.click();
         }
@@ -559,7 +712,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && facilityList.classList.contains('open') && isMobile()) {
+        if (e.key !== 'Escape') return;
+        if (menuModal.classList.contains('visible')) {
+            hideMenuModal();
+            return;
+        }
+        if (facilityList.classList.contains('open') && isMobile()) {
             toggleFacilityList(false);
         }
     });
