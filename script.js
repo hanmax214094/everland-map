@@ -17,7 +17,9 @@ createApp({
             categories: [],
             filterZones: ['全部'],
             menuModalVisible: false,
-            activeMenuFacility: null
+            activeMenuFacility: null,
+            activeFacilityId: null,
+            activeLocationId: null
         });
         const previousFocusedElement = ref(null);
         const hasFallbackAttempted = ref(false);
@@ -67,6 +69,10 @@ createApp({
             });
         });
 
+        const isFiltering = computed(() => {
+            return state.searchTerm.trim().length > 0 || state.selectedZone !== '全部';
+        });
+
         const refreshMapSize = () => {
             requestAnimationFrame(() => {
                 state.map?.invalidateSize();
@@ -102,6 +108,9 @@ createApp({
 
         const selectZone = (zone) => {
             state.selectedZone = zone;
+            if (state.isMobile) {
+                state.isListOpen = true;
+            }
         };
 
         const formatMenuName = (menuItem) => {
@@ -244,6 +253,15 @@ createApp({
                     category.isCollapsed = false;
                 }
             });
+
+            const activeFacilityStillVisible = state.categories.some(category =>
+                category.visibleFacilities.some(facility => facility.id === state.activeFacilityId)
+            );
+
+            if (!activeFacilityStillVisible) {
+                state.activeFacilityId = null;
+                state.activeLocationId = null;
+            }
         };
 
         const focusLocation = (facility, location) => {
@@ -258,6 +276,8 @@ createApp({
                 ? `${facility.name} - ${location.label}`
                 : facility.name;
             state.marker = L.marker(latLng).addTo(state.map).bindPopup(popupName).openPopup();
+            state.activeFacilityId = facility.id;
+            state.activeLocationId = location?.id || null;
             if (state.isMobile) {
                 state.isListOpen = false;
             }
@@ -266,6 +286,8 @@ createApp({
         const handleFacilityClick = (facility) => {
             if (facility.locations.length > 1) {
                 facility.showSublist = !facility.showSublist;
+                state.activeFacilityId = facility.id;
+                state.activeLocationId = null;
                 return;
             }
             const location = facility.visibleLocations[0] || facility.locations[0];
@@ -281,6 +303,8 @@ createApp({
             previousFocusedElement.value = document.activeElement instanceof HTMLElement ? document.activeElement : null;
             state.activeMenuFacility = facility;
             state.menuModalVisible = true;
+            state.activeFacilityId = facility.id;
+            state.activeLocationId = null;
             nextTick(() => {
                 menuBodyRef.value?.scrollTo({ top: 0 });
                 menuCloseRef.value?.focus({ preventScroll: true });
@@ -396,6 +420,12 @@ createApp({
             if (state.isMobile) {
                 state.isListOpen = false;
             }
+        };
+
+        const resetFilters = () => {
+            state.searchTerm = '';
+            state.selectedZone = '全部';
+            updateVisibility();
         };
 
         const initializeMap = () => {
@@ -515,6 +545,7 @@ createApp({
             menuBodyRef,
             state,
             visibleCategories,
+            isFiltering,
             searchTerm: refProxy(state, 'searchTerm'),
             selectedZone: refProxy(state, 'selectedZone'),
             isMobile: refProxy(state, 'isMobile'),
@@ -522,6 +553,8 @@ createApp({
             menuModalVisible: refProxy(state, 'menuModalVisible'),
             activeMenuFacility: refProxy(state, 'activeMenuFacility'),
             filterZones: refProxy(state, 'filterZones'),
+            activeFacilityId: refProxy(state, 'activeFacilityId'),
+            activeLocationId: refProxy(state, 'activeLocationId'),
             handleLocate,
             toggleList,
             closeList,
@@ -538,6 +571,7 @@ createApp({
             formatMenuName,
             formatMenuSubtitle,
             formatMenuPrice,
+            resetFilters,
             zoneClassMap
         };
     }
