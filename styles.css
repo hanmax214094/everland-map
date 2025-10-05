@@ -292,6 +292,57 @@ h1 {
     gap: 10px;
 }
 
+.facility-item-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+}
+
+.facility-item-name {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-size: 0.98rem;
+    line-height: 1.4;
+    color: inherit;
+}
+
+.menu-trigger {
+    border: none;
+    background: rgba(44, 123, 229, 0.1);
+    color: var(--primary-dark);
+    border-radius: 999px;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    box-shadow: inset 0 1px 2px rgba(44, 123, 229, 0.15);
+    flex-shrink: 0;
+}
+
+.menu-trigger::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232c7be5' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 5h10l4 4v10H5z'/%3E%3Cpath d='M5 9h14'/%3E%3Cpath d='M9 13h6'/%3E%3Cpath d='M9 17h6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-trigger:hover,
+.menu-trigger:focus-visible {
+    background: rgba(44, 123, 229, 0.18);
+    outline: none;
+}
+
+.menu-trigger:active {
+    transform: translateY(1px);
+}
+
 .facility-list li:not(.has-sublist)::before {
     content: '';
     width: 10px;
@@ -418,6 +469,164 @@ li.has-sublist > .sub-list {
     pointer-events: auto;
 }
 
+body.menu-modal-open {
+    overflow: hidden;
+}
+
+.menu-modal {
+    position: fixed;
+    inset: 0;
+    padding: clamp(20px, 6vw, 48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 23, 42, 0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 1300;
+}
+
+.menu-modal.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-modal__dialog {
+    width: min(540px, 100%);
+    max-height: min(90vh, 720px);
+    background: var(--surface);
+    border-radius: 24px;
+    box-shadow: 0 28px 60px rgba(15, 23, 42, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: translateY(16px);
+    transition: transform 0.25s ease;
+}
+
+.menu-modal.visible .menu-modal__dialog {
+    transform: translateY(0);
+}
+
+.menu-modal__header {
+    padding: 28px 32px 18px;
+    background: linear-gradient(145deg, rgba(44, 123, 229, 0.12) 0%, rgba(99, 102, 241, 0.08) 100%);
+    position: relative;
+}
+
+.menu-modal__subtitle {
+    margin: 0 0 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(44, 62, 80, 0.7);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.menu-modal__title {
+    margin: 0;
+    font-size: 1.35rem;
+    line-height: 1.4;
+    color: var(--text);
+}
+
+.menu-modal__close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--text);
+    font-size: 1.3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.menu-modal__close:hover,
+.menu-modal__close:focus-visible {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+    outline: none;
+}
+
+.menu-modal__close:active {
+    transform: scale(0.97);
+}
+
+.menu-modal__body {
+    padding: 24px 32px 32px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.menu-modal__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.menu-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(238, 244, 255, 0.9));
+    box-shadow: inset 0 0 0 1px rgba(44, 123, 229, 0.08), 0 10px 25px rgba(15, 23, 42, 0.05);
+}
+
+.menu-card__image {
+    width: 78px;
+    height: 78px;
+    border-radius: 18px;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: rgba(44, 123, 229, 0.12);
+    box-shadow: inset 0 0 0 1px rgba(44, 123, 229, 0.18);
+}
+
+.menu-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.menu-card__title {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.menu-card__subtitle {
+    margin: 0;
+    font-size: 0.88rem;
+    color: rgba(82, 96, 109, 0.85);
+}
+
+.menu-card__price {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+.menu-modal__empty {
+    margin: 0;
+    font-size: 0.95rem;
+    color: rgba(82, 96, 109, 0.9);
+}
+
 #mobile-list-toggle {
     display: none;
 }
@@ -495,6 +704,28 @@ li.has-sublist > .sub-list {
         padding: 16px 20px 24px;
     }
 
+    .menu-modal__dialog {
+        width: min(92vw, 480px);
+    }
+
+    .menu-modal__header {
+        padding: 22px 24px 16px;
+    }
+
+    .menu-modal__body {
+        padding: 20px 24px 24px;
+    }
+
+    .menu-card {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .menu-card__image {
+        width: 64px;
+        height: 64px;
+    }
+
     #mobile-list-toggle {
         display: inline-flex;
         position: fixed;
@@ -528,6 +759,43 @@ li.has-sublist > .sub-list {
 
     body.list-open {
         overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-modal {
+        padding: clamp(12px, 4vw, 18px);
+    }
+
+    .menu-modal__dialog {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .menu-modal__header {
+        padding: 18px 20px 14px;
+    }
+
+    .menu-modal__title {
+        font-size: 1.18rem;
+    }
+
+    .menu-modal__body {
+        padding: 18px 20px 22px;
+    }
+
+    .menu-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .menu-card__image {
+        width: 100%;
+        height: 160px;
+    }
+
+    .menu-card__content {
+        gap: 4px;
     }
 }
 
