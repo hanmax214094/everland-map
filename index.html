@@ -10,10 +10,7 @@
 <body>
     <div id="app">
         <header class="app-header">
-            <div class="title-block">
-                <h1>Everland Interactive Map</h1>
-                <p class="subtitle">即時探索園區、搜尋設施與查看位置</p>
-            </div>
+            <h1 class="app-title">Everland</h1>
             <button type="button" class="ghost-button" aria-label="定位到我的位置" @click="handleLocate">
                 <span aria-hidden="true">📍</span>
                 我的定位
@@ -44,6 +41,13 @@
                             v-model.trim="searchTerm"
                             @focus="openListOnMobile()"
                         >
+                        <button
+                            v-if="isFiltering"
+                            type="button"
+                            class="clear-search"
+                            aria-label="清除搜尋與篩選"
+                            @click="resetFilters"
+                        ></button>
                     </div>
                     <div id="filter-buttons" role="group" aria-label="分區篩選">
                         <button
@@ -83,7 +87,8 @@
                                     {
                                         'has-menu': facility.hasMenu,
                                         'has-sublist': facility.locations.length > 1,
-                                        expanded: facility.showSublist
+                                        expanded: facility.showSublist,
+                                        'is-active': activeFacilityId === facility.id
                                     }
                                 ]"
                                 role="listitem"
@@ -119,6 +124,7 @@
                                             :data-lat="location.lat"
                                             :data-lng="location.lng"
                                             :data-parent-name="facility.name"
+                                            :class="{ 'is-active': activeLocationId === location.id }"
                                             role="listitem"
                                             tabindex="0"
                                             @click.stop="focusLocation(facility, location)"
