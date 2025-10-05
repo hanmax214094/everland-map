@@ -290,7 +290,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!facilt.locList || facilt.locList.length === 0) return;
             const category = zoneMap[facilt.zoneKindCd] || '其他 (Others)';
             if (!groupedByCategory[category]) groupedByCategory[category] = {};
-            const name = facilt.faciltNameCN || `${facilt.faciltNameEng} (${facilt.faciltName})`;
+            const name = `${facilt.faciltNameCN}/${facilt.faciltNameEng} (${facilt.faciltName})`;
+            // const name = facilt.faciltNameCN || `${facilt.faciltNameEng} (${facilt.faciltName})`;
             if (!groupedByCategory[category][name]) {
                 groupedByCategory[category][name] = { name, locations: [] };
             }
