@@ -63,7 +63,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05167",
@@ -129,7 +131,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05231",
@@ -195,7 +199,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06092",
@@ -261,7 +267,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05014",
@@ -327,7 +335,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06084",
@@ -393,7 +403,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05003",
@@ -459,7 +471,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06002",
@@ -525,7 +539,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06003",
@@ -591,7 +607,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06001",
@@ -657,7 +675,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01052",
@@ -723,7 +743,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01066",
@@ -789,7 +811,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06004",
@@ -855,7 +879,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03003",
@@ -921,7 +947,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02010",
@@ -987,7 +1015,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02001",
@@ -1053,7 +1083,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02007",
@@ -1119,7 +1151,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02008",
@@ -1185,7 +1219,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02002",
@@ -1251,7 +1287,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02009",
@@ -1317,7 +1355,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03007",
@@ -1383,7 +1423,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05015",
@@ -1449,7 +1491,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03009",
@@ -1515,7 +1559,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03010",
@@ -1581,7 +1627,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03011",
@@ -1647,7 +1695,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03012",
@@ -1713,7 +1763,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03013",
@@ -1779,7 +1831,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03014",
@@ -1845,7 +1899,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03015",
@@ -1911,7 +1967,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03016",
@@ -1977,7 +2035,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03017",
@@ -2043,7 +2103,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03018",
@@ -2109,7 +2171,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03019",
@@ -2175,7 +2239,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03020",
@@ -2241,7 +2307,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03021",
@@ -2307,7 +2375,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03024",
@@ -2373,7 +2443,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03023",
@@ -2439,7 +2511,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03025",
@@ -2505,7 +2579,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03022",
@@ -2571,7 +2647,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03026",
@@ -2637,7 +2715,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05011",
@@ -2703,7 +2783,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05012",
@@ -2769,7 +2851,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05090",
@@ -2835,7 +2919,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05199",
@@ -2901,7 +2987,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02028",
@@ -2967,7 +3055,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03036",
@@ -3033,7 +3123,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02027",
@@ -3099,7 +3191,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05198",
@@ -3165,7 +3259,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02013",
@@ -3231,7 +3327,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03029",
@@ -3297,7 +3395,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01015",
@@ -3363,7 +3463,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05027",
@@ -3429,7 +3531,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01016",
@@ -3495,7 +3599,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01017",
@@ -3561,7 +3667,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05245",
@@ -3633,7 +3741,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05246",
@@ -3710,7 +3820,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05247",
@@ -3787,7 +3899,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05248",
@@ -3864,7 +3978,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05249",
@@ -3941,7 +4057,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05185",
@@ -4013,7 +4131,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05030",
@@ -4085,7 +4205,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05184",
@@ -4157,7 +4279,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05186",
@@ -4229,7 +4353,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05182",
@@ -4311,7 +4437,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05053",
@@ -4377,7 +4505,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05160",
@@ -4454,7 +4584,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06080",
@@ -4520,7 +4652,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06085",
@@ -4586,7 +4720,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06092",
@@ -4652,7 +4788,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06002",
@@ -4718,7 +4856,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06003",
@@ -4784,7 +4924,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06001",
@@ -4850,7 +4992,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01052",
@@ -4916,7 +5060,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06021",
@@ -4982,7 +5128,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06051",
@@ -5048,7 +5196,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06047",
@@ -5114,7 +5264,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06041",
@@ -5180,7 +5332,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06063",
@@ -5246,7 +5400,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06045",
@@ -5312,7 +5468,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06044",
@@ -5378,7 +5536,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06023",
@@ -5455,7 +5615,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06061",
@@ -5542,7 +5704,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06027",
@@ -5614,7 +5778,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06048",
@@ -5686,7 +5852,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06053",
@@ -5758,7 +5926,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06052",
@@ -5824,7 +5994,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06083",
@@ -5890,7 +6062,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06034",
@@ -5967,7 +6141,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06077",
@@ -6039,7 +6215,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06082",
@@ -6105,14 +6283,16 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05024",
         "faciltCateKindCd": "04",
         "faciltName": "스낵 버스터",
-        "faciltNameEng": "Snack Busters",
-        "faciltNameCN": "零食剋星",
+        "faciltNameEng": "Snack Buster",
+        "faciltNameCN": "速食破壞者",
         "faciltDescrt": "시원한 맥주와 다양한 토핑이 곁들여진\n떡볶이와 치킨을 즐겨보세요\n\n• KPOP DEMON HUNTERS•\n\n※ 헌트릭스 세트에는 농심 한정판 <케이팝데몬헌터스>\n스페셜 신라면컵이 포함 되어있으며,\n캐릭터는 아래 일정과 같이 제공됩니다.\n(캐릭터 교환 불가)\n\n  - 9/26(금) ~ 10/5(일) / 10/20(월) ~ 10/26(일)  → 루미\n  - 10/6(월) ~ 10/12(일) / 10/27(월) ~ 11/2(일)    → 조이\n  - 10/13(월) ~ 10/19(일) / 11/3(월) ~  11/9(일)  → 미라\n  * 이후 일정 추후 공개\n<div style=\"display:none;\">스낵버스터, 스낵버스트</div>",
         "faciltDescrtEng": "Cool beer with various toppings<br>\nEnjoy Tteokbokki and Chicken!<br><br>\n\n• K-POP DEMON HUNTERS•<br>\n- <K-POP DEMON HUNTERS> Menu Sales Store –<br><br>\n\n※ The HUNTR/X set includes a limited edition<br>\n<K-POP DEMON HUNTERS> Special Nongshim Shin Ramyun Cup,<br>\nand the character design of the cup comes as follows.<br>\n(Characters cannot be exchanged)<br><br>\n\n- 9/26 (Fri) ~ 10/5 (Sun) / 10/20 (Mon) ~ 10/26 (Sun) → Rumi<br>\n- 10/6 (Mon) ~ 10/12 (Sun) / 10/27 (Mon) ~ 11/2 (Sun) → Zoey<br>\n- 10/13 (Mon) ~ 10/19 (Sun) / 11/3 (Mon) ~ 11/9 (Sun) → Mira<br>\n* Later schedule will be released later<br><br>\n\nMenu type : Snacks",
         "faciltDescrtCN": "享用炒年糕和炸雞，佐以清爽的啤酒和各種配料。\n\n• KPOP DEMON HUNTERS•\n\n※ Hunttrix 套餐包含農心限量版《KPOP DEMON HUNTERS》辛拉麵杯。\n\n角色提供時間如下：\n（不可交換角色）\n\n- 9月26日（週五）~ 10月5日（週日）/ 10月20日（週一）~ 10月26日（週日）→ Lumi\n- 10月6日（週一）~ 10月12日（週日）/ 10月27日（週一）~ 11月2日（週日）→ Joy\n- 10月13日（週一）~ 10月19日（週日）/ 11月3日（週一）~ 11月9日（週日）→ Mira\n* 後續安排待定。\n<div style=\"display:none;\">零食剋星，點心爆發</div>",
@@ -6129,7 +6309,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "소다팝#헌트릭스세트#사자보이즈세트#컵라면#스낵버스터 #케데헌",
         "keywordDescrtEng": "SODA POP#HUNTR/X SET#SAJA BOYS SET#fried#KPop demon hunters",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "蘇打汽水#HUNTR/X套餐#SAJA BOYS套餐#油炸#K-Pop惡魔獵人",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -6171,14 +6351,70 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 38000,
+                "seqNo": 1,
+                "menuDescrtEng": "HUNTR/X SET",
+                "menuDescrt": "헌트릭스 세트 ",
+                "menuDescrtCN": "HUNTR/X套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/5fbafc5d2a0442d5a85cbf0a56aea528.png"
+            },
+            {
+                "menuPrice": 36000,
+                "seqNo": 2,
+                "menuDescrtEng": "SAJA BOYS SET",
+                "menuDescrt": "사자보이즈 세트 ",
+                "menuDescrtCN": "SAJA BOYS套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/51255d3d84974852bc20dd9c87b0b55d.png"
+            },
+            {
+                "menuPrice": 11000,
+                "seqNo": 3,
+                "menuDescrtEng": "HOT MAYO BONELESS CHICKEN & FRIES, COKE",
+                "menuDescrt": "핫마요 순살치킨과 감자튀김, 컵콜라 ",
+                "menuDescrtCN": "熱蛋黃醬無骨雞肉、薯條和一杯可樂",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/e335a12647c9489baa1df96bea843b8a.png"
+            },
+            {
+                "menuPrice": 7800,
+                "seqNo": 4,
+                "menuDescrtEng": "SAJA BOYS SODA POP",
+                "menuDescrt": "사자보이즈 소다팝 ",
+                "menuDescrtCN": "SAJA BOYS蘇打汽水",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/4bca0d20675e40dd9194aee26754136c.png"
+            },
+            {
+                "menuPrice": 15100,
+                "seqNo": 5,
+                "menuDescrtEng": "ASSORTED FRIES TOPOKKI",
+                "menuDescrt": "모둠튀김 떡볶이",
+                "menuDescrtCN": "混合薯條和年糕",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/3145ac8f0639438aa611222cfc352dc4.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/ce8169a04e0348fb979a7ff7e45aecdc.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/8bfe5c7230154040b17bc695d4aec047.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/4a8605a34acb4f19ab5e65df92cb80e9.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/072bc289ecad41a3aa17fc6d1eaa65b1.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V06094",
         "faciltCateKindCd": "04",
         "faciltName": "푸드트레일러(메모리 카니발)",
         "faciltNameEng": "Food Trailer(Memory Carnival)",
-        "faciltNameCN": "美食預告（記憶嘉年華）",
+        "faciltNameCN": "美食小推車（記憶嘉年華）",
         "faciltDescrt": "<케이팝 데몬 헌터스>  스페셜 스낵을 즐길 수 있는 공간!\n헌트릭스 골든글로우에이드부터 \n사자보이즈로 둘러싸인 핫마요 핫도그까지!\n한정판 팝콘 틴케이스도 만나보세요",
         "faciltDescrtEng": "Food Trailer(Memory Carnival)",
         "faciltDescrtCN": "盡情享用《K-Pop 惡魔獵人》的特別小吃！\n從 Huntrix Golden Glowade 到 Hot Mayo 熱狗，\n被 Lion Boys 包圍！\n還有限量版爆米花罐。",
@@ -6195,7 +6431,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "푸드트레일러#케이팝 데몬 헌터스#한정판팝콘틴케이스",
         "keywordDescrtEng": "Food Trailer#KPOP Demon Hunters#Popcorn",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "美食小推車#K-Pop惡魔獵人#爆米花",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -6237,14 +6473,61 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 18000,
+                "seqNo": 1,
+                "menuDescrtEng": "KPOP DEMON HUNTERS Ramyun-Flavored Popcorn ",
+                "menuDescrt": "<케이팝 데몬 헌터스> 라면맛 팝콘",
+                "menuDescrtCN": "<K-Pop惡魔獵人> 拉麵口味爆米花",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/0c7fe79f59b94ea793838de758b3d89e.png"
+            },
+            {
+                "menuPrice": 5500,
+                "seqNo": 2,
+                "menuDescrtEng": "Spicy Mayonnaise Hot Dog",
+                "menuDescrt": "핫마요 핫도그",
+                "menuDescrtCN": "熱蛋黃醬熱狗",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/297b79d7b46d46e2b930e0365257d4c0.png"
+            },
+            {
+                "menuPrice": 6900,
+                "seqNo": 3,
+                "menuDescrtEng": "HUNTR/X Golden Glow Ade",
+                "menuDescrt": "헌트릭스 골든글로우에이드",
+                "menuDescrtCN": "헌트릭스 金黃色光芒愛德",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/e85d96fc90c84d3f8ce17fde258c6ddc.png"
+            },
+            {
+                "menuPrice": 5700,
+                "seqNo": 4,
+                "menuDescrtEng": "Snow Cheese Hot Dog",
+                "menuDescrt": "눈꽃치즈핫도그",
+                "menuDescrtCN": "雪球起司熱狗",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/e7d1d11932e34c52be08e2d0ddc16cfb.png"
+            },
+            {
+                "menuPrice": 5900,
+                "seqNo": 5,
+                "menuDescrtEng": "Shine Mucat Ade",
+                "menuDescrt": "샤인머스캣에이드",
+                "menuDescrtCN": "閃耀麝香葡萄酒",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/befb37a9acc846798b75f5fa1c9997eb.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/9b4f737fcb2449a0a5e106486fb25e65.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V05026",
         "faciltCateKindCd": "04",
         "faciltName": "알파인 레스토랑",
         "faciltNameEng": "Alpine Food Fair",
-        "faciltNameCN": "阿爾卑斯餐廳",
+        "faciltNameCN": "Alpine餐廳",
         "faciltDescrt": "<div style=\"display:none;\">돈까스</div>\n알프스 산장 어느 식당에 준비된\n따뜻하고 든든한 음식들\n돼지고기 김치찌개, 돈가스까지,\n취향 저격 알파인 레스토랑으로 쉬러오세요.\n\n• The Everland of Oz •\n- 블러드시티 메뉴 판매매장 -",
         "faciltDescrtEng": "All the best menus that men and women of all ages like, gather together!\n\nPork and Kimchi Jjigae, pork cutlet!\nYou can taste all these things\nPlease visit the Alpine restaurant.\n\nMenu type:\nKorean restaurant. Korean food",
         "faciltDescrtCN": "<div style=\"display:none;\">Donkatsu</div>\n阿爾卑斯山間小屋餐廳烹調的溫暖豐盛菜餚\n從豬肉泡菜湯到Donkatsu，\n歡迎來到這家阿爾卑斯山餐廳放鬆身心，滿足您的各種口味。\n\n• 奧茲國的永恆樂園 •\n- Blood City Menu Store -",
@@ -6261,7 +6544,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "김치찌개# 돈가스 #김치볶음밥#대게다리튀김#단체 #돈까스",
         "keywordDescrtEng": "Kimchi Jjigae#Korean food#Kimchi Fried Rice#Fried Crab Leg#",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "泡菜鍋#韓國菜#炒年糕#炸螃蟹腿#炸豬排",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -6303,14 +6586,67 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 17900,
+                "seqNo": 1,
+                "menuDescrtEng": "The Wicked Witch of the East Jumbo Pork Cutlet Set",
+                "menuDescrt": "동쪽마녀의 왕돈가스 세트",
+                "menuDescrtCN": "東方女巫的國王豬排套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/f5e231d7513844a08d0fdbec4056fb65.png"
+            },
+            {
+                "menuPrice": 23900,
+                "seqNo": 2,
+                "menuDescrtEng": "Pork Kimchi Stew Set (For Two)",
+                "menuDescrt": "돼지고기김치찌개반상(2인)",
+                "menuDescrtCN": "豬肉泡菜鍋套餐（兩人份）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d6260c63c3c44aed9c60a940d61deb14.png"
+            },
+            {
+                "menuPrice": 18500,
+                "seqNo": 3,
+                "menuDescrtEng": "Chicken&Teppanyaki Kimchi Fried Rice",
+                "menuDescrt": "치킨&철판김치볶음밥세트",
+                "menuDescrtCN": "雞肉和鐵板泡菜炒飯套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/382b589d133243e7b2046398ae8628db.jpg"
+            },
+            {
+                "menuPrice": 16400,
+                "seqNo": 4,
+                "menuDescrtEng": "Pork Cutlet & fried Shrimp Set",
+                "menuDescrt": "돈가스&새우튀김세트",
+                "menuDescrtCN": "豬排和炸蝦套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/4d572507d19b4eddbbccedf2a8aba3da.png"
+            },
+            {
+                "menuPrice": 4500,
+                "seqNo": 5,
+                "menuDescrtEng": "Fried Crab Legs",
+                "menuDescrt": "대게다리튀김",
+                "menuDescrtCN": "炸螃蟹腿",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c0308902396041aca1bfdcfada2ca818.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/a4dc750cb1e74990afeb7d72209ce5c6.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/93984dd7abce4a84994db9945d33b4b7.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/7fcb76af1fc9408f9b2a3029c812cd5d.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V05087",
         "faciltCateKindCd": "04",
         "faciltName": "쿠치나 마리오",
-        "faciltNameEng": "Cucina Mario(Lunch)",
-        "faciltNameCN": "馬裡奧廚房",
+        "faciltNameEng": "Cucina Mario",
+        "faciltNameCN": "馬里奧的廚房",
         "faciltDescrt": "'마리오 아저씨의 부엌'이란 뜻의 피자&파스타 전문 레스토랑.\n포시즌스가든, 장미원이 보이는 그림 같은 전망과 함께\n쫄깃바삭한 화덕 피자와 풍부한 파스타의 맛을 즐겨보세요!\n\n• 모바일오더로 주문을 받고 음식을 서빙해드리는\n  테이블 서비스 매장입니다\n• 브레이크 타임: 16:00 ~ 17:00  (브레이크 타임 전 라스트오더 15:30)",
         "faciltDescrtEng": "It means \"Mr. Mario's Kitchen\"\nA restaurant specializing in pizza and pasta!\n\nwith a picturesque view\nEnjoy crispy oven pizza and rich pasta!\n\n■ break time : 16:00-17:00 (L/O 15:30)",
         "faciltDescrtCN": "一家披薩義面餐廳，名字意為「馬裡奧叔叔的廚房」。\n\n享用香脆的木烤披薩和濃鬱的意麵，欣賞四季花園和玫瑰園的美景！\n\n• 提供餐桌服務，也支援手機點餐。\n• 休息時間：下午 4:00 - 下午 5:00（休息前最後點餐時間：下午 3:30）",
@@ -6327,7 +6663,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "양식#파스타#피자#샐러드#에이드 #쿠치나마리오",
         "keywordDescrtEng": "western restaurant#pasta#pizza#salad#ade",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "西餐廳#意大利麵#披薩#沙拉#無酒精雞尾酒",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -6369,14 +6705,70 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 18300,
+                "seqNo": 1,
+                "menuDescrtEng": "Bacon Cream Pasta",
+                "menuDescrt": "베이컨크림파스타",
+                "menuDescrtCN": "培根奶油麵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/9d633a840e4a465abdb7c9565695f848.png"
+            },
+            {
+                "menuPrice": 19300,
+                "seqNo": 2,
+                "menuDescrtEng": "Pomodoro",
+                "menuDescrt": "뽀모도로",
+                "menuDescrtCN": "番茄",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/36b7471772f44297b259f0a5a7bb52e0.png"
+            },
+            {
+                "menuPrice": 19900,
+                "seqNo": 3,
+                "menuDescrtEng": "Gamberi Oil Pasta",
+                "menuDescrt": "감베리오일파스타",
+                "menuDescrtCN": "蝦油麵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/9817dbed051e4829b07f17c38982808a.png"
+            },
+            {
+                "menuPrice": 21300,
+                "seqNo": 4,
+                "menuDescrtEng": "Gorgonzola Pizza",
+                "menuDescrt": "고르곤졸라 피자",
+                "menuDescrtCN": "高達起司披薩",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/21faa0f4640a4c0c8b2f3bb91a8f21db.png"
+            },
+            {
+                "menuPrice": 22900,
+                "seqNo": 5,
+                "menuDescrtEng": "Margherita Pizza",
+                "menuDescrt": "마르게리타",
+                "menuDescrtCN": "瑪格麗特披薩",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/5c57af62d2e1493c8a54c7e8d7fe32b9.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/d57e131601a14c50b0946032380bcc46.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/80aa2f04f735405d9c7b5bca2953351d.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/5aa0a0b27799429893b89cb5f1167de1.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/1c41971f88fb4e3e9bc3f9dc19818fc6.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V05023",
         "faciltCateKindCd": "04",
         "faciltName": "한가람",
         "faciltNameEng": "Han-ga-ram",
-        "faciltNameCN": "韓加拉姆",
+        "faciltNameCN": "한가람韓嘉蘭韓式餐廳",
         "faciltDescrt": "<div style=\"display:none;\">한식당, 한식, 김치찌개, 고등어구이, 소불고기, 계란말이</div>\n한식의 깔끔하고 정갈한 맛을 그대로 살려낸 에버랜드의\n소문난 맛집 한가람.\n\n포시즌스 가든에서 따뜻한 한식 한상을 즐겨보시는건 어떨까요?",
         "faciltDescrtEng": "Hanaram, Everland's rumored restaurant that preserves the clean and simple flavors of Korean food\nfavorite restaurant in Everland.\n\nWhy not enjoy a hearty Korean meal in the Four Seasons Garden",
         "faciltDescrtCN": "<div style=\"display:none;\">韓國餐廳，韓式料理，泡菜湯，烤鯖魚，烤肉，蛋捲</div>\n愛寶樂園的知名餐廳「Hangaram」捕捉了韓國料理純淨精緻的風味。\n\n不妨在四季花園享用豐盛的韓式大餐？",
@@ -6393,7 +6785,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "한식당#김치찌개#고등어구이#소불고기#계란말이",
         "keywordDescrtEng": "Korean restaurant#KimchiJjigae###",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "韓國餐廳#泡菜鍋#烤魚#烤肉#炒蛋",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -6435,14 +6827,51 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 23900,
+                "seqNo": 1,
+                "menuDescrtEng": "Pork Kimchi Stew Set",
+                "menuDescrt": "돼지고기 김치찌개 반상",
+                "menuDescrtCN": "豬肉泡菜鍋套餐（兩人份）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/650660c593c84c93af3ecb91cd38717d.png"
+            },
+            {
+                "menuPrice": 14900,
+                "seqNo": 2,
+                "menuDescrtEng": "",
+                "menuDescrt": "고등어구이",
+                "menuDescrtCN": "烤魚",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/44de69965b0c473494fb12f8e646db4b.png"
+            },
+            {
+                "menuPrice": 14900,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "소불고기",
+                "menuDescrtCN": "烤肉",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/80e6ec579d8c4a13b504449b6840118e.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/d41765026a9641bd9808a51c5e999e53.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/2900b3e6ddd74db78bcd71dc5294a725.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/90099da86c1d45aa868e8861b6a32ddd.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V02025",
         "faciltCateKindCd": "04",
         "faciltName": "CGV 팝콘팩토리",
         "faciltNameEng": "CGV Popcorn Factory",
-        "faciltNameCN": "CGV爆米花工廠",
+        "faciltNameCN": "CGV 爆米花工廠",
         "faciltDescrt": "락앤롤 아메리칸 어드벤처에서 즐겨보는 간식파티!\n 이곳으로 여행을 온 여러분들을 위한\n 다양한 간식 메뉴가 준비되어 있답니다.",
         "faciltDescrtEng": "The Popcorn Factory store is located in the Rocksville Zone, an American adventure in the fictional rock-and-roll city, opposite the Double Rocks Spin and in front of the Rolling Xtrain.\n\n[Main menu]\nSweet popcorn, Plain hot dog, Chili cheese hot dog,\nAde, Iced tea, soda etc",
         "faciltDescrtCN": "在搖滾美國冒險樂園享受一場小吃派對吧！\n\n這裡為遊客提供各種小吃菜單。",
@@ -6459,7 +6888,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "팝콘#핫도그#아이스티#에이드#탄산음료",
         "keywordDescrtEng": "popcorn#hot dog#ice tea#ade#sparkling drink",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "爆米花#熱狗#冰茶#飲料#氣泡飲料",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -6501,14 +6930,61 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 7000,
+                "seqNo": 1,
+                "menuDescrtEng": "",
+                "menuDescrt": "달콤 팝콘",
+                "menuDescrtCN": "甜爆米花",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/612957639c7543ab82cdf062acecfc4a.png"
+            },
+            {
+                "menuPrice": 6000,
+                "seqNo": 2,
+                "menuDescrtEng": "",
+                "menuDescrt": "고소팝콘",
+                "menuDescrtCN": "濃爆米花",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/dcfdd54f2abf4e6494eef8af6e226798.png"
+            },
+            {
+                "menuPrice": 6500,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "칠리치즈핫도그",
+                "menuDescrtCN": "辣味起司熱狗",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/f5fdd75dd78b41db9bf77831e4e24973.png"
+            },
+            {
+                "menuPrice": 5000,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "아이스티",
+                "menuDescrtCN": "冰茶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/cbfc7a9fca5045aab17b0b1e890f935d.png"
+            },
+            {
+                "menuPrice": 3500,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "콜라",
+                "menuDescrtCN": "可樂",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c0156608e4524eaa920ac9725a3ebbee.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/046e20d373c1428ca7359e8ffa8af7d0.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V06091",
         "faciltCateKindCd": "04",
         "faciltName": "팝콘(사파리)",
         "faciltNameEng": "Popcorn(Safari)",
-        "faciltNameCN": "爆米花（Safari）",
+        "faciltNameCN": "爆米花(野生動物園)",
         "faciltDescrt": "톡톡 터지는 즐거움, 한 입의 팝콘으로 시작하세요\n귀엽고 특별한 캐릭터 팝콘통으로 추억까지 담아가면\n에버랜드 완벽 즐기기 성공!",
         "faciltDescrtEng": "The joy of popping, start with a bite of popcorn\nCute and special character. If you capture memories with the popcorn container\nWe succeeded in enjoying Everland perfectly!",
         "faciltDescrtCN": "用一口爆米花開啟興奮的一天。\n\n用可愛又特別的爆米花桶記錄下你的美好回憶，讓你擁有完美的愛寶樂園體驗！",
@@ -6525,7 +7001,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "팝콘통#판다#호랑이#시나모롤#포차코",
         "keywordDescrtEng": "Popcorn Bucket#Panda#Tiger#Cinnamoroll#Pochaco",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "爆米花桶#熊貓#老虎#大耳狗#帕恰狗",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -6567,14 +7043,61 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 9000,
+                "seqNo": 1,
+                "menuDescrtEng": "Popcorn",
+                "menuDescrt": "심쿵! 양철 하트 팝콘",
+                "menuDescrtCN": "甜爆米花",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/060818c592014507ae09c785aa3471c2.png"
+            },
+            {
+                "menuPrice": 20000,
+                "seqNo": 2,
+                "menuDescrtEng": "Panda Character Popcorn",
+                "menuDescrt": "판다팝콘통",
+                "menuDescrtCN": "熊貓爆米花桶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/3dfbb57ce1ca430cadcdbe6dc160a359.png"
+            },
+            {
+                "menuPrice": 21000,
+                "seqNo": 3,
+                "menuDescrtEng": "Tiger Character Popcorn",
+                "menuDescrt": "호랑이팝콘통",
+                "menuDescrtCN": "老虎爆米花桶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/5c14ac8a03a54fb194635b4725e5721a.png"
+            },
+            {
+                "menuPrice": 31000,
+                "seqNo": 4,
+                "menuDescrtEng": "Cinnamoroll Popcorn Bucket",
+                "menuDescrt": "시나모롤팝콘통",
+                "menuDescrtCN": "大耳狗爆米花桶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/8c9a2e1df6e340fb8de6a887fa8b057f.png"
+            },
+            {
+                "menuPrice": 31000,
+                "seqNo": 5,
+                "menuDescrtEng": "Pochaco Popcorn Bucket",
+                "menuDescrt": "포차코팝콘통",
+                "menuDescrtCN": "帕恰狗爆米花桶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/a0500527ce594d9dabe6056e1a190c89.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/99f383f77906424984d36a04b9e17a48.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V01064",
         "faciltCateKindCd": "04",
         "faciltName": "팝콘(오리엔탈)",
         "faciltNameEng": "Popcorn(Oriental)",
-        "faciltNameCN": "爆米花（東方）",
+        "faciltNameCN": "爆米花(東方)",
         "faciltDescrt": "톡톡 터지는 즐거움, 한 입의 팝콘으로 시작하세요\n귀엽고 특별한 캐릭터 팝콘통으로 추억까지 담아가면\n에버랜드 완벽 즐기기 성공!",
         "faciltDescrtEng": "The joy of popping, start with a bite of popcorn\nCute and special character. If you capture memories with the popcorn container\nWe succeeded in enjoying Everland perfectly!",
         "faciltDescrtCN": "用一口爆米花開啟興奮的一天。\n\n用可愛又特別的爆米花桶記錄下你的美好回憶，讓你擁有完美的愛寶樂園體驗！",
@@ -6591,7 +7114,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "팝콘통#푸바오#호랑이#시나모롤#포차코",
         "keywordDescrtEng": "Popcorn Bucket#Fubao#Tiger#Cinnamoroll#Pochaco",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "爆米花桶#福寶#老虎#大耳狗#帕恰狗",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -6633,7 +7156,54 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 9000,
+                "seqNo": 1,
+                "menuDescrtEng": "Popcorn",
+                "menuDescrt": "심쿵! 양철 하트 팝콘",
+                "menuDescrtCN": "心動！錫心爆米花",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/ee5f2b6ddd964414a4ddc958b85303cf.png"
+            },
+            {
+                "menuPrice": 20000,
+                "seqNo": 2,
+                "menuDescrtEng": "Fubao Character Popcorn",
+                "menuDescrt": "푸바오팝콘통",
+                "menuDescrtCN": "福寶角色爆米花",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/bc4598cc23d745aca1f015ccb0d7968f.png"
+            },
+            {
+                "menuPrice": 21000,
+                "seqNo": 3,
+                "menuDescrtEng": "Tiger Character Popcorn",
+                "menuDescrt": "호랑이팝콘통",
+                "menuDescrtCN": "老虎角色爆米花",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c434cef6d62a439aad141646b73f7139.png"
+            },
+            {
+                "menuPrice": 31000,
+                "seqNo": 4,
+                "menuDescrtEng": "Cinnamoroll Popcorn Bucket",
+                "menuDescrt": "시나모롤팝콘통",
+                "menuDescrtCN": "大耳狗爆米花桶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/b00c4b4b7be149a7bef65aba97e1c03f.png"
+            },
+            {
+                "menuPrice": 31000,
+                "seqNo": 5,
+                "menuDescrtEng": "Pochaco Popcorn Bucket",
+                "menuDescrt": "포차코팝콘통",
+                "menuDescrtCN": "帕恰狗爆米花桶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/fa9a480f6c9942f1b556d881a463822d.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/1b7dfb4281cd416680ae4600d04c6592.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V03039",
@@ -6657,7 +7227,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "팝콘통#판다#호랑이#시나모롤#포차코",
         "keywordDescrtEng": "Popcorn Bucket#Panda#Tiger#Cinnamoroll#Pochaco",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "爆米花桶#熊貓#老虎#大耳狗#帕恰狗",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -6699,14 +7269,61 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 9000,
+                "seqNo": 1,
+                "menuDescrtEng": "Popcorn",
+                "menuDescrt": "심쿵! 양철 하트 팝콘",
+                "menuDescrtCN": "甜爆米花",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/4b4691856f2b43748c4a48c14073f43e.png"
+            },
+            {
+                "menuPrice": 20000,
+                "seqNo": 2,
+                "menuDescrtEng": "Panda Character Popcorn",
+                "menuDescrt": "판다팝콘통",
+                "menuDescrtCN": "熊貓爆米花桶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d796d71967934d4583c731b9f4132708.png"
+            },
+            {
+                "menuPrice": 21000,
+                "seqNo": 3,
+                "menuDescrtEng": "Tiger Character Popcorn",
+                "menuDescrt": "호랑이팝콘통",
+                "menuDescrtCN": "老虎爆米花桶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/9676257aefc247a5b927acf76b06a876.png"
+            },
+            {
+                "menuPrice": 31000,
+                "seqNo": 4,
+                "menuDescrtEng": "Cinnamoroll Popcorn Bucket",
+                "menuDescrt": "시나모롤팝콘통",
+                "menuDescrtCN": "大耳狗爆米花桶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/9aa2ba72ebaf455bbb44d779e2061cad.png"
+            },
+            {
+                "menuPrice": 31000,
+                "seqNo": 5,
+                "menuDescrtEng": "Pochaco Popcorn Bucket",
+                "menuDescrt": "포차코팝콘통",
+                "menuDescrtCN": "帕恰狗爆米花桶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/23421286575e4489992941ba8bfa1a14.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/19ecab6b9f0743e482395c3523267e74.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V05217",
         "faciltCateKindCd": "04",
         "faciltName": "슬로우야드 바베큐",
         "faciltNameEng": "slow yard BBQ",
-        "faciltNameCN": "慢園燒烤",
+        "faciltNameCN": "慢食區BBQ",
         "faciltDescrt": "합정동 핫플레이스 ‘슬로우야드 바베큐’가\n에버랜드에 입점했다구요?\n낮은 온도에서 간접열로 서서히 익히는 방식인\n‘Low&Slow’ 조리방식으로 최대 12시간 이상\n참나무로 직접 훈연한 정통 미국식 바베큐를\n에버랜드에서도 즐겨보세요!",
         "faciltDescrtEng": "It's a method of cooking it slowly with indirect heat at low temperatures\n\"Low & Slow\" cooking method for up to 12 hours\nIt's an authentic American barbecue smoked with oak\nEnjoy it at Everland, too!",
         "faciltDescrtCN": "合井洞的熱門餐廳「Slow Yard Barbecue」在愛寶樂園開設了新店！\n在愛寶樂園，您可以品嚐到正宗的美式燒烤，採用“Low & Slow”烹飪方法，在橡木桶中熏制長達12小時，在低溫下以間接加熱的方式慢慢烹製！",
@@ -6723,7 +7340,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "바베큐#미국식BBQ#바베큐플래터#수제소시지#바베큐볶음밥",
         "keywordDescrtEng": "BBQ####",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "BBQ####",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -6765,14 +7382,64 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 46000,
+                "seqNo": 1,
+                "menuDescrtEng": "slow yard Barbecue Platter",
+                "menuDescrt": "슬로우야드 바베큐 플래터",
+                "menuDescrtCN": "慢食區BBQ 套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/b9dd5dd00f5e4b0bb2a0343925d2e21f.png"
+            },
+            {
+                "menuPrice": 62000,
+                "seqNo": 2,
+                "menuDescrtEng": "Beef Lip Platter",
+                "menuDescrt": "비프립 플래터",
+                "menuDescrtCN": "牛肉里脊肉套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/244df6ea3254419c8d5f57324fc34085.png"
+            },
+            {
+                "menuPrice": 16500,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "자메이카치킨 볶음밥",
+                "menuDescrtCN": "牙買加雞肉炒飯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c773689f012a49f9a42abd464f99acae.png"
+            },
+            {
+                "menuPrice": 14500,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "브리스킷 라멘",
+                "menuDescrtCN": "布里斯托魚湯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/8020253f2243432f8fea7546d9fe86ae.png"
+            },
+            {
+                "menuPrice": 12000,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "소시지&웨지감자",
+                "menuDescrtCN": "香腸和薯條",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/5131e7c9d6544ba6a24f30138ba84d24.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/28591743328e44b5a1dbdd340b366866.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/b865d541fa204b3caeeec89697b9a4a7.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V05219",
         "faciltCateKindCd": "04",
         "faciltName": "테라로사",
         "faciltNameEng": "Terarosa",
-        "faciltNameCN": "玫瑰地",
+        "faciltNameCN": "特拉羅薩",
         "faciltDescrt": "커피 애호가들을 위한\n스페셜티 커피하우스,  테라로사에서\n꽃내음이 향긋한 정원과 함께,\n스페셜티 미식을 즐겨보세요.",
         "faciltDescrtEng": "At the rose garden of Everland\nThe Terarosa store is opening.\nTry drinking a special coffee",
         "faciltDescrtCN": "對於咖啡愛好者來說，可以在 Terrarosa 特色咖啡館享用特色美食，周圍環繞著芬芳的花園。",
@@ -6789,7 +7456,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "스페셜티 커피#드립커피#카페",
         "keywordDescrtEng": "##",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "特別咖啡#手沖咖啡#咖啡廳",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -6831,14 +7498,59 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 6500,
+                "seqNo": 1,
+                "menuDescrtEng": "",
+                "menuDescrt": "드립 커피",
+                "menuDescrtCN": "手沖咖啡",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/4eb0926684264d71ab20215e0732262b.png"
+            },
+            {
+                "menuPrice": 7500,
+                "seqNo": 2,
+                "menuDescrtEng": "",
+                "menuDescrt": "바닐라빈 플로럴 카페라테",
+                "menuDescrtCN": "香草豆拿鐵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/de56ec707edd4776964dc39c51f16956.png"
+            },
+            {
+                "menuPrice": 7500,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "핑크 플로럴 에이드",
+                "menuDescrtCN": "粉紅 茉莉花 蘇打",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/63995facbe9843ab8cedff2dab6e18d2.png"
+            },
+            {
+                "menuPrice": 6800,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "로즈 가든 스페셜 케이크 4종",
+                "menuDescrtCN": "玫瑰花園 特別蛋糕 4種",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/b5f8908e877946fbb07b0d50f6703bce.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/80101929c4484ffabf6f4432858396dc.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/0b63fe25dd3a49f78d823567ab5f60fe.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/0317c8eec1a04d95952904689465cd9d.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V06076",
         "faciltCateKindCd": "04",
         "faciltName": "판다월드 카페",
         "faciltNameEng": "Panda World Cafe",
-        "faciltNameCN": "熊貓世界咖啡館",
+        "faciltNameCN": "Dal.komm咖啡",
         "faciltDescrt": "사육사 아부지로부터 전수받은 시크릿 레시피에\n아셰프 만의 노하우를 더했다!\n\n아이바오가 준비한 맛있는 디저트를 맛볼 수 있는 카페",
         "faciltDescrtEng": "Chef Ai Bao's own know-how has been added to the secret recipe I got from my zookeeper's father!\nDon't miss the delicious desserts prepared by Ibao",
         "faciltDescrtCN": "從動物園管理員父親傳承下來的秘方，\n更增添了廚師A的獨特技巧！\n\n在這家咖啡館，您可以品嚐到艾寶製作的美味甜點。",
@@ -6855,7 +7567,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "커피#에이드#스무디#초코츄러스#워토우",
         "keywordDescrtEng": "Coffee#Ade#Smoothie#Chocolate Churros#Wotou",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "咖啡#蘇打#冰淇淋#巧克力甜甜圈#娃娃",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -6897,7 +7609,60 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 5300,
+                "seqNo": 1,
+                "menuDescrtEng": "Wotou (Original) ",
+                "menuDescrt": "워토우 (오리지널)",
+                "menuDescrtCN": "沃托（原味）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/ae507acdcd5b4d3987b26e49286d4e10.jpg"
+            },
+            {
+                "menuPrice": 6300,
+                "seqNo": 2,
+                "menuDescrtEng": "Bamboo Leaf Mojito Ade ",
+                "menuDescrt": "댓잎 모히또 에이드",
+                "menuDescrtCN": "竹葉 莫吉托 飲料",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/e9625dbab8a94aad95d7a7e28f153b91.jpg"
+            },
+            {
+                "menuPrice": 6500,
+                "seqNo": 3,
+                "menuDescrtEng": "Bamboo Leaf Apple Smoothie",
+                "menuDescrt": " 댓잎 애플스무디",
+                "menuDescrtCN": "竹葉 蘋果 冰沙",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/7be7b2ed51a9448490af88ebe88e1001.jpg"
+            },
+            {
+                "menuPrice": 4800,
+                "seqNo": 4,
+                "menuDescrtEng": "Panda Ice Bar",
+                "menuDescrt": "판다 아이스바",
+                "menuDescrtCN": "熊貓 冰吧",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/b25d5a684678409cb77d7a1d8d3b29aa.jpg"
+            },
+            {
+                "menuPrice": 5000,
+                "seqNo": 5,
+                "menuDescrtEng": "Chocolate Churros",
+                "menuDescrt": "초코츄러스",
+                "menuDescrtCN": "巧克力甜甜圈",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/4068f4fe6839445989c3e864a8780b46.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/55f3070c66c647ec881fdd18b6c7b141.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/6f54e31fe8164c68b1de84a52b6a799c.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/ab7be8d747fd48c0a559b94f6a969ccf.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V05019",
@@ -6921,7 +7686,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "생맥주#바비큐#볶음밥#떡볶이#피자 #홀랜드빌리지",
         "keywordDescrtEng": "#BBQ# Fried Rice#Tteokbokki#PIZZA",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -6963,14 +7728,70 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 19900,
+                "seqNo": 1,
+                "menuDescrtEng": "Wise Scarecrow Tteokbokki",
+                "menuDescrt": "지혜가득 허수아비 떡볶이",
+                "menuDescrtCN": "智慧滿滿的稻草人炒年糕",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/353f11b619584c7d8080f58ce9b734ca.png"
+            },
+            {
+                "menuPrice": 29900,
+                "seqNo": 2,
+                "menuDescrtEng": "Tin Woodman Plate",
+                "menuDescrt": "양철나무꾼 플레이트",
+                "menuDescrtCN": "錫木匠盤",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/cd14328202564464ac63aca9816cd389.jpg"
+            },
+            {
+                "menuPrice": 7500,
+                "seqNo": 3,
+                "menuDescrtEng": "Wizard of OZ Pistachio Latte",
+                "menuDescrt": "마법사 OZ 피스타치오 라떼",
+                "menuDescrtCN": "綠野仙蹤開心果拿鐵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/22cb6599a07641f7ad847ca4aba81549.png"
+            },
+            {
+                "menuPrice": 13500,
+                "seqNo": 4,
+                "menuDescrtEng": "Doongji Tteokbokki",
+                "menuDescrt": "둥지떡볶이",
+                "menuDescrtCN": "鳥巢炒年糕",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/46754da8af074393a6049ca541c56a63.png"
+            },
+            {
+                "menuPrice": 17900,
+                "seqNo": 5,
+                "menuDescrtEng": "Chicken Steak Kimchi Fried Rice",
+                "menuDescrt": "치킨스테이크 김치볶음밥",
+                "menuDescrtCN": "雞排泡菜炒飯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/2dc774956f9445d0a8b45c5673aeac0c.jpg"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/84f21885803641b9b00617d3cf89d737.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/f016f4e571364f42a4d8aaddd8534370.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/80c891528f564229ad83ce4ae485c38d.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/811f662aab664a33905795a73934fb7f.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V06086",
         "faciltCateKindCd": "04",
         "faciltName": "茶百道 차백도",
         "faciltNameEng": "Chapanda",
-        "faciltNameCN": "茶白島",
+        "faciltNameCN": "茶百道 茶吧",
         "faciltDescrt": "중국 쓰촨성의 밀크티 프랜차이즈 차백도!\n에버랜드에서도 품질 좋은 재료를 기본으로\n밀크티와 에이드까지 신선함을 경험해 보세요!",
         "faciltDescrtEng": "It's based on tea\nIt is a Fresh Fruit & Tea specialty store.",
         "faciltDescrtCN": "來自中國四川的奶茶連鎖店－茶白島！\n愛寶樂園也提供採用優質原料製作的新鮮奶茶和汽水！",
@@ -6987,7 +7808,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "밀크티#라떼#스무디#과일에이드",
         "keywordDescrtEng": "###",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "牛奶茶#拿鐵#冰沙#水果飲料",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -7029,14 +7850,64 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 6900,
+                "seqNo": 1,
+                "menuDescrtEng": "",
+                "menuDescrt": "망고 포멜로 사고",
+                "menuDescrtCN": "芒果 波蘿 沙瓦",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/b9f1a62aae624dc8aa2abf71a4ef61a1.png"
+            },
+            {
+                "menuPrice": 5400,
+                "seqNo": 2,
+                "menuDescrtEng": "",
+                "menuDescrt": "타로볼 밀크티",
+                "menuDescrtCN": "塔羅波 牛奶茶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d7696d599a604bf69d64c8e827e62e85.png"
+            },
+            {
+                "menuPrice": 5900,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "우롱 라떼",
+                "menuDescrtCN": "烏龍 拿鐵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/90279e6d5f504fe5bac67c31a301c1da.png"
+            },
+            {
+                "menuPrice": 6000,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "애플에이드",
+                "menuDescrtCN": "蘋果飲料",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/a013ed14b4364d2e8199d119d7db6564.png"
+            },
+            {
+                "menuPrice": 5600,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "우롱 코코넛젤리 밀크티",
+                "menuDescrtCN": "烏龍 椰子果凍 牛奶茶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/8d183ac59d8346b9acefcc8266ed92ae.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/8e6071f9a2c34eefb86ce4c5102dbea1.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/251d511852714f64bb20a0be5dbb58e6.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V03028",
         "faciltCateKindCd": "04",
         "faciltName": "타운즈 마켓 레스토랑",
-        "faciltNameEng": "Town’s Market Restaurant",
-        "faciltNameCN": "城鎮市場餐廳",
+        "faciltNameEng": "Town's Market Restaurant",
+        "faciltNameCN": "小鎮超市餐廳",
         "faciltDescrt": "<div style=\"display:none;\">타운즈마켓</div>\n이솝빌리지 친구들이 찾는 동화같은 음식점,\n타운즈마켓에서 도란도란 이야기를 나누며\n특별한 만찬을 즐겨보세요.",
         "faciltDescrtEng": "Enjoy a variety of family menus at the cute and cute interiors Towns Market Restaurant as Aesop Village friends visit",
         "faciltDescrtCN": "<div style=\"display:none;\">Towns Market</div>\nTowns Market 是一家童話般的餐廳，伊索村的朋友們經常光顧，\n一邊享用特別的晚餐，一邊聊天。",
@@ -7053,7 +7924,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "일식#우동#초밥#덮밥#돈가스 #타운즈마켓 #돈까스",
         "keywordDescrtEng": "Japanese restaurant#udon#sushi##Pork Cutlet",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "日式餐廳#烏冬#壽司#蓋飯#炸豬排 #特拉羅薩#炸豬排",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7095,14 +7966,70 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 28800,
+                "seqNo": 1,
+                "menuDescrtEng": "Sushi & Mini Udon Set",
+                "menuDescrt": "초밥&미니우동세트",
+                "menuDescrtCN": "壽司&迷你烏冬套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/4f28cb7151a14b72ae146de97a22dacd.png"
+            },
+            {
+                "menuPrice": 26000,
+                "seqNo": 2,
+                "menuDescrtEng": "Unagi don (eel)",
+                "menuDescrt": "우나기동(장어 반마리)",
+                "menuDescrtCN": "鰻魚套餐（鰻魚半隻）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/615967771ec643779b5a05d8e93b35f7.png"
+            },
+            {
+                "menuPrice": 16800,
+                "seqNo": 3,
+                "menuDescrtEng": "Avocado pollock roe rice",
+                "menuDescrt": "아보카도 명란덮밥",
+                "menuDescrtCN": "鱈魚卵蓋飯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/cabe9340614e48ceb3d344a872dafeac.png"
+            },
+            {
+                "menuPrice": 29000,
+                "seqNo": 4,
+                "menuDescrtEng": "Kaisen don (assorted seafood)",
+                "menuDescrt": "카이센동(해산물모둠덮밥)",
+                "menuDescrtCN": "海鮮套餐（海鮮拼盤蓋飯）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/29df7da96e874c41b61d180b1552f1bd.png"
+            },
+            {
+                "menuPrice": 13800,
+                "seqNo": 5,
+                "menuDescrtEng": "Katsudon (Pork Cutlet Rice Bowl)",
+                "menuDescrt": "가츠동(돈가스덮밥)",
+                "menuDescrtCN": "炸豬排套餐（炸豬排蓋飯）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/2a7a53d0db54457aa6da07970fa53b52.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/be76ff2826bb43378518d9fd63d562c8.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/808dc76655054b448cb63e3e9e42805d.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/af30cda976a245a89f88c30d36080bbf.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/af39430cc20b49d6a3ee8ced313ef084.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V05016",
         "faciltCateKindCd": "04",
         "faciltName": "가든 테라스",
         "faciltNameEng": "Garden Terrace",
-        "faciltNameCN": "花園露台",
+        "faciltNameCN": "庭院陽臺",
         "faciltDescrt": "아름다운 포시즌스 가든을 보며 즐기는 다채로운 메뉴의 향연!\n밤에는 화려한 야경과 함께 특별하고 즐거운 식사를 즐겨보세요.\n\n• The Everland of Oz •\n- 에메랄드시티 메뉴 판매매장 -",
         "faciltDescrtEng": "Brunch menu overlooking the beautiful Four Seasons Garden!\nEnjoy cool beer while enjoying the sparkling night view at night.\n\nMenu type:\nPUB",
         "faciltDescrtCN": "一邊欣賞美麗的四季花園，一邊享用豐富多樣的美食！\n晚上，一邊欣賞壯麗的夜景，享受特別而愉悅的用餐體驗。\n\n• 綠野仙蹤的永恆樂園 •\n- 翡翠城菜單供應商 -",
@@ -7119,7 +8046,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "양식#떡볶이#페스츄리피자#카레라이스#비프스튜라이스 #가든테라스",
         "keywordDescrtEng": "Restaurant#Tteokbokki#Pastry Pizza#Curry Rice#Beef stew rice",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "餐廳#年糕#披薩#咖哩飯#牛肉燉飯 #翡翠市",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7161,7 +8088,63 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 20400,
+                "seqNo": 1,
+                "menuDescrtEng": "Spinach Pastry Pizza",
+                "menuDescrt": "회오리바람 시금치 페스츄리피자",
+                "menuDescrtCN": "旋風菠菜糕點披薩",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/f98cce9d26f84406a019106e4e318015.png"
+            },
+            {
+                "menuPrice": 18800,
+                "seqNo": 2,
+                "menuDescrtEng": "Avocado & Shrimp Salad",
+                "menuDescrt": "아보카도&쉬림프 샐러드",
+                "menuDescrtCN": "酪梨蝦仁沙拉",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/9ce0fee46dcf46409a1de4590fd9e6fa.png"
+            },
+            {
+                "menuPrice": 12800,
+                "seqNo": 3,
+                "menuDescrtEng": "Sausage & Curry Rice",
+                "menuDescrt": "소시지&카레라이스",
+                "menuDescrtCN": "香腸咖哩飯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/19ecc2c5f6fa462382988f6b7f816aba.png"
+            },
+            {
+                "menuPrice": 14400,
+                "seqNo": 4,
+                "menuDescrtEng": "Garden Mozzarella Tteokbokki",
+                "menuDescrt": "G.D 모짜렐라 떡볶이",
+                "menuDescrtCN": "G.D. 馬蘇里拉炒年糕",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/80a4c0ed7ed84c6d8b9cd2942b5b330c.png"
+            },
+            {
+                "menuPrice": 36500,
+                "seqNo": 5,
+                "menuDescrtEng": "Baby pork rib & potato",
+                "menuDescrt": "베이비폭립&포테이토",
+                "menuDescrtCN": "豬肋排和薯條",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/aa7dca4235d04f0594d9bae9d9d121d7.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/67914359e78549f5a65c0551b0f2f32f.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/5fb1500dca7e47f9beecafe20c15f593.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/fe9cd2debfcf4ea0bb985f143f98a5f5.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/330365177d584d778ec8da61496714ea.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V05017",
@@ -7185,7 +8168,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "커피#아이스초코#말차라떼#크림라떼#아이스티 #가든테라스",
         "keywordDescrtEng": "Coffee# Iced Chocolate#Matcha Latte#Cream Latte#Iced Tea",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "咖啡#冰巧克力#馬卡龍#奶油#冰茶 #花園露台",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7227,14 +8210,64 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 6500,
+                "seqNo": 1,
+                "menuDescrtEng": "Emerald City Matcha Latte",
+                "menuDescrt": "에메랄드시티 말차라떼",
+                "menuDescrtCN": "翡翠市 抹茶拿鐵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/e22aa39669d2499981cd52adbbd235d7.png"
+            },
+            {
+                "menuPrice": 6300,
+                "seqNo": 2,
+                "menuDescrtEng": "Banana Cream Latte",
+                "menuDescrt": "바나나 크림라떼",
+                "menuDescrtCN": "香蕉奶油拿鐵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d1b094e7f72a45cf9bc8a5e3acca0b20.png"
+            },
+            {
+                "menuPrice": 5200,
+                "seqNo": 3,
+                "menuDescrtEng": "Iced Americano",
+                "menuDescrt": "아이스아메리카노",
+                "menuDescrtCN": "冰美式咖啡",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/90bd6044b16c4e4a80937d8846eea179.png"
+            },
+            {
+                "menuPrice": 5700,
+                "seqNo": 4,
+                "menuDescrtEng": "Iced Café Latte",
+                "menuDescrt": "아이스카페라떼",
+                "menuDescrtCN": "冰卡布奇諾",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/3506afa168cb4deba85f5029dd1dd9de.png"
+            },
+            {
+                "menuPrice": 5000,
+                "seqNo": 5,
+                "menuDescrtEng": "Iced Tea with Mango",
+                "menuDescrt": "아망추(아이스티망고추가)",
+                "menuDescrtCN": "芒果冰茶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/e26aee5f83404eb7b48e85b0016e9dfe.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/5be4c1cfc6f947c3b86987a633160d6d.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/0e1143098ff54d9cb21da185f56731bd.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V05022",
         "faciltCateKindCd": "04",
         "faciltName": "매직타임 레스토랑",
         "faciltNameEng": "Magic Time Restaurant",
-        "faciltNameCN": "魔法時光餐廳",
+        "faciltNameCN": "夢幻時間餐飲",
         "faciltDescrt": "시간과 공간을 넘나드는 맛있는 미각여행!\n이곳으로 여행을 온 여러분들을 위한\n다양한 메뉴가 준비되어 있답니다.",
         "faciltDescrtEng": "A taste trip that transcends time and space!\nEnjoy delicious Korean, Japanese, Chinese, and salad in one place!\n\nMenu type:\nGeneral restaurant",
         "faciltDescrtCN": "跨越時空的美味之旅！\n\n我們為前來旅行的賓客提供豐富多樣的菜單。",
@@ -7251,7 +8284,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "한식#우삼겹사골쌀국수#돈가스카레 #돈까스#김치짜글이#소불고기 #매직타임레스토랑",
         "keywordDescrtEng": "General Restaurant#Beef Brisket Ox-bone Soup Pho #Pork cutlet curry#kimchee stew#beef Bulgogi",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "一般餐廳#牛肉牛骨湯#豬肉咖哩#泡菜燉菜#牛肉烤肉",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7293,14 +8326,62 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 14800,
+                "seqNo": 3,
+                "menuDescrtEng": "Beef Bulgogi Set",
+                "menuDescrt": "소불고기 세트",
+                "menuDescrtCN": "牛肉烤肉套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d86d19e7d7e04adfa03f644da06e5860.png"
+            },
+            {
+                "menuPrice": 16500,
+                "seqNo": 4,
+                "menuDescrtEng": "Pork Cutlet Shrimp Set",
+                "menuDescrt": "돈가스새우카레 세트",
+                "menuDescrtCN": "豬肉咖哩炸蝦套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/f47e1b64d5924bd6b9b63b0495544891.png"
+            },
+            {
+                "menuPrice": 14900,
+                "seqNo": 1,
+                "menuDescrtEng": "Beef Brisket Ox-bone Soup Pho & Spicy Dumplings",
+                "menuDescrt": "우삼겹사골쌀국수&비빔만두",
+                "menuDescrtCN": "牛肉牛骨湯&泡菜煎餃",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/508cf51a07b247328619dce9045ccebd.png"
+            },
+            {
+                "menuPrice": 14900,
+                "seqNo": 2,
+                "menuDescrtEng": "Pork Kimchi Stew",
+                "menuDescrt": "돼지고기김치짜글이",
+                "menuDescrtCN": "豬肉泡菜燉菜",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/004d5dce4b024c0fb44102dfca9e7547.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/3bbb893fef224ec39ada0a730cba9b66.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/a74728f756ea4d068487be91b27d0732.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/3c57be030cf946e7b33298d7cdfdde4b.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/a62df3e676a1405fa318bbd711eea08c.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V05025",
         "faciltCateKindCd": "04",
         "faciltName": "알프스 쿠체",
         "faciltNameEng": "Alps Kuche",
-        "faciltNameCN": "阿爾卑斯山 庫車",
+        "faciltNameCN": "Alps Kuche",
         "faciltDescrt": "알프스 마을의 고즈넉한 식당을 그대로 옮겨 놓은 듯한 공간.\n식사와 스낵, 음료를 모두 즐길 수 있는 이곳에서\n유럽 노천카페의 분위기를 한껏 느껴보세요.\n\n• The Everland of Oz •\n- 블러드시티 메뉴 판매매장 -",
         "faciltDescrtEng": "A place that seems to have moved the quiet restaurant in the Alps,\nIt's a European menu\nFeel the atmosphere of an open-air cafe in Europe to the fullest.\n\nMenu type:\nBBQ, Rice, PUB",
         "faciltDescrtCN": "宛如阿爾卑斯山村古樸餐廳的空間。\n\n在這裡享用餐點、小吃和飲品，\n充分體驗歐式露天咖啡館的氛圍。\n\n• 綠野仙蹤的永恆樂園 •\n- Blood City 菜單店 -",
@@ -7317,7 +8398,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "양식#바비큐#치킨#떡볶이#우동 #알프스쿠체",
         "keywordDescrtEng": "western restaurant #Barbecue #Beer #Udon #PorkLip#BBQ Plate#Chicken#Tteokbokki#noodle",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "西餐廳#燒烤#啤酒#烏龍麵#豬唇#燒烤拼盤#雞肉#炒年糕#麵條",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7359,14 +8440,67 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 27000,
+                "seqNo": 1,
+                "menuDescrtEng": "The Wicked Witch of the East Fried Chicken",
+                "menuDescrt": "동쪽마녀 후라이드 치킨",
+                "menuDescrtCN": "東方女巫炸雞",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/96c3b35df11e4c9eb95713009e9c490c.png"
+            },
+            {
+                "menuPrice": 4500,
+                "seqNo": 2,
+                "menuDescrtEng": "Dorothy’s Tornado Potato",
+                "menuDescrt": "도로시 토네이도 감자",
+                "menuDescrtCN": "多蘿西龍捲風馬鈴薯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/27aaf0fadded49a6b0302a8c7cc155ee.png"
+            },
+            {
+                "menuPrice": 15500,
+                "seqNo": 3,
+                "menuDescrtEng": "BBQ Plate",
+                "menuDescrt": "바비큐플레이트",
+                "menuDescrtCN": "燒烤拼盤",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/7c5057ce4d544debac38f1bbf38f94a4.png"
+            },
+            {
+                "menuPrice": 7600,
+                "seqNo": 4,
+                "menuDescrtEng": "Spicy Garae Tteokbokki",
+                "menuDescrt": "매콤가래떡볶이",
+                "menuDescrtCN": "辣味炒年糕",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/48c67fa1b3f84e20bcc433452b35da63.png"
+            },
+            {
+                "menuPrice": 10300,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "유부꼬치어묵우동",
+                "menuDescrtCN": "豆腐串魚板烏龍麵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/35c6e904662747e0a54ec89f4daa6f75.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/8b1a11ad2a9e4cfea23f31ef765831e0.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/de993932e9d54467b90db523ed921ebd.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/09d9148bc3ed42bbba801ddcb1fe128b.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V01012",
         "faciltCateKindCd": "04",
         "faciltName": "오리엔탈 스테이션",
-        "faciltNameEng": "Oriental Station",
-        "faciltNameCN": "東方站",
+        "faciltNameEng": "Oriental Station (Oriental Noodle)",
+        "faciltNameCN": "東方麵條",
         "faciltDescrt": "줄서는 핫플 맛집!\n외식 브랜드 팝업 메뉴를 만나보세요\n\n오리엔탈 자체 메뉴와 \n시즌별 변경되는 팝업스토어\n전용 메뉴들을 만나보실 수 있습니다.\n<div style=\"display:none;\">오리엔탈 레스토랑,오리엔탈레스토랑</div>",
         "faciltDescrtEng": "Hot place in line!\nCheck out the pop-up menu for restaurant brands.\n\nYou can find the oriental menu and the menu exclusively for pop-up stores that change season by season.",
         "faciltDescrtCN": "人氣餐廳，排隊長龍！\n\n探索知名餐廳品牌的快閃菜單。\n\n體驗原創東方菜單和當季快閃菜單。\n<div style=\"display:none;\">東方餐廳，東方餐廳</div>",
@@ -7383,7 +8517,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "줄서는 맛집#라멘#우동#덮밥#팝업메뉴 #오리엔탈스테이션",
         "keywordDescrtEng": "####Pop-up menu",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "####快閃菜單",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7425,14 +8559,67 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 16000,
+                "seqNo": 1,
+                "menuDescrtEng": "Bulgogi rice bowl",
+                "menuDescrt": "소불고기 덮밥",
+                "menuDescrtCN": "牛肉烤肉蓋飯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/61f4e14613544c039b73714988d3d659.png"
+            },
+            {
+                "menuPrice": 14500,
+                "seqNo": 2,
+                "menuDescrtEng": "Tonkotsu Ramen",
+                "menuDescrt": "돈코츠라멘",
+                "menuDescrtCN": "豚骨拉麵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/fff4bda0d33d45faa6769e33ee7e59d4.png"
+            },
+            {
+                "menuPrice": 13000,
+                "seqNo": 3,
+                "menuDescrtEng": "Deep-fried Shrimp Udon",
+                "menuDescrt": "새우튀김 우동",
+                "menuDescrtCN": "蝦仁烏龍麵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/59960b4cd1bc4a80b9d5651866c4234c.png"
+            },
+            {
+                "menuPrice": 16500,
+                "seqNo": 4,
+                "menuDescrtEng": "whelk Spicy Mixed Rice Noodles & Grilled Short Rib Patties",
+                "menuDescrt": "[미미옥] 양지 비빔쌀국수&두툼떡갈비",
+                "menuDescrtCN": "豬肉韓式拌飯和厚實的豬肉排骨",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/82f52333c60d4bf8a53742e29452b1e0.png"
+            },
+            {
+                "menuPrice": 16500,
+                "seqNo": 5,
+                "menuDescrtEng": "Brisket Spicy Mixed Rice Noodles & Grilled Short Rib Patties",
+                "menuDescrt": "[미미옥] 골뱅이 비빔쌀국수&두툼떡갈비",
+                "menuDescrtCN": "牛骨韓式拌飯和厚實的豬肉排骨",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/31d3d25f55cb45d4b055a6ceeea616ec.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/cea34bb0796a4c7d85caa1e0f67980d2.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/93dcf9f06b654352ba6ccc3dca7ef470.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/8768d460d95544ed976eade04478b3a8.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V06016",
         "faciltCateKindCd": "04",
         "faciltName": "카페 정글캠프",
-        "faciltNameEng": "Cafe Jungle Camp",
-        "faciltNameCN": "咖啡廳叢林營地",
+        "faciltNameEng": "Caf'e Jungle Camp",
+        "faciltNameCN": "雨林野營咖啡館",
         "faciltDescrt": "로스트 밸리, 아마존 정글, 사파리 월드로의 모험을 떠나기 위해\n든든하게 배를 채우는 준비는 필수!\n탐험가들을 위한 휴식처 카페 정글캠프로 놀러오세요",
         "faciltDescrtEng": "To Lost Valley, Amazon Jungle, Safari World~\nIf you want to go on an adventure, you'll have to fill your stomach\nThorough preparation is essential!\nCafe Jungle Camp is a resting place for explorers!\n\nMenu type:\nPizza and chicken",
         "faciltDescrtCN": "想要體驗迷失谷、亞馬遜叢林和野生動物世界的探險之旅，\n一定要享用豐盛的美食！\n來叢林營地 (Jungle Camp) 體驗探險家的咖啡館和休憩之所吧。",
@@ -7449,7 +8636,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "스파게티#피자#치킨#커피#에이드 #정글카페 #카페정글",
         "keywordDescrtEng": "Spaghetti#Pizza#Chicken#Coffee#ade",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "義大利麵#披薩#雞肉#咖啡#飲料 #叢林咖啡廳 #叢林咖啡廳",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7491,14 +8678,67 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 40900,
+                "seqNo": 1,
+                "menuDescrtEng": "Monster Tray",
+                "menuDescrt": "몬스터트레이",
+                "menuDescrtCN": "怪物托盤",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/bb0493494107428e8e586cd613d98f2d.png"
+            },
+            {
+                "menuPrice": 35800,
+                "seqNo": 2,
+                "menuDescrtEng": "Triple Combo Steak",
+                "menuDescrt": "트리플콤보스테이크",
+                "menuDescrtCN": "三重組合牛排",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/690062861fa340d0a46dc3aa85ab5640.png"
+            },
+            {
+                "menuPrice": 20800,
+                "seqNo": 3,
+                "menuDescrtEng": "3-Flavored Pizza",
+                "menuDescrt": "세가지맛피자",
+                "menuDescrtCN": "三種口味的披薩",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/98ec923bed75479a8db23f7ba0e5648d.png"
+            },
+            {
+                "menuPrice": 7300,
+                "seqNo": 4,
+                "menuDescrtEng": "Grapefruit Sun Rise Mojito(Non-alcoholic) ",
+                "menuDescrt": "오자몽썬라이즈모히또(논알콜)",
+                "menuDescrtCN": "橙汁太陽升起莫吉托（非酒精）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/486eca2c52d7472cbd356d36ee0ebe91.png"
+            },
+            {
+                "menuPrice": 7300,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "하와이안블루레몬모히또",
+                "menuDescrtCN": "夏威夷藍檸檬莫吉托",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/60608bce38f0413189008fd8145bc4d5.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/d503c4602f354aa8958d565836dcc362.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/e808378107c848febf197425fe19a224.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/09dfea5e9cd147bbb795cd0877dae9aa.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V02031",
         "faciltCateKindCd": "04",
         "faciltName": "이레컴퍼니(허리케인점)",
         "faciltNameEng": "Yire Company",
-        "faciltNameCN": "愛爾蘭公司（颶風分公司）",
+        "faciltNameCN": "艾爾公司（颶風店）",
         "faciltDescrt": "EVER WISH SNACK\n에버랜드와 NCT WISH의\n청량한 콜라보 음료 팝핑슬러시와\n귀여운 레시 핫도그&와플을 즐겨보세요.",
         "faciltDescrtEng": "EVER WISH SNACK\nEverland and NCT WISH\nA refreshing collaboration drink, Popping Slush\nEnjoy cute Lesh Hot Dogs & Waffles.",
         "faciltDescrtCN": "EVER WISH 小吃\n享受 Everland 與 NCT WISH 聯手打造的清爽 Popping Slush，以及可愛的 Ressi 熱狗華夫餅。",
@@ -7515,7 +8755,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "팝핑슬러시#레시핫도그#레시와플#NCT엔씨티#이레컴퍼니",
         "keywordDescrtEng": "Popping Slush#Lessi hot dog#Lesh Whaffle (custard cream)#NCT#Yire Company",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "彈跳蘇打水#雷希熱狗#雷希鬆餅#NCT#艾爾公司",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -7557,14 +8797,61 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 7000,
+                "seqNo": 1,
+                "menuDescrtEng": "Popping Slush",
+                "menuDescrt": "팝핑슬러시",
+                "menuDescrtCN": "彈跳蘇打水",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/a951f3a7e002419b94fe32a6017637f2.png"
+            },
+            {
+                "menuPrice": 6000,
+                "seqNo": 2,
+                "menuDescrtEng": "Lessi hot dog",
+                "menuDescrt": "레시핫도그",
+                "menuDescrtCN": "雷希熱狗",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/6b943a47004e400aaac8a671188c0df2.png"
+            },
+            {
+                "menuPrice": 6000,
+                "seqNo": 3,
+                "menuDescrtEng": "Lesh Whaffle (custard cream)",
+                "menuDescrt": "레시와플",
+                "menuDescrtCN": "雷希鬆餅",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/90c28d71acc2427996faa84936a145f7.png"
+            },
+            {
+                "menuPrice": 3500,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "보성홍차제로 복숭아아이스티",
+                "menuDescrtCN": "寶城紅茶荔枝冰茶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/a25d96aa3bfd492882bfd05e9ace8952.png"
+            },
+            {
+                "menuPrice": 4000,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "코카콜라 닥터페퍼",
+                "menuDescrtCN": "可樂博士",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d73a6738f4c4479487768049dd3030b3.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/28059bc188cd44d0ac3dcb1f81c1726d.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V05133",
         "faciltCateKindCd": "04",
         "faciltName": "포메인",
         "faciltNameEng": "Phomein",
-        "faciltNameCN": "福爾曼",
+        "faciltNameCN": "PhoMein",
         "faciltDescrt": "햅쌀 본연의 깔끔한 향과 맛이 담긴 ‘햅쌀면‘\n매장에서 직접 끓인 ‘명품 육수’로 만든\n건강하고 맛있는 쌀국수를 만나보세요!",
         "faciltDescrtEng": "Formain started in 2006 at Jeongja headquarters in Bundang\nIt's been loved for 16 years\nIt's Korea's representative Vietnamese pho brand.\n\nFor the first time in its industry, Pomaine is the first in its kind\nBased on fresh ingredients and proprietary technology\nI developed \"Haebongmyeon,\" which is fragrant and soft\nI've completed the \"taste\" that differentiates it from the Tabrand.\n\n\"Haebongmyeon,\" which contains the original Hep Rice's clean scent and taste\nMade from \"luxury broth\" boiled in the store\nMeet Healthy and Delicious Rice Noodles!\n\nSINCE 2006 Rice Noodles is the main dish.\n\nMain menu:\nFormain rice noodles, Spicy Po, premium beef rice noodles, spicy seafood stir-fried rice noodles, chili stir-fried rice, beef stir-fried rice, etc\n\nMenu type:\nRice noodles, fried rice, and fried noodles",
         "faciltDescrtCN": "「新米粉」：蘊含新鮮米的清香與美味。\n\n採用店內新鮮熬製的優質湯底。\n\n體驗健康美味的米粉！",
@@ -7581,7 +8868,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "쌀국수#프리미엄 소고기 쌀국수#소고기 볶음밥#짜조#치킨윙",
         "keywordDescrtEng": "rice noodles#premium beef rice noodles#beef fried rice#cha zio#chicken wing",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "米粉#高級牛肉米粉#牛肉炒飯#炸春捲#雞翅",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7623,14 +8910,64 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 13000,
+                "seqNo": 1,
+                "menuDescrtEng": "",
+                "menuDescrt": "포메인 쌀국수",
+                "menuDescrtCN": "越式河粉",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/448b82369e764c458c0218816b557ca5.png"
+            },
+            {
+                "menuPrice": 16500,
+                "seqNo": 2,
+                "menuDescrtEng": "",
+                "menuDescrt": "소고기 볶음밥",
+                "menuDescrtCN": "牛肉炒飯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/59eff299d6ab4949b9503f59ae38204d.png"
+            },
+            {
+                "menuPrice": 16500,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "매운 해산물 볶음 쌀국수",
+                "menuDescrtCN": "辣味海鮮炒年糕",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/17d48080f7d1454d9621cd09020b2bac.png"
+            },
+            {
+                "menuPrice": 17500,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "프리미엄 쌀국수",
+                "menuDescrtCN": "高級牛肉米粉",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c97e22c96de14f988ca7e0d19ff9874d.png"
+            },
+            {
+                "menuPrice": 7000,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "짜조",
+                "menuDescrtCN": "炸春捲",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/635bc6ca275b4e28b6ffa40a917c7a4d.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/e0765ff973bb48af907e4d8823a30ec7.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/9e7fa9459b3d49a18f448e7ad424c01c.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V05021",
         "faciltCateKindCd": "04",
         "faciltName": "버거카페 유럽",
-        "faciltNameEng": "Burger Cafe Europe",
-        "faciltNameCN": "歐洲漢堡咖啡館",
+        "faciltNameEng": "Burger Caf'e Europe",
+        "faciltNameCN": "歐洲漢堡咖啡",
         "faciltDescrt": "버거카페에서 만나볼 수 있는 Premium Buger! \n버거카페 유럽만의 특급 레시피를 경험해 보세요.",
         "faciltDescrtEng": "The new burger cafe is Europe's Premium Burger!",
         "faciltDescrtCN": "漢堡咖啡館供應優質漢堡！\n體驗漢堡咖啡館歐洲的獨家配方。",
@@ -7647,7 +8984,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "패스트푸드#햄버거#감자튀김#치킨#비스켓",
         "keywordDescrtEng": "fastfood#Hamburger#fried#Chicken#biscuit",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "快餐#漢堡#炸薯條#雞肉#餅乾",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7689,14 +9026,67 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 18600,
+                "seqNo": 1,
+                "menuDescrtEng": "Double Cheese Beef Set",
+                "menuDescrt": "더블비프치즈버거세트",
+                "menuDescrtCN": "雙層牛肉芝士漢堡套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/10c36c0c14234114bc7e5d2d2307d2b6.png"
+            },
+            {
+                "menuPrice": 14400,
+                "seqNo": 2,
+                "menuDescrtEng": "Classic Garlic Beef Set",
+                "menuDescrt": "클래식갈릭비프버거세트",
+                "menuDescrtCN": "經典蒜味牛肉漢堡套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/0505903c93374135b4c1d1769c2cffbc.png"
+            },
+            {
+                "menuPrice": 13900,
+                "seqNo": 3,
+                "menuDescrtEng": "Spicy Chicken Set",
+                "menuDescrt": "스파이시치킨버거세트",
+                "menuDescrtCN": "辣味雞肉漢堡套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/8003669790a54708a6bdc3fbdcec1c90.png"
+            },
+            {
+                "menuPrice": 13900,
+                "seqNo": 4,
+                "menuDescrtEng": "Boneless Sour Chicken Burger Set",
+                "menuDescrt": "통살사워치킨버거세트",
+                "menuDescrtCN": "無骨酸辣雞肉漢堡套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/e70db568ac89495db8f855e509b71b1a.png"
+            },
+            {
+                "menuPrice": 12900,
+                "seqNo": 5,
+                "menuDescrtEng": "Real Shrimp Burger Set",
+                "menuDescrt": "리얼슈림프버거세트",
+                "menuDescrtCN": "真蝦漢堡套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/759888010b524d2b8c17a5b4cbe1affe.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/2d818f0716dd4ddeb2c938a9d41619e1.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/b044112e5362468a8daf0991e943c744.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/108a1b3f6d8b4c269cbf3dee8723c864.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V02012",
         "faciltCateKindCd": "04",
         "faciltName": "버거카페 아메리카",
         "faciltNameEng": "Burger Cafe America",
-        "faciltNameCN": "美國漢堡咖啡館",
+        "faciltNameCN": "美式漢堡咖啡廳",
         "faciltDescrt": "어트랙션을 신나게 즐겼다면\n캘리포니아 분위기의 햄버거 가게\n버거카페 아메리카에서 식사하실래요?",
         "faciltDescrtEng": "If you enjoyed an exciting attraction\nto fill one's stomach with hunger\nIt's like a burger joint in California\nLet's eat at Burger Cafe America.",
         "faciltDescrtCN": "如果您喜歡這些遊樂設施，那麼去加州風格的漢堡店 Burger Cafe America 吃一頓飯怎麼樣？",
@@ -7713,7 +9103,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "패스트푸드#햄버거#감자튀김#치킨#비스켓",
         "keywordDescrtEng": "Festfood#Burger#French Fries#Chicken#",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "速食#漢堡#薯條#雞肉#",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7755,7 +9145,57 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 14400,
+                "seqNo": 1,
+                "menuDescrtEng": "Classic Garlic Beef Burger Set",
+                "menuDescrt": "클래식갈릭비프버거세트",
+                "menuDescrtCN": "經典蒜味牛肉漢堡套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/9be4ad00f2db48d4bb57640057ac7c2c.png"
+            },
+            {
+                "menuPrice": 13900,
+                "seqNo": 2,
+                "menuDescrtEng": "Spicy Chicken Burger Set",
+                "menuDescrt": "스파이시치킨버거세트",
+                "menuDescrtCN": "辣味雞肉漢堡套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/aa06095c7538412e9b064e079c5fffb3.png"
+            },
+            {
+                "menuPrice": 12900,
+                "seqNo": 3,
+                "menuDescrtEng": "Real Shrimp Burger Set",
+                "menuDescrt": "리얼슈림프버거세트",
+                "menuDescrtCN": "真蝦漢堡套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/df1c677d8dc34b378b03fbdcf0bbefae.png"
+            },
+            {
+                "menuPrice": 5000,
+                "seqNo": 4,
+                "menuDescrtEng": "Boneless Chicken(5 Pcs.)",
+                "menuDescrt": "순살치킨(5조각)",
+                "menuDescrtCN": "無骨雞肉（5塊）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/613d648e6c21467398d98088a6b93446.png"
+            },
+            {
+                "menuPrice": 2500,
+                "seqNo": 5,
+                "menuDescrtEng": "French Fries",
+                "menuDescrt": "프렌치프라이",
+                "menuDescrtCN": "法式薯條",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/2d48d2b324144097a42708e29989954e.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/0c4cf0be21fa4028af45ea84a19f4245.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/def973ee001d43d69f6c41ca34e806a7.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V02011",
@@ -7779,7 +9219,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "햄버거#치킨#콜라#닭다리#비스켓 #케이에프씨",
         "keywordDescrtEng": "Hamburger #Biscuit#Chicken#Cola#Chicken drumstick#Biscuit",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "漢堡#餅乾#雞肉#可樂#雞腿#餅乾",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7821,7 +9261,57 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 14800,
+                "seqNo": 1,
+                "menuDescrtEng": "",
+                "menuDescrt": "더블치즈타워박스",
+                "menuDescrtCN": "雙芝士塔瓦盒子",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/3927980510b647d292b78d16753ed273.png"
+            },
+            {
+                "menuPrice": 29000,
+                "seqNo": 2,
+                "menuDescrtEng": "",
+                "menuDescrt": "2인버거팩",
+                "menuDescrtCN": "2人漢堡套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c489ce8e3c7849eaa0e1ebbca06ae5ee.png"
+            },
+            {
+                "menuPrice": 3100,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "비스켓",
+                "menuDescrtCN": "餅乾",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/2b44e20c29584136a05426db708208d5.png"
+            },
+            {
+                "menuPrice": 25000,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "갓양념치킨",
+                "menuDescrtCN": "辣味炸雞",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/e5c9620cdc7e42d8a2ab6a660ded570f.png"
+            },
+            {
+                "menuPrice": 39000,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "패밀리팩",
+                "menuDescrtCN": "家庭套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d82ab96364414020a41477e55a2c9d95.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/59d417d396524ff3851eb7d9f123fdf1.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/95b262a595ee450da1e7fd9822f9ce8c.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V01028",
@@ -7845,7 +9335,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "카페#커피#샌드위치#케이크",
         "keywordDescrtEng": "café###",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "咖啡館###",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7887,13 +9377,66 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 7000,
+                "seqNo": 1,
+                "menuDescrtEng": "Ice Americano",
+                "menuDescrt": "아이스아메리카노",
+                "menuDescrtCN": "冰美式咖啡",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/b5431e5e4d784421bc1b89eb01e0cb65.png"
+            },
+            {
+                "menuPrice": 6100,
+                "seqNo": 2,
+                "menuDescrtEng": "Dolce Latte",
+                "menuDescrt": "돌체라떼",
+                "menuDescrtCN": "拿鐵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c1a6b3a8d7984840b25327fe0561e5fd.png"
+            },
+            {
+                "menuPrice": 7900,
+                "seqNo": 3,
+                "menuDescrtEng": "Starbucks Panda Cookie Blended",
+                "menuDescrt": "스타벅스 판다 쿠키 블렌디드",
+                "menuDescrtCN": "星巴克 熊貓餅乾 混合",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/69b9b1f8effa4b4daf43501182731189.png"
+            },
+            {
+                "menuPrice": 6500,
+                "seqNo": 4,
+                "menuDescrtEng": "White Tiger Frappuccino",
+                "menuDescrt": "화이트 타이거 프라푸치노",
+                "menuDescrtCN": "白老虎 弗拉普丘诺",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c1f3fdebdd6e453e956991128352a6e5.png"
+            },
+            {
+                "menuPrice": 6500,
+                "seqNo": 5,
+                "menuDescrtEng": "Fluffy Panda Chocolate",
+                "menuDescrt": "플러피 판다 초콜릿",
+                "menuDescrtCN": "蓬鬆的熊貓巧克力",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/db2fb79cf8ea47c8a7cf74f29614aadf.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/18e935b2e3aa438c8e4a8decfc676a73.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/0d551fbb54c049e7a2247b5282bee234.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/6b4b6a07e3764bfcb1b0503fe016b4fd.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V05111",
         "faciltCateKindCd": "04",
         "faciltName": "커피빈",
-        "faciltNameEng": "coffee bean",
+        "faciltNameEng": "The Coffee Bean & Tea leaf",
         "faciltNameCN": "咖啡豆",
         "faciltDescrt": "가든뷰와 함께 즐기는 다양한 커피&티와\n한정 MD도 만나보세요!",
         "faciltDescrtEng": "You can enjoy a variety of coffee and tea with the garden view\nCheck out the limited MD!",
@@ -7911,7 +9454,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "카페#커피#디저트#티#아이스블랜디드",
         "keywordDescrtEng": "Cafe#Coffee#Dessert#Tea#IceBlended",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "咖啡館#咖啡#甜點#茶#冰淇淋",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -7953,14 +9496,67 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 5500,
+                "seqNo": 1,
+                "menuDescrtEng": "Americano",
+                "menuDescrt": "아이스 아메리카노",
+                "menuDescrtCN": "冰咖啡",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/730ed7954e88445b97fe43470aba733e.png"
+            },
+            {
+                "menuPrice": 6000,
+                "seqNo": 2,
+                "menuDescrtEng": "Iced hazelnut americano.",
+                "menuDescrt": "아이스 헤이즐넛 아메리카노",
+                "menuDescrtCN": "冰榛果咖啡",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/ded841de92ac4f60a80f47ca3f1bfde4.png"
+            },
+            {
+                "menuPrice": 6900,
+                "seqNo": 3,
+                "menuDescrtEng": "Goheung citron lemon chamomile tea",
+                "menuDescrt": "고흥 유자 레몬 캐모마일티",
+                "menuDescrtCN": "高興柚子檸檬茶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c7fe42ce402d4a3482692b7f4d393fc2.png"
+            },
+            {
+                "menuPrice": 6500,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "망고 아이스 블렌디드",
+                "menuDescrtCN": "芒果冰沙",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/b1a798c439c34af397893d2017f109c0.png"
+            },
+            {
+                "menuPrice": 6700,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "로지레몬셔벗",
+                "menuDescrtCN": "洛檸氣泡飲",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/b480125a602e4ba8823eff158a46f0a2.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/0c9c96bc093248ac9e85826b82ae0999.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/44739c6cb0754eb9a0f4ae899b39a3f9.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/d1286a6638ad40a585b74da5a38da7ff.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V01034",
         "faciltCateKindCd": "04",
         "faciltName": "라운지엑스",
         "faciltNameEng": "Lounge X",
-        "faciltNameCN": "休息室 X",
+        "faciltNameCN": "威尼斯甜點咖啡館",
         "faciltDescrt": "현재와 미래가 만나는 공간, 라운지엑스\n정밀한 바리스타 로봇이 선사하는 커피&디저트는 물론,\n상상력을 자극하는 독특한 경험으로 스타일리시한 여유를 만나보세요.",
         "faciltDescrtEng": "Lounge X, a place where the present and the future meet\nThe precise barista robot offers coffee and desserts,\nEnjoy stylish relaxation with a unique experience that stimulates your imagination.",
         "faciltDescrtCN": "Lounge X，現代與未來的交會之地。\n\n體驗時尚休閒，享用由精準咖啡師機器人製作的咖啡和甜點，\n以及激發您想像的獨特體驗。",
@@ -7977,7 +9573,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "카페#로봇커피#로봇아이스크림 #커피#디저트",
         "keywordDescrtEng": "Café#RobotCoffee #RobotIceCream #Coffee#Dessert",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "咖啡館#機器人咖啡#機器人冰淇淋#咖啡#甜點",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -8019,7 +9615,60 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 7000,
+                "seqNo": 1,
+                "menuDescrtEng": "Lounge x Latte",
+                "menuDescrt": "라운지X 라떼",
+                "menuDescrtCN": "拉雅特克斯 拿鐵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/74e023bbf5e649b198104284c858648e.png"
+            },
+            {
+                "menuPrice": 6000,
+                "seqNo": 2,
+                "menuDescrtEng": "robot dress coffee",
+                "menuDescrt": "로봇 드립커피",
+                "menuDescrtCN": "機器人 滴濾咖啡",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c488d760f7a94bb2a9154a91f2893fb4.png"
+            },
+            {
+                "menuPrice": 5500,
+                "seqNo": 3,
+                "menuDescrtEng": "Robot ice cream",
+                "menuDescrt": "로봇 아이스크림",
+                "menuDescrtCN": "機器人 冰淇淋",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d4813fe0b24a479caec2f4934d630b51.png"
+            },
+            {
+                "menuPrice": 7000,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "청귤 진저 에이드",
+                "menuDescrtCN": "青桔 薑汁 蘇打",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/ae18189ceed64dfd85bbbd18186e7924.png"
+            },
+            {
+                "menuPrice": 4900,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "글레이즈 크로넛",
+                "menuDescrtCN": "格雷澤 克朗尼",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/93d1cae59c0548f58aa3777c09c30bf1.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/2b69eafc5b5d4e12a90f30cf2385554d.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/6c65f052389d4e94b024f6aabf86bced.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/b24fcd03116a49e5a243985c90394354.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V02014",
@@ -8043,7 +9692,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "츄러스#핫도그#후라이드닭꼬치#훈제소시지#치킨",
         "keywordDescrtEng": "Churros#Hot Dog#Fried Chicken Skewer#Smoked Sausage#Chicken",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "炸油條#熱狗#炸雞翅#煙燻腸#烤肉味雞肉",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -8085,14 +9734,61 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 4500,
+                "seqNo": 1,
+                "menuDescrtEng": "Churros",
+                "menuDescrt": "츄러스",
+                "menuDescrtCN": "炸油條",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/5a6eb94ff0e744f493f5f2b9f977cb5a.png"
+            },
+            {
+                "menuPrice": 5000,
+                "seqNo": 2,
+                "menuDescrtEng": "Star Hot Dog",
+                "menuDescrt": "별난핫도그",
+                "menuDescrtCN": "星星熱狗",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/6170ec028b934309896dd6f473101a67.png"
+            },
+            {
+                "menuPrice": 4800,
+                "seqNo": 3,
+                "menuDescrtEng": "Lenny Lara's Smoked Sausage",
+                "menuDescrt": "레니라라의 훈제소시지",
+                "menuDescrtCN": "煙燻腸",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/e23be2bd7c20435d89223fc566451349.png"
+            },
+            {
+                "menuPrice": 5600,
+                "seqNo": 4,
+                "menuDescrtEng": "Honey soy sauce fried chicken skewers",
+                "menuDescrt": "허니간장후라이드닭꼬치",
+                "menuDescrtCN": "蜂蜜醬油炸雞翅",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/180054a6b2d34d8fad7d3506f1e996e3.png"
+            },
+            {
+                "menuPrice": 5800,
+                "seqNo": 5,
+                "menuDescrtEng": "Sauce Fried Pork Skewer",
+                "menuDescrt": "갈비맛핑돈꼬치",
+                "menuDescrtCN": "烤肉味雞肉",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/7122643f8a2a425e8f9f640ccfbe3cb1.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/854a4ca9ac534c52be7e295f7730c892.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V03030",
         "faciltCateKindCd": "04",
         "faciltName": "멀린스 스낵",
-        "faciltNameEng": "Merlin’s Snack",
-        "faciltNameCN": "穆林的零食",
+        "faciltNameEng": "Merlin's Snack",
+        "faciltNameCN": "馬林斯小吃",
         "faciltDescrt": "스낵들아 맛있어져라 얍!\n마법처럼 달콤해진 츄러스와 핫도그\n이곳의 간식들은 어쩐지 더 맛있는 것 같네요!",
         "faciltDescrtEng": "There's another menu to soothe your hunger!\nTaste the various snacks you can enjoy while looking around!",
         "faciltDescrtCN": "零食，變美味啦！\n神奇變甜的吉事果和熱狗。\n這裡的零食竟然更美味！",
@@ -8109,7 +9805,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "츄러스#핫도그#훈제소시지#돈꼬치#아이스티",
         "keywordDescrtEng": "Churros#Hot Dog#Smoked Sausage#Pork Skewer#IceTea",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "吉拿棒#熱狗#煙燻香腸#豬肉串#冰茶",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -8151,14 +9847,61 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 4500,
+                "seqNo": 1,
+                "menuDescrtEng": "Churros",
+                "menuDescrt": "츄러스",
+                "menuDescrtCN": "吉拿棒",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/59d0f8c3e2bc4bc0a40ad8bbe2574bd6.png"
+            },
+            {
+                "menuPrice": 5000,
+                "seqNo": 2,
+                "menuDescrtEng": "Star Hot Dog",
+                "menuDescrt": "별난핫도그",
+                "menuDescrtCN": "星形熱狗",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/54e85b64ab14477191b55a44a126a25f.png"
+            },
+            {
+                "menuPrice": 4800,
+                "seqNo": 3,
+                "menuDescrtEng": "Lenny Lara's Smoked Sausage",
+                "menuDescrt": "레니라라의 훈제소시지",
+                "menuDescrtCN": "雷尼拉拉的煙燻香腸",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/bd1572cce3fe44f5b90861163085b7ca.png"
+            },
+            {
+                "menuPrice": 5800,
+                "seqNo": 4,
+                "menuDescrtEng": "Sauce Fried Pork Skewer",
+                "menuDescrt": "갈비맛핑돈꼬치",
+                "menuDescrtCN": "烤肉味豬肉串",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/fdcc8238c036448890ba12cb97f1b92d.png"
+            },
+            {
+                "menuPrice": 4500,
+                "seqNo": 5,
+                "menuDescrtEng": "Ice Tea Peach",
+                "menuDescrt": "아이스티 복숭아",
+                "menuDescrtCN": "桃子冰茶",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/bf0418f7a6df4ae8adfe70a2e017ac19.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/9b67530d0d344ec1a3cb72caa056ef93.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V06025",
         "faciltCateKindCd": "04",
         "faciltName": "아마존 스낵",
-        "faciltNameEng": "Amazon snack",
-        "faciltNameCN": "亞馬遜零食",
+        "faciltNameEng": "Amazon Snack",
+        "faciltNameCN": "亞馬遜小吃",
         "faciltDescrt": "오늘은 어떤 스낵을 탐험해볼까?\n탐험가들의 단골 스낵점, 아마존 스낵은 지나가는 모든 이들을 환영합니다.",
         "faciltDescrtEng": "오늘은 어떤 스낵을 탐험해볼까?\n탐험가들의 단골 스낵점, 아마존 스낵은 지나가는 모든 이들을 환영합니다.",
         "faciltDescrtCN": "今天你想探索哪些零食？\n亞馬遜零食，探險家最愛的零食店，歡迎每位路過的朋友。",
@@ -8175,7 +9918,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "츄러스#핫도그#후라이드닭꼬치#훈제소시지#아마존스낵",
         "keywordDescrtEng": "Churros#Hot Dog#Fried Chicken Skewer#Smoked Sausage#Amazon snack",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "吉拿棒#熱狗#炸雞翅#煙燻腸#亞馬遜小吃",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -8217,14 +9960,53 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 4500,
+                "seqNo": 1,
+                "menuDescrtEng": "Churros",
+                "menuDescrt": "츄러스",
+                "menuDescrtCN": "吉拿棒",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/a4aa51f1246e4b28a33dc9817e38dd2a.png"
+            },
+            {
+                "menuPrice": 5000,
+                "seqNo": 2,
+                "menuDescrtEng": "Star Hot Dog",
+                "menuDescrt": "별난핫도그",
+                "menuDescrtCN": "星形熱狗",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d4351806741140459f63b312467d2ecf.png"
+            },
+            {
+                "menuPrice": 5600,
+                "seqNo": 3,
+                "menuDescrtEng": "Honey Soy Sauce Fried Chicken Skewer",
+                "menuDescrt": "허니간장후라이드닭꼬치",
+                "menuDescrtCN": "烤肉味雞肉串",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/b9b71706497a4b0d9ceaa8fc8f0f6b0a.png"
+            },
+            {
+                "menuPrice": 4800,
+                "seqNo": 4,
+                "menuDescrtEng": "Lenny and Lara’s Smoked Sausage",
+                "menuDescrt": "레니라라의 훈제소시지",
+                "menuDescrtCN": "雷尼拉拉的煙燻香腸",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/77738cd2dfa94f849a817646a0966196.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/df70dafc4638450a9f521ab9942e1818.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V01042",
         "faciltCateKindCd": "04",
         "faciltName": "한와담 소반",
         "faciltNameEng": "Hanwadam",
-        "faciltNameCN": "韓華談總盤",
+        "faciltNameCN": "韓和談小飯",
         "faciltDescrt": "Est. 2013 한우.와인.담소 한와담의 가장 사랑받는 메뉴만을 선정하여\n정갈하게 담아낸 한와담소반, 맛있는 한식여행을 초대합니다.",
         "faciltDescrtEng": "Est. 2013 Korean beef.We'll select only the most loved menu of wine, discourse, and hanwadam\nI invite you to have a nice Korean food trip, a neat Hanwadam soban.",
         "faciltDescrtCN": "成立於2013年的韓牛。美酒。閒聊。精選韓華潭最受歡迎的菜色。我們誠摯邀請您品嚐我們精心烹調的韓華潭蕎麥麵，開啟一趟美味的韓式美食之旅。",
@@ -8241,7 +10023,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "한식전문#불고기 #전골 #갈비곰탕",
         "keywordDescrtEng": "Korean food restaurant#bulgogi  #jeongol#GalbiGomtang",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "韓國料理餐廳#烤肉#火鍋#排骨湯",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -8283,14 +10065,67 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 23000,
+                "seqNo": 1,
+                "menuDescrtEng": "Seoul-style bulgogi",
+                "menuDescrt": "서울식 불고기 1인분",
+                "menuDescrtCN": "首爾式烤肉 1人份",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/4b8db9278dac4bb6910b86a4159c4369.png"
+            },
+            {
+                "menuPrice": 21000,
+                "seqNo": 2,
+                "menuDescrtEng": "Beef dumpling hot pot (clear/hot)",
+                "menuDescrt": "소고기 만두 전골(맑은/얼큰) 1인분",
+                "menuDescrtCN": "小牛肉餃子火鍋（清/辣） 1人份",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/2844a6393e1746719a3b39e8c701a902.png"
+            },
+            {
+                "menuPrice": 13000,
+                "seqNo": 3,
+                "menuDescrtEng": "Spicy beef brisket rice soup",
+                "menuDescrt": "얼큰 소고기 국밥",
+                "menuDescrtCN": "辣牛肉湯飯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/889a6fbf21394f8289fd7c081ebe46f3.png"
+            },
+            {
+                "menuPrice": 14000,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "맑은 소고기 칼국수",
+                "menuDescrtCN": "清牛肉刀削麵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/660ae3f5f9304da19a91f512e5c651ad.png"
+            },
+            {
+                "menuPrice": 17000,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "소불고기 덮밥",
+                "menuDescrtCN": "小炒牛肉蓋飯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d4b0600cfe6c497a86c85080a0b227ea.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/dd770f0b22c04c99b32fa379387ede99.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/d0ef02d5186d4210b28937ddabd5e397.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/9af423f8f25f4bbf9f81564235c48b4b.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V01041",
         "faciltCateKindCd": "04",
         "faciltName": "온더보더",
-        "faciltNameEng": "On the Border",
-        "faciltNameCN": "在邊境",
+        "faciltNameEng": "On the Boarder",
+        "faciltNameCN": "On the Boarder",
         "faciltDescrt": "신선한 재료와 홈메이드 방식의 정통 멕시칸 레스토랑 온더보더!\n다양한 멕시코 요리와 함께 축제를 즐겨보세요!",
         "faciltDescrtEng": "On the Border, an authentic Mexican restaurant that pursues fresh ingredients and homemade methods\nLet's enjoy the 365-day festival with exciting Latin music and a variety of Mexican dishes!",
         "faciltDescrtCN": "邊境餐廳 (On the Border)，正宗墨西哥餐廳，採用新鮮食材，自製食譜！用各種墨西哥菜餚慶祝節日！",
@@ -8307,7 +10142,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "멕시칸음식#타코#퀘사디아#화이타#부리또",
         "keywordDescrtEng": "MexicanFood#Taco#Quesadilla#Fajita#Burrito",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "墨西哥美食#塔可#卷餅#菲希塔#布利托",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -8349,14 +10184,67 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 6500,
+                "seqNo": 1,
+                "menuDescrtEng": "Fold fork tacos (1 piece)",
+                "menuDescrt": "폴드포크 타코(1피스)",
+                "menuDescrtCN": "折疊叉子塔可（1片）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d65658e639584f31af3eb17379dce0af.png"
+            },
+            {
+                "menuPrice": 39500,
+                "seqNo": 2,
+                "menuDescrtEng": "Smooth steak fajita",
+                "menuDescrt": "스무더드 스테이크 화이타",
+                "menuDescrtCN": "順滑牛排法士達",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/72c0d36d5db74dbf8da78e3e2fed98af.png"
+            },
+            {
+                "menuPrice": 33000,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "더블 스텍 클럽 퀘사디아",
+                "menuDescrtCN": "雙層牛排俱樂部奎薩迪亞",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/9268e38f5aa44b71a219a76420327802.png"
+            },
+            {
+                "menuPrice": 15500,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "타코샐러드 비프",
+                "menuDescrtCN": "塔可沙拉牛肉",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/ef81efc5109d4110bb996a44843265a3.png"
+            },
+            {
+                "menuPrice": 7000,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "구아카몰볼",
+                "menuDescrtCN": "酪梨醬球",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/58b357aa26ea47b1b1719b2c0e14a845.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/910561f8556e48178f8fe2678668037c.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/8259f6d33d1a4a62bf46e76178198a76.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/b364ccc13c2941b3bb8eeac89c782463.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V01043",
         "faciltCateKindCd": "04",
         "faciltName": "크리스탈 제이드",
         "faciltNameEng": "Crystal Jade",
-        "faciltNameCN": "水晶玉",
+        "faciltNameCN": "水晶翡翠",
         "faciltDescrt": "전 세계 미식가들이 사랑하는 글로벌 차이니즈 레스토랑\n현지 셰프의 딤섬과 누들, 다채로운 중국 요리를 만나보세요.",
         "faciltDescrtEng": "Global Chinese Restaurant Loved by Gourmet Worlds\nMeet the local chef's dim sum, noodle, and various Chinese dishes.",
         "faciltDescrtCN": "深受全球美食家喜愛的國際中餐廳。探索由當地廚師烹製的點心、麵條以及各種中式菜餚。",
@@ -8373,7 +10261,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "쇼마이#딴딴면#완탕면#유니 짜장면#광동식 탕수육 크리스탈제이드",
         "keywordDescrtEng": "Shomai####",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "燒賣####",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -8415,14 +10303,64 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 13000,
+                "seqNo": 1,
+                "menuDescrtEng": "",
+                "menuDescrt": "쇼마이(4PCS)",
+                "menuDescrtCN": "燒賣（4個）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/8e6ea64504564c4e9c695ba3f8303ecf.png"
+            },
+            {
+                "menuPrice": 15000,
+                "seqNo": 2,
+                "menuDescrtEng": "",
+                "menuDescrt": "딴딴면",
+                "menuDescrtCN": "點心麵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/cedfa1af4e7442b391caecd158d8d10d.png"
+            },
+            {
+                "menuPrice": 33000,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "광동식 탕수육",
+                "menuDescrtCN": "廣東炒肉",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/1c46511b139846f5adefa6d7b21943d9.png"
+            },
+            {
+                "menuPrice": 35000,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "아몬드 레몬크림 새우",
+                "menuDescrtCN": "杏仁檸檬蝦仁",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/4d04bc212a93487b88344d1dcb286a3a.png"
+            },
+            {
+                "menuPrice": 33000,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "통마늘 깐풍기",
+                "menuDescrtCN": "蒜香烤肉",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/d0a71f17865749788feddff465b9cda8.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/6f80c8429f2545e09ec222886de973fa.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/9a83ef0bf3eb4649b90d6fdc93e6a025.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V01045",
         "faciltCateKindCd": "04",
         "faciltName": "PIZZA IL FORNO",
         "faciltNameEng": "PIZZA IL FORNO",
-        "faciltNameCN": "披薩",
+        "faciltNameCN": "PIZZA IL FORNO",
         "faciltDescrt": "나폴리 피자 협회 'Vera Pizza' 인증을 세계 300번째,\n한국에서 첫번째로 인증 받은 '정통 나폴리 진수'를 이어\n정통 나폴리 화덕 피자와 파스타를 즐겨보세요!",
         "faciltDescrtEng": "Ilboro means \"Forno\" in Italian\nThis is a Fitzeria store where you can enjoy authentic Neapolitan oven pizza and pasta.\nThe Naples Pizza Association's \"Vera Pizza\" certification is the 300th in the world, in Korea\nThe first is to continue the authentic Neapolitan essence.",
         "faciltDescrtCN": "延續那不勒斯披薩協會認證的“正宗那不勒斯精華”，全球第300家、韓國首家披薩“Vera Pizza”，盡享正宗那不勒斯烤箱烤披薩和意大利麵！",
@@ -8439,7 +10377,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "화덕피자#파스타#스테이크#샐러드",
         "keywordDescrtEng": "Pizza###",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "烤爐披薩#義大利麵#牛排#沙拉",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -8481,14 +10419,67 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 17000,
+                "seqNo": 1,
+                "menuDescrtEng": "",
+                "menuDescrt": "새우 오일 파스타",
+                "menuDescrtCN": "蝦油麵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/bb439f70b0bd4caab6fc18e803932787.png"
+            },
+            {
+                "menuPrice": 18000,
+                "seqNo": 2,
+                "menuDescrtEng": "",
+                "menuDescrt": "소시지 로제 파스타",
+                "menuDescrtCN": "香腸羅勒麵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/a1dc03a4a4114b39966fa77e8546f5e5.png"
+            },
+            {
+                "menuPrice": 16000,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "마르게리타 피자",
+                "menuDescrtCN": "瑪格麗特披薩",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/66981ac421074ddf89e4518e404f31ff.png"
+            },
+            {
+                "menuPrice": 18000,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "소시지 콘 피자",
+                "menuDescrtCN": "香腸玉米披薩",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/a3beb7af780f44c3a2b43beb21e4a505.png"
+            },
+            {
+                "menuPrice": 72000,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "패밀리 세트",
+                "menuDescrtCN": "家庭套餐",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/df18bf37fe74460197e2edbcb6152e41.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/c820ecadb4d2443a8774220844baf097.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/01e7f81e3fcc425bbea73bf2fb0e247f.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/03f33c9f523845b6935194d396541dbe.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V01044",
         "faciltCateKindCd": "04",
         "faciltName": "폴바셋 에버랜드점",
         "faciltNameEng": "Paul Bassett",
-        "faciltNameCN": "保羅‧巴塞特愛寶樂園店",
+        "faciltNameCN": "Paul Bassett",
         "faciltDescrt": "2003 WBC (World Barista Championship) 우승자 폴 바셋과\n함께하는 스폐셜티 커피 전문점.\u000b\u000b편안한 공간에서 시그니처 메뉴 룽고와\n상하목장 아이스크림이 올라간 아이스크림라떼를 즐겨보세요.",
         "faciltDescrtEng": "2003 World Barista Championship (WBC) winner Paul Bassett and the\nspecialty coffee shop with Paul Bassett.\n\nEnjoy high quality coffee and desserts in a relaxed environment.",
         "faciltDescrtCN": "這是一家特色咖啡店，店內設有 2003 年世界咖啡師錦標賽 (WBC) 冠軍保羅·巴塞特 (Paul Bassett) 的專屬咖啡。\n\n在舒適的環境中享用招牌大杯咖啡 (Lungo) 和淋上 Sanghamok 冰淇淋的冰淇淋拿鐵。",
@@ -8505,7 +10496,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "커피 #디저트 #룽고 #아이스크림라떼",
         "keywordDescrtEng": "coffee #dessert #lungo #ice cream latte",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "咖啡#甜點#Lungo#冰淇淋拿鐵",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -8547,14 +10538,64 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 5300,
+                "seqNo": 1,
+                "menuDescrtEng": "Longo",
+                "menuDescrt": "룽고",
+                "menuDescrtCN": "Lungo",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/aa6b013be9394f8197a4e9f09c97e28d.png"
+            },
+            {
+                "menuPrice": 7500,
+                "seqNo": 2,
+                "menuDescrtEng": "Ice Cream Latte",
+                "menuDescrt": "아이스크림라떼",
+                "menuDescrtCN": "冰淇淋拿鐵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/7c5cdaf4033f4583afc6a865c53dc985.png"
+            },
+            {
+                "menuPrice": 4300,
+                "seqNo": 3,
+                "menuDescrtEng": "Milk ice cream",
+                "menuDescrt": "밀크아이스크림",
+                "menuDescrtCN": "牛奶冰淇淋",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/089490259bea4242908c829a0c7b8da2.png"
+            },
+            {
+                "menuPrice": 6500,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "바닐라빈라떼(G)",
+                "menuDescrtCN": "香草豆拿鐵(G)",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/be84e8174dfb4a1da108095f9a7d968a.png"
+            },
+            {
+                "menuPrice": 5900,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "카페라떼(G)",
+                "menuDescrtCN": "卡布奇諾拿鐵(G)",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/bf7bd5d8d7094124b20d1b2679b7174d.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/3aefff66bc304025b5cd7538cc351f36.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/16fa38a1a7484ca8a10d3bd77fadf69c.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V05236",
         "faciltCateKindCd": "04",
         "faciltName": "요거트월드 에버랜드점",
         "faciltNameEng": "Yogurt world Everland",
-        "faciltNameCN": "優格世界愛寶樂園店",
+        "faciltNameCN": "優格世界 愛寶樂園店",
         "faciltDescrt": "에버랜드에서도 요거트월드!\n꿈과 환상의 나라 에버랜드에서\n달콤한 요거트월드 인기메뉴를 만나보세요!",
         "faciltDescrtEng": "yogurt world",
         "faciltDescrtCN": "愛寶樂園優格世界！\n\n在愛寶樂園，這片充滿夢幻與奇幻的土地上，\n\n探索香甜又備受歡迎的優格世界菜單！",
@@ -8571,7 +10612,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "요거트아이스크림#커피#콜드브루#과일에이드",
         "keywordDescrtEng": "yogurt icecream#coffee#coldbrew#fruit ade",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "優格冰淇淋#咖啡#冷萃咖啡#水果飲料",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -8613,14 +10654,64 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 7000,
+                "seqNo": 1,
+                "menuDescrtEng": "",
+                "menuDescrt": "더피의 베리월드",
+                "menuDescrtCN": "草莓世界",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/ee5be952ef654af0a86521bb458b5bd6.png"
+            },
+            {
+                "menuPrice": 7500,
+                "seqNo": 2,
+                "menuDescrtEng": "",
+                "menuDescrt": "두바이월드컵",
+                "menuDescrtCN": "杜拜世界杯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/4a17261803f743c8b469dc12bad88341.png"
+            },
+            {
+                "menuPrice": 6500,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "믹스베리월드컵",
+                "menuDescrtCN": "混合草莓世界",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/467afc6fd6e74b269d32e015036a6b1a.png"
+            },
+            {
+                "menuPrice": 5500,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "코코자몽에이드",
+                "menuDescrtCN": "椰子芒果飲料",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/a9d99fe7eada490aaaf6d0bebc3eb9fa.png"
+            },
+            {
+                "menuPrice": 5000,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "콜드브루",
+                "menuDescrtCN": "冷萃咖啡",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/2af9eb8d9f01451096ddff553fd5e126.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/0ef9983343c6421ca596f3755495f7c9.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/ff3f6d59d0884e86b3f0b41ccd783b58.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V05177",
         "faciltCateKindCd": "04",
         "faciltName": "55츄 (라피아자)",
-        "faciltNameEng": "55 Chu (Rafias)",
-        "faciltNameCN": "55 楚（拉皮亞薩）",
+        "faciltNameEng": "55Chu",
+        "faciltNameCN": "迷失山穀小吃",
         "faciltDescrt": "<div style=\"display:none;\">오오츄 오오추 55츄러스</div>\n반죽을 직접 뽑아 갓 튀겨 더욱 바삭하고 맛있는 츄러스!\n초코와 크림치즈 필링이 들어간 츄러스부터\n오레오를 듬뿍 묻힌 츄러스까지 다양한 맛을 경험하세요!",
         "faciltDescrtEng": "It's fresh fried. It's crispier and more delicious\nHandmade churros!\n\nStarting with Filling Chu, which is full of sweetness,\nChurros with a lot of Oreo on top!\n\n[Main menu]\nOriginal Chuu, Feeling Chuu, Cup Chuu",
         "faciltDescrtCN": "<div style=\"display:none;\">OoChoo OoChoo 55 吉事果</div>\n新鮮製作，新鮮油炸，口感酥脆可口！\n體驗各種口味，從巧克力和奶油起司餡料的吉事果，\n到裹滿奧利奧餅乾的吉事果！",
@@ -8637,7 +10728,7 @@
         "guardRidingYn": "",
         "keywordDescrt": " 수제츄러스#필링츄#컵츄#에이드#커피 오오츄 오오추",
         "keywordDescrtEng": "churros###Ade#Coffee",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "吉拿棒###飲料#咖啡",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -8679,14 +10770,67 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 5000,
+                "seqNo": 1,
+                "menuDescrtEng": "",
+                "menuDescrt": "오리지널츄(시나몬/오레오)",
+                "menuDescrtCN": "原味啾（香草/奧利奘）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/9fd49330adc84f3aa99db5db61bad830.png"
+            },
+            {
+                "menuPrice": 5500,
+                "seqNo": 2,
+                "menuDescrtEng": "",
+                "menuDescrt": "필링츄(초코/크림치즈)",
+                "menuDescrtCN": "感情啾（巧克力/奶油起司）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/a71a3085b67a4e28802ceb52b5118921.png"
+            },
+            {
+                "menuPrice": 14000,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "컵츄(시나몬/오레오/기본)",
+                "menuDescrtCN": "杯子啾（香草/奧利奘/基本）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/38f9684d22da498caef656b026718c61.png"
+            },
+            {
+                "menuPrice": 6000,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "블루오렌지에이드",
+                "menuDescrtCN": "藍柑橘飲料",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/af305e5580774aaa8083c127903a1fc9.png"
+            },
+            {
+                "menuPrice": 6000,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "청포도에이드",
+                "menuDescrtCN": "葡萄飲料",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/1589d734a1ac46e6b172ce2173dda078.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/7be9cce522764c9991c72eeebe6b62dd.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/d99197ad4b434e239eddf46cfa104b91.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/d756f24594c845e991b51218bd5f74d5.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V05178",
         "faciltCateKindCd": "04",
         "faciltName": "앤티앤스 (라피아자)",
-        "faciltNameEng": "Auntie Anne's (Lafias)",
-        "faciltNameCN": "反安妮（Lapiaza）",
+        "faciltNameEng": "Auntie Anne's Pretzel",
+        "faciltNameCN": "復古噴霧",
         "faciltDescrt": "즉석으로 반죽부터 직접 만들고 구운 프레즐!\n버터를 묻혀 풍미 가득하고\n담백한 프레즐을 다양한 버전으로 즐겨 보세요!",
         "faciltDescrtEng": "Fresh and warm, Golden Brown's soft pretzels\n\nSweet and savory cream cheese pretzels\nHot dog pretzels loved all over the world\n\n[Main menu]\nOriginal stick, almond cream cheese stick, hot dog",
         "faciltDescrtCN": "新鮮烘焙的椒鹽脆餅，從零開始！\n\n盡情享用這些奶油味濃鬱、風味十足、做法簡單的椒鹽脆餅，多種口味任您選擇！",
@@ -8703,7 +10847,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "수제프레즐#핫도그프레즐#커피#에이드",
         "keywordDescrtEng": "Handmade Fresle#Hotdog Fresle#Coffee#Ade",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "手工餅乾#熱狗餅乾#咖啡#飲料",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -8745,14 +10889,64 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 6200,
+                "seqNo": 1,
+                "menuDescrtEng": "almond cream cheese stick",
+                "menuDescrt": "아몬드 크림치즈 스틱",
+                "menuDescrtCN": "杏仁奶油起司棒",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/27fc37d938f44dfc923ae878e12d83b2.png"
+            },
+            {
+                "menuPrice": 6700,
+                "seqNo": 2,
+                "menuDescrtEng": "a jalapeno cheese hot dog",
+                "menuDescrt": "할라피뇨 치즈 핫도그",
+                "menuDescrtCN": "哈拉佩諾奶油起司熱狗",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c0059dac510743738b3ad084a053e822.png"
+            },
+            {
+                "menuPrice": 6000,
+                "seqNo": 3,
+                "menuDescrtEng": "Lemonade",
+                "menuDescrt": "레몬에이드",
+                "menuDescrtCN": "檸檬蘇打",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/43227b2404ab4f55bf1c14a2d452f3bb.png"
+            },
+            {
+                "menuPrice": 6000,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "블루큐라소",
+                "menuDescrtCN": "藍莓汽水",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/e439273ecaf548718d35a24743c56644.png"
+            },
+            {
+                "menuPrice": 5500,
+                "seqNo": 5,
+                "menuDescrtEng": "Americano",
+                "menuDescrt": "아메리카노",
+                "menuDescrtCN": "美式咖啡",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/bf8fcd727ff94d52baf8c1f5f69bed57.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/da456c4e0f76491d9f9db929b16bb97b.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/891d1e4140a44464a53c253a9630061e.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V05180",
         "faciltCateKindCd": "04",
         "faciltName": "BBQ",
-        "faciltNameEng": "BBQ",
-        "faciltNameCN": "燒烤",
+        "faciltNameEng": "BBQ Chicken",
+        "faciltNameCN": "BBQ韓式炸雞",
         "faciltDescrt": "Best of the Best Quality, BBQ\n세상에서 가장 맛있고 건강한\n최고 품질의 프리미엄 치킨\n<div style=\"display:none;\">bhc</div>",
         "faciltDescrtEng": "Best of the Best Quality, BBQ\nThe most delicious and healthy food in the world\nthe highest quality premium chicken",
         "faciltDescrtCN": "頂級品質，燒烤\n全球最美味、最健康的美食\n最高品質的優質雞肉\n<div style=\"display:none;\">bhc</div>",
@@ -8769,7 +10963,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "치킨#뻥치콜#감자튀김#치즈볼#크런치순살크래커 #bhc",
         "keywordDescrtEng": "####",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "雞肉#炸雞#薯條#起司球#炸雞塊",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -8811,14 +11005,61 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 7000,
+                "seqNo": 1,
+                "menuDescrtEng": "Fried chicken",
+                "menuDescrt": "뻥치 후라이드",
+                "menuDescrtCN": "酥脆炸雞",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/a4fe1418528240a9a130b3450a0cc474.png"
+            },
+            {
+                "menuPrice": 9000,
+                "seqNo": 2,
+                "menuDescrtEng": "",
+                "menuDescrt": "뻥치콜",
+                "menuDescrtCN": "炸雞塊",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/bfb4566f3f294dd7a36a4bbc2e8a3760.png"
+            },
+            {
+                "menuPrice": 13000,
+                "seqNo": 3,
+                "menuDescrtEng": "",
+                "menuDescrt": "뻥치콜+감자튀김",
+                "menuDescrtCN": "炸雞塊+薯條",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/84884656376e42628e785f1a793ea0d9.png"
+            },
+            {
+                "menuPrice": 3500,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "레몬보이 스파클링",
+                "menuDescrtCN": "檸檬汽水",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/3dc0f3cfb4c94ee4899246e1e993c5d1.png"
+            },
+            {
+                "menuPrice": 23000,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "크런치 순살 크래커",
+                "menuDescrtCN": "脆脆炸雞塊",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/a50c65f0b9394fe4a056f3fae9372dd2.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/27a96ae3c2b54a03b7c2baf854fda955.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V05020",
         "faciltCateKindCd": "04",
         "faciltName": "차이나문",
         "faciltNameEng": "China Moon",
-        "faciltNameCN": "中國門",
+        "faciltNameCN": "China Moon中式餐廳",
         "faciltDescrt": "<div style=\"display:none;\">짜장면 자장면 탕수육 중식 차이나 문</div>\n아이 어른 모두가 만족하는 차이니즈 레스토랑 차이나문!\n특별한 추억을 만들고 싶은 분에게는\n포시즌스 가든이 한 눈에 들어오는 창가 자리를 추천합니다.",
         "faciltDescrtEng": "Children and adults are all satisfied\nChinese Restaurant China Moon!\n\nIf you want to make special memories\nI recommend a window seat.\n\nFour Seasons Garden at a glance\nA million dollar garden view is free.",
         "faciltDescrtCN": "<div style=\"display:none;\">炸醬麵，炸醬麵，湯汁，中式料理，China Moon</div>\nChina Moon 是一家老少皆宜的中餐廳！\n如果您希望留下特別的回憶，\n我們推薦您選擇靠窗的座位，可以欣賞四季花園的全景。",
@@ -8835,7 +11076,7 @@
         "guardRidingYn": "N",
         "keywordDescrt": "중식#탕수육#자장면#짬뽕#볶음밥 #차이나 문",
         "keywordDescrtEng": "chinese restaurant#sweet and sour pork#jajangmyeon#jjamppong#Fried Rice",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "中餐#糖醋排骨#炸醬麵#炒飯#炒菜",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "0",
@@ -8877,14 +11118,67 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 12000,
+                "seqNo": 1,
+                "menuDescrtEng": "Black Bean Noodles & Fried Dumplings",
+                "menuDescrt": "자장면과 튀김만두",
+                "menuDescrtCN": "炸醬麵和炸餃子",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/564f5bb7ed644555b21fe809b86842b8.png"
+            },
+            {
+                "menuPrice": 13000,
+                "seqNo": 2,
+                "menuDescrtEng": "Spicy Noodles w/ Squid",
+                "menuDescrt": "오징어짬뽕",
+                "menuDescrtCN": "章魚炸醬麵",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/4f1774a599ec429ab626d32b61e75f0c.png"
+            },
+            {
+                "menuPrice": 14500,
+                "seqNo": 3,
+                "menuDescrtEng": "Grilled Chicken & Fried Rice",
+                "menuDescrt": "치킨구이와 중화볶음밥",
+                "menuDescrtCN": "烤雞和炒飯",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/17b7091706d349b9a2cef81256b4b60e.png"
+            },
+            {
+                "menuPrice": 18000,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "광동식 탕수육",
+                "menuDescrtCN": "廣東炒肉",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/de7f8c2345da405dba08d43547033c7e.png"
+            },
+            {
+                "menuPrice": 5800,
+                "seqNo": 5,
+                "menuDescrtEng": "Fried Dumpling(5Pcs.)",
+                "menuDescrt": "튀김만두(5입)",
+                "menuDescrtCN": "炸餃子（5個）",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/c958229a63cf42c18f2c9d893472041d.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/3116f027566a4209bfa08d883315d5e8.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/b9fe9d5f5a66407381857d4114252abe.jpg"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/739fec53448e44d4af4efb170ad9586f.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V02026",
         "faciltCateKindCd": "04",
         "faciltName": "모노브레드(굿프렌즈캐빈점)",
         "faciltNameEng": "MONO BREAD(Good Friends Cabin)",
-        "faciltNameCN": "Monobread（好朋友小屋店）",
+        "faciltNameCN": "單麵包 (好朋友艙)",
         "faciltDescrt": "이솝 동화 속 친구들과 즐겨보는 간식파티!\n 이곳으로 여행을 온 여러분들을 위한\n 다양한 간식 메뉴가 준비되어 있답니다.",
         "faciltDescrtEng": "-",
         "faciltDescrtCN": "和伊索寓言裡的朋友們一起享受一場小吃派對吧！\n\n這裡為遊客提供各種小吃。",
@@ -8901,7 +11195,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "분식#떡볶이#어묵#커피#아이스크림",
         "keywordDescrtEng": "####",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "小吃#年糕#魚糕#咖啡#冰淇淋",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -8943,14 +11237,61 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": [
+            {
+                "menuPrice": 6000,
+                "seqNo": 1,
+                "menuDescrtEng": "",
+                "menuDescrt": "컵 떡볶이",
+                "menuDescrtCN": "杯裝年糕",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/e82b7e415fef497e915ecab8749c8019.png"
+            },
+            {
+                "menuPrice": 6000,
+                "seqNo": 2,
+                "menuDescrtEng": "fish cake",
+                "menuDescrt": "컵 어묵 꼬치",
+                "menuDescrtCN": "杯裝魚糕",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/ef253047a51147ab8b7b5a46bf9d9dcc.png"
+            },
+            {
+                "menuPrice": 7000,
+                "seqNo": 3,
+                "menuDescrtEng": "milk ice cream",
+                "menuDescrt": "밀크 아이스크림",
+                "menuDescrtCN": "牛奶冰淇淋",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/169a12cba1ac43a8ad4d522ec237ae5a.png"
+            },
+            {
+                "menuPrice": 7000,
+                "seqNo": 4,
+                "menuDescrtEng": "",
+                "menuDescrt": "아이스 딸기 탕후루",
+                "menuDescrtCN": "草莓冰淇淋",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/7c05506e96044465b41080696eb561fe.png"
+            },
+            {
+                "menuPrice": 7500,
+                "seqNo": 5,
+                "menuDescrtEng": "",
+                "menuDescrt": "철판 군만두",
+                "menuDescrtCN": "鐵板煎餃子",
+                "menuImagUrl": "https://www.everland.com/contents/ia/facilities/58aaa499240c4d1180175d5f59717aa4.png"
+            }
+        ],
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/04714cc70bb64feb8bd862c2d43fdbeb.jpg"
+            }
+        ]
     },
     {
         "faciltId": "H100V05215",
         "faciltCateKindCd": "04",
         "faciltName": "Snow Peak Cafe & Dining",
         "faciltNameEng": "Snow Peak Cafe & Dining",
-        "faciltNameCN": "雪峰咖啡廳和餐廳",
+        "faciltNameCN": "雪峰咖啡館和餐廳",
         "faciltDescrt": "자연을 담은 Cafe & Dining, Snow Peak의 철학을 담다.\nSnow Peak Cafe & Dining은 자연의 아름다움과 그 속에서 진정성 있는 경험을 소중히 여기며 자연과 사람,\n미식이 조화를 이루는 특별한 공간입니다.\n\nCafe - 연중 무휴\nDining - 매장 문의 (0507-1348-6881)\n\n운영시간\n11:00~20:00(Last Order 19:00)",
         "faciltDescrtEng": "Snow Peak Cafe & Dining",
         "faciltDescrtCN": "體現 Snow Peak 理念的咖啡與餐飲體驗。\nSnow Peak 咖啡與餐飲珍惜大自然之美，提供道地的體驗，打造自然、人文與美食和諧共存的特別空間。\n\n咖啡 - 全年營業\n餐飲 - 諮詢電話：0507-1348-6881\n\n營業時間：\n上午 11:00 - 晚上 8:00（最後點餐時間：晚上 7:00）",
@@ -8967,7 +11308,7 @@
         "guardRidingYn": "",
         "keywordDescrt": "스노우 피크 카페",
         "keywordDescrtEng": "Snow Peak Cafe",
-        "keywordDescrtCN": null,
+        "keywordDescrtCN": "雪峰咖啡館",
         "heightLimitStartRange": "",
         "heightLimitEndRange": "",
         "weightLimitRange": "",
@@ -9009,7 +11350,22 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": [
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/34b46ea5de5745eaa91e7131a00a1f8c.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/1a05f5bb6c254897b59d6a32ac4c6559.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/824af639d1e74689a002bf686f33c34d.png"
+            },
+            {
+                "bannerImgUrl": "https://www.everland.com/contents/ia/facilities/11d9a65e16bc4a73a5c8b766e7e0841e.png"
+            }
+        ]
     },
     {
         "faciltId": "H100V01065",
@@ -9075,7 +11431,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99001",
@@ -9301,7 +11659,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05220",
@@ -9519,7 +11879,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99008",
@@ -9665,7 +12027,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99003",
@@ -9755,7 +12119,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99007",
@@ -9893,7 +12259,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99011",
@@ -9959,7 +12327,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01050",
@@ -10025,7 +12395,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99002",
@@ -10091,7 +12463,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99004",
@@ -10157,7 +12531,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99012",
@@ -10247,7 +12623,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99005",
@@ -10321,7 +12699,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99010",
@@ -10395,7 +12775,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99006",
@@ -10613,7 +12995,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V99009",
@@ -10703,7 +13087,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02030",
@@ -10809,7 +13195,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05237",
@@ -10875,7 +13263,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01067",
@@ -10941,7 +13331,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02029",
@@ -11007,7 +13399,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05213",
@@ -11073,7 +13467,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01061",
@@ -11139,7 +13535,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05218",
@@ -11205,7 +13603,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03037",
@@ -11271,7 +13671,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03008",
@@ -11337,7 +13739,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01062",
@@ -11403,7 +13807,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01005",
@@ -11469,7 +13875,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01001",
@@ -11535,7 +13943,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06005",
@@ -11601,7 +14011,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01046",
@@ -11667,7 +14079,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01033",
@@ -11733,7 +14147,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01003",
@@ -11799,7 +14215,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01004",
@@ -11865,7 +14283,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06006",
@@ -11931,7 +14351,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06007",
@@ -11997,7 +14419,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V06008",
@@ -12063,7 +14487,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05007",
@@ -12129,7 +14555,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05028",
@@ -12195,7 +14623,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03006",
@@ -12261,7 +14691,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05010",
@@ -12327,7 +14759,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05005",
@@ -12393,7 +14827,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01009",
@@ -12459,7 +14895,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01008",
@@ -12525,7 +14963,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01010",
@@ -12591,7 +15031,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01021",
@@ -12657,7 +15099,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01051",
@@ -12723,7 +15167,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01018",
@@ -12789,7 +15235,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V01047",
@@ -12855,7 +15303,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05079",
@@ -12921,7 +15371,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02016",
@@ -12987,7 +15439,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V05055",
@@ -13053,7 +15507,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03002",
@@ -13119,7 +15575,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V02017",
@@ -13185,7 +15643,9 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     },
     {
         "faciltId": "H100V03031",
@@ -13251,6 +15711,8 @@
         "animalPlayYn": "N",
         "rentYn": "N",
         "rentStatus": "",
-        "disabledRsvAble": "N"
+        "disabledRsvAble": "N",
+        "menuList": null,
+        "bannerImgUrl": null
     }
 ]
