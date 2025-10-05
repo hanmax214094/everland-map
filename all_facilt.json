@@ -1,5 +1,6 @@
 [
     {
+        "code": null,
         "faciltId": "H100V06093",
         "faciltCateKindCd": "01",
         "faciltName": "메모리 카니발",
@@ -68,6 +69,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05167",
         "faciltCateKindCd": "01",
         "faciltName": "호러메이즈",
@@ -136,6 +138,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05231",
         "faciltCateKindCd": "01",
         "faciltName": "레일 슬라이드",
@@ -204,6 +207,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06092",
         "faciltCateKindCd": "01",
         "faciltName": "판다 세컨하우스",
@@ -272,6 +276,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05014",
         "faciltCateKindCd": "01",
         "faciltName": "슈팅고스트 with BABY SHARK",
@@ -340,6 +345,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06084",
         "faciltCateKindCd": "01",
         "faciltName": "케이팝 데몬 헌터스",
@@ -408,6 +414,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05003",
         "faciltCateKindCd": "01",
         "faciltName": "T익스프레스",
@@ -476,6 +483,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06002",
         "faciltCateKindCd": "01",
         "faciltName": "판다월드",
@@ -544,6 +552,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06003",
         "faciltCateKindCd": "01",
         "faciltName": "사파리 월드",
@@ -612,6 +621,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06001",
         "faciltCateKindCd": "01",
         "faciltName": "로스트 밸리",
@@ -680,6 +690,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01052",
         "faciltCateKindCd": "01",
         "faciltName": "바오 하우스",
@@ -748,6 +759,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01066",
         "faciltCateKindCd": "01",
         "faciltName": "거품멍전",
@@ -816,6 +828,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06004",
         "faciltCateKindCd": "01",
         "faciltName": "아마존 익스프레스",
@@ -884,6 +897,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03003",
         "faciltCateKindCd": "01",
         "faciltName": "썬더폴스",
@@ -952,6 +966,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02010",
         "faciltCateKindCd": "01",
         "faciltName": "콜럼버스 대탐험",
@@ -1020,6 +1035,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02001",
         "faciltCateKindCd": "01",
         "faciltName": "더블 락스핀",
@@ -1088,6 +1104,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02007",
         "faciltCateKindCd": "01",
         "faciltName": "렛츠 트위스트",
@@ -1156,6 +1173,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02008",
         "faciltCateKindCd": "01",
         "faciltName": "롤링 엑스 트레인",
@@ -1224,6 +1242,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02002",
         "faciltCateKindCd": "01",
         "faciltName": "허리케인",
@@ -1292,6 +1311,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02009",
         "faciltCateKindCd": "01",
         "faciltName": "챔피온쉽 로데오",
@@ -1360,6 +1380,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03007",
         "faciltCateKindCd": "01",
         "faciltName": "매직 쿠키 하우스",
@@ -1428,6 +1449,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05015",
         "faciltCateKindCd": "01",
         "faciltName": "로얄 쥬빌리 캐로셀",
@@ -1496,6 +1518,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03009",
         "faciltCateKindCd": "01",
         "faciltName": "시크릿쥬쥬 비행기",
@@ -1564,6 +1587,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03010",
         "faciltCateKindCd": "01",
         "faciltName": "자동차 왕국",
@@ -1632,6 +1656,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03011",
         "faciltCateKindCd": "01",
         "faciltName": "플래쉬 팡팡",
@@ -1700,6 +1725,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03012",
         "faciltCateKindCd": "01",
         "faciltName": "피터팬",
@@ -1768,6 +1794,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03013",
         "faciltCateKindCd": "01",
         "faciltName": "나는 코끼리",
@@ -1836,6 +1863,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03014",
         "faciltCateKindCd": "01",
         "faciltName": "로보트카",
@@ -1904,6 +1932,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03015",
         "faciltCateKindCd": "01",
         "faciltName": "붕붕카",
@@ -1972,6 +2001,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03016",
         "faciltCateKindCd": "01",
         "faciltName": "범퍼카",
@@ -2040,6 +2070,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03017",
         "faciltCateKindCd": "01",
         "faciltName": "스카이 댄싱",
@@ -2108,6 +2139,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03018",
         "faciltCateKindCd": "01",
         "faciltName": "매직 스윙",
@@ -2176,6 +2208,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03019",
         "faciltCateKindCd": "01",
         "faciltName": "비룡열차",
@@ -2244,6 +2277,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03020",
         "faciltCateKindCd": "01",
         "faciltName": "우주 전투기",
@@ -2312,6 +2346,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03021",
         "faciltCateKindCd": "01",
         "faciltName": "스푸키 펀 하우스",
@@ -2380,6 +2415,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03024",
         "faciltCateKindCd": "01",
         "faciltName": "레이싱 코스터",
@@ -2448,6 +2484,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03023",
         "faciltCateKindCd": "01",
         "faciltName": "볼 하우스",
@@ -2516,6 +2553,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03025",
         "faciltCateKindCd": "01",
         "faciltName": "릴리댄스",
@@ -2584,6 +2622,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03022",
         "faciltCateKindCd": "01",
         "faciltName": "플라잉 레스큐",
@@ -2652,6 +2691,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03026",
         "faciltCateKindCd": "01",
         "faciltName": "플레이 야드",
@@ -2720,6 +2760,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05011",
         "faciltCateKindCd": "01",
         "faciltName": "페스티벌트레인",
@@ -2788,6 +2829,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05012",
         "faciltCateKindCd": "01",
         "faciltName": "스페이스투어(4D 어트랙션)",
@@ -2856,6 +2898,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05090",
         "faciltCateKindCd": "01",
         "faciltName": "레니의 마법학교",
@@ -2924,6 +2967,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05199",
         "faciltCateKindCd": "01",
         "faciltName": "알파인 카니발",
@@ -2992,6 +3036,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02028",
         "faciltCateKindCd": "01",
         "faciltName": "어드벤처 카니발",
@@ -3060,6 +3105,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03036",
         "faciltCateKindCd": "01",
         "faciltName": "게임피아",
@@ -3128,6 +3174,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02027",
         "faciltCateKindCd": "01",
         "faciltName": "게임어드벤처",
@@ -3196,6 +3243,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05198",
         "faciltCateKindCd": "01",
         "faciltName": "쥬빌리게임즈",
@@ -3264,6 +3312,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02013",
         "faciltCateKindCd": "01",
         "faciltName": "스카이 크루즈(상단)",
@@ -3332,6 +3381,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03029",
         "faciltCateKindCd": "01",
         "faciltName": "스카이 크루즈(하단)",
@@ -3400,6 +3450,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01015",
         "faciltCateKindCd": "01",
         "faciltName": "스카이 웨이(상단)",
@@ -3468,6 +3519,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05027",
         "faciltCateKindCd": "01",
         "faciltName": "스카이 웨이(하단)",
@@ -3536,6 +3588,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01016",
         "faciltCateKindCd": "01",
         "faciltName": "휴먼 스카이(상단)",
@@ -3604,6 +3657,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01017",
         "faciltCateKindCd": "01",
         "faciltName": "휴먼 스카이(하단)",
@@ -3672,6 +3726,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05245",
         "faciltCateKindCd": "02",
         "faciltName": "스마일리 펌킨 퍼레이드",
@@ -3746,6 +3801,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05246",
         "faciltCateKindCd": "02",
         "faciltName": "크레이지 좀비 헌트 in 오즈 : 도로시의 악몽",
@@ -3825,6 +3881,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05247",
         "faciltCateKindCd": "02",
         "faciltName": "공포의 오즈 포토타임",
@@ -3904,6 +3961,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05248",
         "faciltCateKindCd": "02",
         "faciltName": "오즈 워킹 포토타임",
@@ -3983,6 +4041,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05249",
         "faciltCateKindCd": "02",
         "faciltName": "오즈 댄싱 포토타임",
@@ -4062,6 +4121,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05185",
         "faciltCateKindCd": "02",
         "faciltName": "멀티미디어쇼 주크박스(Let's Dance)",
@@ -4136,6 +4196,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05030",
         "faciltCateKindCd": "02",
         "faciltName": "문라이트 퍼레이드",
@@ -4210,6 +4271,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05184",
         "faciltCateKindCd": "02",
         "faciltName": "서커스쇼, 레니의 컬러풀 드림 1회차",
@@ -4284,6 +4346,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05186",
         "faciltCateKindCd": "02",
         "faciltName": "서커스쇼, 레니의 컬러풀 드림 2회차",
@@ -4358,6 +4421,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05182",
         "faciltCateKindCd": "02",
         "faciltName": "홀랜드 빌리지 팝 밴드",
@@ -4442,6 +4506,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05053",
         "faciltCateKindCd": "02",
         "faciltName": "민속놀이 체험존",
@@ -4510,6 +4575,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05160",
         "faciltCateKindCd": "02",
         "faciltName": "레니&라라 한복 포토타임",
@@ -4589,6 +4655,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06080",
         "faciltCateKindCd": "03",
         "faciltName": "리버 트레일 어드벤처 (탑승장)",
@@ -4657,6 +4724,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06085",
         "faciltCateKindCd": "03",
         "faciltName": "씨라이언 빌리지",
@@ -4725,6 +4793,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06092",
         "faciltCateKindCd": "03",
         "faciltName": "판다 세컨하우스",
@@ -4793,6 +4862,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06002",
         "faciltCateKindCd": "03",
         "faciltName": "판다월드",
@@ -4861,6 +4931,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06003",
         "faciltCateKindCd": "03",
         "faciltName": "사파리 월드",
@@ -4929,6 +5000,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06001",
         "faciltCateKindCd": "03",
         "faciltName": "로스트 밸리",
@@ -4997,6 +5069,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01052",
         "faciltCateKindCd": "03",
         "faciltName": "바오 하우스",
@@ -5065,6 +5138,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06021",
         "faciltCateKindCd": "03",
         "faciltName": "타이거밸리",
@@ -5133,6 +5207,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06051",
         "faciltCateKindCd": "03",
         "faciltName": "뿌빠타운",
@@ -5201,6 +5276,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06047",
         "faciltCateKindCd": "03",
         "faciltName": "펭귄 아일랜드",
@@ -5269,6 +5345,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06041",
         "faciltCateKindCd": "03",
         "faciltName": "버드 파라다이스",
@@ -5337,6 +5414,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06063",
         "faciltCateKindCd": "03",
         "faciltName": "알버트 스페이스 센터",
@@ -5405,6 +5483,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06045",
         "faciltCateKindCd": "03",
         "faciltName": "패럿 하우스",
@@ -5473,6 +5552,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06044",
         "faciltCateKindCd": "03",
         "faciltName": "물범과 바다사자",
@@ -5541,6 +5621,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06023",
         "faciltCateKindCd": "03",
         "faciltName": "판타스틱 윙스",
@@ -5620,6 +5701,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06061",
         "faciltCateKindCd": "03",
         "faciltName": "슈퍼윙스 애니멀톡",
@@ -5709,6 +5791,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06027",
         "faciltCateKindCd": "03",
         "faciltName": "타이거 밸리 애니멀톡",
@@ -5783,6 +5866,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06048",
         "faciltCateKindCd": "03",
         "faciltName": "펭귄 애니멀톡",
@@ -5857,6 +5941,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06053",
         "faciltCateKindCd": "03",
         "faciltName": "뿌빠 카피바라 애니멀톡",
@@ -5931,6 +6016,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06052",
         "faciltCateKindCd": "03",
         "faciltName": "뿌빠 나무늘보 애니멀톡",
@@ -5999,6 +6085,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06083",
         "faciltCateKindCd": "03",
         "faciltName": "버드토피아 애니멀톡",
@@ -6067,6 +6154,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06034",
         "faciltCateKindCd": "03",
         "faciltName": "알버트 라이브 톡",
@@ -6146,6 +6234,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06077",
         "faciltCateKindCd": "03",
         "faciltName": "패럿 애니멀톡",
@@ -6220,6 +6309,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06082",
         "faciltCateKindCd": "03",
         "faciltName": "뿌빠 라쿤 애니멀톡",
@@ -6288,6 +6378,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": "185",
         "faciltId": "H100V05024",
         "faciltCateKindCd": "04",
         "faciltName": "스낵 버스터",
@@ -6410,6 +6501,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V06094",
         "faciltCateKindCd": "04",
         "faciltName": "푸드트레일러(메모리 카니발)",
@@ -6523,6 +6615,7 @@
         ]
     },
     {
+        "code": "187",
         "faciltId": "H100V05026",
         "faciltCateKindCd": "04",
         "faciltName": "알파인 레스토랑",
@@ -6642,6 +6735,7 @@
         ]
     },
     {
+        "code": "177",
         "faciltId": "H100V05087",
         "faciltCateKindCd": "04",
         "faciltName": "쿠치나 마리오",
@@ -6764,6 +6858,7 @@
         ]
     },
     {
+        "code": "183",
         "faciltId": "H100V05023",
         "faciltCateKindCd": "04",
         "faciltName": "한가람",
@@ -6867,6 +6962,7 @@
         ]
     },
     {
+        "code": "70",
         "faciltId": "H100V02025",
         "faciltCateKindCd": "04",
         "faciltName": "CGV 팝콘팩토리",
@@ -6980,6 +7076,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V06091",
         "faciltCateKindCd": "04",
         "faciltName": "팝콘(사파리)",
@@ -7093,6 +7190,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V01064",
         "faciltCateKindCd": "04",
         "faciltName": "팝콘(오리엔탈)",
@@ -7206,6 +7304,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V03039",
         "faciltCateKindCd": "04",
         "faciltName": "팝콘(분수대)",
@@ -7319,6 +7418,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V05217",
         "faciltCateKindCd": "04",
         "faciltName": "슬로우야드 바베큐",
@@ -7435,6 +7535,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V05219",
         "faciltCateKindCd": "04",
         "faciltName": "테라로사",
@@ -7546,6 +7647,7 @@
         ]
     },
     {
+        "code": "233",
         "faciltId": "H100V06076",
         "faciltCateKindCd": "04",
         "faciltName": "판다월드 카페",
@@ -7665,6 +7767,7 @@
         ]
     },
     {
+        "code": "178",
         "faciltId": "H100V05019",
         "faciltCateKindCd": "04",
         "faciltName": "홀랜드 빌리지",
@@ -7787,6 +7890,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V06086",
         "faciltCateKindCd": "04",
         "faciltName": "茶百道 차백도",
@@ -7903,6 +8007,7 @@
         ]
     },
     {
+        "code": "137",
         "faciltId": "H100V03028",
         "faciltCateKindCd": "04",
         "faciltName": "타운즈 마켓 레스토랑",
@@ -8025,6 +8130,7 @@
         ]
     },
     {
+        "code": "176",
         "faciltId": "H100V05016",
         "faciltCateKindCd": "04",
         "faciltName": "가든 테라스",
@@ -8147,6 +8253,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V05017",
         "faciltCateKindCd": "04",
         "faciltName": "가든 테라스(카페)",
@@ -8263,6 +8370,7 @@
         ]
     },
     {
+        "code": "184",
         "faciltId": "H100V05022",
         "faciltCateKindCd": "04",
         "faciltName": "매직타임 레스토랑",
@@ -8377,6 +8485,7 @@
         ]
     },
     {
+        "code": "186",
         "faciltId": "H100V05025",
         "faciltCateKindCd": "04",
         "faciltName": "알프스 쿠체",
@@ -8496,6 +8605,7 @@
         ]
     },
     {
+        "code": "24",
         "faciltId": "H100V01012",
         "faciltCateKindCd": "04",
         "faciltName": "오리엔탈 스테이션",
@@ -8615,6 +8725,7 @@
         ]
     },
     {
+        "code": "227",
         "faciltId": "H100V06016",
         "faciltCateKindCd": "04",
         "faciltName": "카페 정글캠프",
@@ -8734,6 +8845,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V02031",
         "faciltCateKindCd": "04",
         "faciltName": "이레컴퍼니(허리케인점)",
@@ -8847,6 +8959,7 @@
         ]
     },
     {
+        "code": "194",
         "faciltId": "H100V05133",
         "faciltCateKindCd": "04",
         "faciltName": "포메인",
@@ -8963,6 +9076,7 @@
         ]
     },
     {
+        "code": "182",
         "faciltId": "H100V05021",
         "faciltCateKindCd": "04",
         "faciltName": "버거카페 유럽",
@@ -9082,6 +9196,7 @@
         ]
     },
     {
+        "code": "68",
         "faciltId": "H100V02012",
         "faciltCateKindCd": "04",
         "faciltName": "버거카페 아메리카",
@@ -9198,6 +9313,7 @@
         ]
     },
     {
+        "code": "69",
         "faciltId": "H100V02011",
         "faciltCateKindCd": "04",
         "faciltName": "KFC",
@@ -9314,6 +9430,7 @@
         ]
     },
     {
+        "code": "25",
         "faciltId": "H100V01028",
         "faciltCateKindCd": "04",
         "faciltName": "스타벅스",
@@ -9433,6 +9550,7 @@
         ]
     },
     {
+        "code": "197",
         "faciltId": "H100V05111",
         "faciltCateKindCd": "04",
         "faciltName": "커피빈",
@@ -9552,6 +9670,7 @@
         ]
     },
     {
+        "code": "23",
         "faciltId": "H100V01034",
         "faciltCateKindCd": "04",
         "faciltName": "라운지엑스",
@@ -9671,6 +9790,7 @@
         ]
     },
     {
+        "code": "67",
         "faciltId": "H100V02014",
         "faciltCateKindCd": "04",
         "faciltName": "뉴욕 센트럴 스낵",
@@ -9784,6 +9904,7 @@
         ]
     },
     {
+        "code": "139",
         "faciltId": "H100V03030",
         "faciltCateKindCd": "04",
         "faciltName": "멀린스 스낵",
@@ -9897,6 +10018,7 @@
         ]
     },
     {
+        "code": "228",
         "faciltId": "H100V06025",
         "faciltCateKindCd": "04",
         "faciltName": "아마존 스낵",
@@ -10002,6 +10124,7 @@
         ]
     },
     {
+        "code": "20",
         "faciltId": "H100V01042",
         "faciltCateKindCd": "04",
         "faciltName": "한와담 소반",
@@ -10121,6 +10244,7 @@
         ]
     },
     {
+        "code": "19",
         "faciltId": "H100V01041",
         "faciltCateKindCd": "04",
         "faciltName": "온더보더",
@@ -10240,6 +10364,7 @@
         ]
     },
     {
+        "code": "17",
         "faciltId": "H100V01043",
         "faciltCateKindCd": "04",
         "faciltName": "크리스탈 제이드",
@@ -10356,6 +10481,7 @@
         ]
     },
     {
+        "code": "6",
         "faciltId": "H100V01045",
         "faciltCateKindCd": "04",
         "faciltName": "PIZZA IL FORNO",
@@ -10475,6 +10601,7 @@
         ]
     },
     {
+        "code": "3",
         "faciltId": "H100V01044",
         "faciltCateKindCd": "04",
         "faciltName": "폴바셋 에버랜드점",
@@ -10591,6 +10718,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V05236",
         "faciltCateKindCd": "04",
         "faciltName": "요거트월드 에버랜드점",
@@ -10707,6 +10835,7 @@
         ]
     },
     {
+        "code": "230",
         "faciltId": "H100V05177",
         "faciltCateKindCd": "04",
         "faciltName": "55츄 (라피아자)",
@@ -10826,6 +10955,7 @@
         ]
     },
     {
+        "code": "188",
         "faciltId": "H100V05178",
         "faciltCateKindCd": "04",
         "faciltName": "앤티앤스 (라피아자)",
@@ -10942,6 +11072,7 @@
         ]
     },
     {
+        "code": "189",
         "faciltId": "H100V05180",
         "faciltCateKindCd": "04",
         "faciltName": "BBQ",
@@ -11055,6 +11186,7 @@
         ]
     },
     {
+        "code": "180",
         "faciltId": "H100V05020",
         "faciltCateKindCd": "04",
         "faciltName": "차이나문",
@@ -11174,6 +11306,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V02026",
         "faciltCateKindCd": "04",
         "faciltName": "모노브레드(굿프렌즈캐빈점)",
@@ -11287,6 +11420,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V05215",
         "faciltCateKindCd": "04",
         "faciltName": "Snow Peak Cafe & Dining",
@@ -11368,6 +11502,7 @@
         ]
     },
     {
+        "code": null,
         "faciltId": "H100V01065",
         "faciltCateKindCd": "05",
         "faciltName": "정기권 서비스센터",
@@ -11436,6 +11571,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99001",
         "faciltCateKindCd": "05",
         "faciltName": "화장실",
@@ -11664,6 +11800,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05220",
         "faciltCateKindCd": "05",
         "faciltName": "장애인화장실",
@@ -11884,6 +12021,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99008",
         "faciltCateKindCd": "05",
         "faciltName": "휴대폰충전기",
@@ -12032,6 +12170,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99003",
         "faciltCateKindCd": "05",
         "faciltName": "베이비 서비스",
@@ -12124,6 +12263,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99007",
         "faciltCateKindCd": "05",
         "faciltName": "보관함",
@@ -12264,6 +12404,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99011",
         "faciltCateKindCd": "05",
         "faciltName": "피크닉에어리어",
@@ -12332,6 +12473,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01050",
         "faciltCateKindCd": "05",
         "faciltName": "매표소",
@@ -12400,6 +12542,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99002",
         "faciltCateKindCd": "05",
         "faciltName": "인포메이션",
@@ -12468,6 +12611,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99004",
         "faciltCateKindCd": "05",
         "faciltName": "유모차/웨건/휠체어 대여",
@@ -12536,6 +12680,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99012",
         "faciltCateKindCd": "05",
         "faciltName": "흡연구역",
@@ -12628,6 +12773,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99005",
         "faciltCateKindCd": "05",
         "faciltName": "의무실",
@@ -12704,6 +12850,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99010",
         "faciltCateKindCd": "05",
         "faciltName": "미아, 분실물 찾기",
@@ -12780,6 +12927,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99006",
         "faciltCateKindCd": "05",
         "faciltName": "AED",
@@ -13000,6 +13148,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V99009",
         "faciltCateKindCd": "05",
         "faciltName": "현금인출기",
@@ -13092,6 +13241,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02030",
         "faciltCateKindCd": "05",
         "faciltName": "미니멜츠 구슬아이스크림 자판기",
@@ -13200,6 +13350,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05237",
         "faciltCateKindCd": "05",
         "faciltName": "홈브리지 입구",
@@ -13268,6 +13419,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01067",
         "faciltCateKindCd": "05",
         "faciltName": "정문 유료 주차장",
@@ -13336,6 +13488,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02029",
         "faciltCateKindCd": "05",
         "faciltName": "하늘정원길 가든패스 라운지",
@@ -13404,6 +13557,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05213",
         "faciltCateKindCd": "05",
         "faciltName": "장미원 가든패스 라운지",
@@ -13472,6 +13626,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01061",
         "faciltCateKindCd": "05",
         "faciltName": "가든패스 서비스센터",
@@ -13540,6 +13695,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05218",
         "faciltCateKindCd": "05",
         "faciltName": "로즈가든 쉘터",
@@ -13608,6 +13764,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03037",
         "faciltCateKindCd": "05",
         "faciltName": "글램핑힐",
@@ -13676,6 +13833,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03008",
         "faciltCateKindCd": "06",
         "faciltName": "이솝기프트",
@@ -13744,6 +13902,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01062",
         "faciltCateKindCd": "06",
         "faciltName": "가챠샵",
@@ -13812,6 +13971,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01005",
         "faciltCateKindCd": "06",
         "faciltName": "그랜드엠포리엄",
@@ -13880,6 +14040,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01001",
         "faciltCateKindCd": "06",
         "faciltName": "라시언메모리엄",
@@ -13948,6 +14109,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06005",
         "faciltCateKindCd": "06",
         "faciltName": "판다월드샵",
@@ -14016,6 +14178,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01046",
         "faciltCateKindCd": "06",
         "faciltName": "빅토리아 레고샵",
@@ -14084,6 +14247,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01033",
         "faciltCateKindCd": "06",
         "faciltName": "마하라자샵(인생네컷)",
@@ -14152,6 +14316,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01003",
         "faciltCateKindCd": "06",
         "faciltName": "매직기프트 (탑텐키즈/티니핑)",
@@ -14220,6 +14385,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01004",
         "faciltCateKindCd": "06",
         "faciltName": "캔디 & 쿠키",
@@ -14288,6 +14454,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06006",
         "faciltCateKindCd": "06",
         "faciltName": "로스트밸리기프트",
@@ -14356,6 +14523,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06007",
         "faciltCateKindCd": "06",
         "faciltName": "아마존샵",
@@ -14424,6 +14592,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V06008",
         "faciltCateKindCd": "06",
         "faciltName": "사파리기프트",
@@ -14492,6 +14661,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05007",
         "faciltCateKindCd": "06",
         "faciltName": "알프스샵",
@@ -14560,6 +14730,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05028",
         "faciltCateKindCd": "06",
         "faciltName": "스카이웨이 기프트",
@@ -14628,6 +14799,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03006",
         "faciltCateKindCd": "06",
         "faciltName": "로즈기프트",
@@ -14696,6 +14868,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05010",
         "faciltCateKindCd": "06",
         "faciltName": "메모리얼샵",
@@ -14764,6 +14937,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05005",
         "faciltCateKindCd": "06",
         "faciltName": "에델바이스",
@@ -14832,6 +15006,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01009",
         "faciltCateKindCd": "06",
         "faciltName": "타워포토",
@@ -14900,6 +15075,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01008",
         "faciltCateKindCd": "06",
         "faciltName": "에잇세컨즈",
@@ -14968,6 +15144,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01010",
         "faciltCateKindCd": "06",
         "faciltName": "올리브영",
@@ -15036,6 +15213,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01021",
         "faciltCateKindCd": "06",
         "faciltName": "에버핏 (브랜드의류 종합매장)",
@@ -15104,6 +15282,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01051",
         "faciltCateKindCd": "06",
         "faciltName": "스노우피크 스토어",
@@ -15172,6 +15351,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01018",
         "faciltCateKindCd": "06",
         "faciltName": "정문 CU편의점",
@@ -15240,6 +15420,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V01047",
         "faciltCateKindCd": "06",
         "faciltName": "감성교복",
@@ -15308,6 +15489,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05079",
         "faciltCateKindCd": "07",
         "faciltName": "장미원",
@@ -15376,6 +15558,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02016",
         "faciltCateKindCd": "07",
         "faciltName": "하늘정원길",
@@ -15444,6 +15627,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V05055",
         "faciltCateKindCd": "07",
         "faciltName": "포시즌스 가든",
@@ -15512,6 +15696,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03002",
         "faciltCateKindCd": "07",
         "faciltName": "뮤직가든",
@@ -15580,6 +15765,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V02017",
         "faciltCateKindCd": "07",
         "faciltName": "장미원학습장",
@@ -15648,6 +15834,7 @@
         "bannerImgUrl": null
     },
     {
+        "code": null,
         "faciltId": "H100V03031",
         "faciltCateKindCd": "07",
         "faciltName": "이솝학습장",
