@@ -291,9 +291,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const category = zoneMap[facilt.zoneKindCd] || '其他 (Others)';
             if (!groupedByCategory[category]) groupedByCategory[category] = {};
             const name = `${facilt.faciltNameCN}/${facilt.faciltNameEng} (${facilt.faciltName})`;
-            // const name = facilt.faciltNameCN || `${facilt.faciltNameEng} (${facilt.faciltName})`;
             if (!groupedByCategory[category][name]) {
-                groupedByCategory[category][name] = { name, locations: [] };
+                groupedByCategory[category][name] = {
+                    name,
+                    locations: [],
+                    isRestaurant: facilt.faciltCateKindCd === '04'
+                };
+            } else if (facilt.faciltCateKindCd === '04') {
+                groupedByCategory[category][name].isRestaurant = true;
             }
             facilt.locList.forEach(loc => {
                 groupedByCategory[category][name].locations.push({
@@ -333,12 +338,13 @@ document.addEventListener('DOMContentLoaded', () => {
             ul.setAttribute('role', 'list');
             ul.setAttribute('aria-hidden', 'false');
 
-            categorizedFacilities[category].forEach(facilt => {
+            const createFacilityListItem = (facilt) => {
                 const li = document.createElement('li');
                 li.textContent = facilt.name;
                 li.setAttribute('role', 'listitem');
                 li.setAttribute('tabindex', '0');
                 li.dataset.name = facilt.name;
+                li.dataset.fullName = facilt.name;
                 if (zoneClass) li.classList.add(zoneClass);
                 if (facilt.locations.length > 1) {
                     li.classList.add('has-sublist');
@@ -364,8 +370,40 @@ document.addEventListener('DOMContentLoaded', () => {
                     li.setAttribute('data-lat', facilt.locations[0].coords[0]);
                     li.setAttribute('data-lng', facilt.locations[0].coords[1]);
                 }
-                ul.appendChild(li);
+                return li;
+            };
+
+            const facilities = categorizedFacilities[category];
+            const restaurantFacilities = facilities.filter(facilt => facilt.isRestaurant);
+            const otherFacilities = facilities.filter(facilt => !facilt.isRestaurant);
+
+            if (restaurantFacilities.length > 0) {
+                const restaurantLi = document.createElement('li');
+                restaurantLi.textContent = '餐廳';
+                restaurantLi.classList.add('has-sublist', 'restaurant-group');
+                restaurantLi.setAttribute('role', 'listitem');
+                restaurantLi.setAttribute('tabindex', '0');
+                restaurantLi.setAttribute('aria-expanded', 'false');
+                restaurantLi.dataset.name = '餐廳';
+                if (zoneClass) restaurantLi.classList.add(zoneClass);
+
+                const restaurantSubUl = document.createElement('ul');
+                restaurantSubUl.classList.add('sub-list', 'collapsed');
+                restaurantSubUl.setAttribute('role', 'list');
+                restaurantSubUl.setAttribute('aria-hidden', 'true');
+
+                restaurantFacilities.forEach(facilt => {
+                    restaurantSubUl.appendChild(createFacilityListItem(facilt));
+                });
+
+                restaurantLi.appendChild(restaurantSubUl);
+                ul.appendChild(restaurantLi);
+            }
+
+            otherFacilities.forEach(facilt => {
+                ul.appendChild(createFacilityListItem(facilt));
             });
+
             listContent.appendChild(categoryHeader);
             listContent.appendChild(ul);
         });
@@ -494,7 +532,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const targetLi = e.target.closest('li');
         if (!targetLi) return;
-        if (targetLi.classList.contains('has-sublist') && e.target.closest('.sub-list') === null) {
+        if (targetLi.classList.contains('has-sublist')) {
             targetLi.classList.toggle('expanded');
             const sublist = targetLi.querySelector('.sub-list');
             if (sublist) {
