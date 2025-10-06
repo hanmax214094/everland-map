@@ -241,7 +241,7 @@
                     type="button"
                     class="menu-modal__close"
                     aria-label="關閉菜單視窗"
-                    @click="closeMenu()"
+                    @click.stop="closeMenu()"
                     @keydown.enter.prevent="closeMenu()"
                     @keydown.space.prevent="closeMenu()"
                     ref="menuCloseRef"
