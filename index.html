@@ -237,7 +237,18 @@
             @click.self="closeMenu()"
         >
             <div class="menu-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="menu-modal-title">
-                <button type="button" class="menu-modal__close" aria-label="關閉菜單視窗" @click="closeMenu" ref="menuCloseRef">&times;</button>
+                <button
+                    type="button"
+                    class="menu-modal__close"
+                    aria-label="關閉菜單視窗"
+                    @click="closeMenu()"
+                    @keydown.enter.prevent="closeMenu()"
+                    @keydown.space.prevent="closeMenu()"
+                    ref="menuCloseRef"
+                >
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">關閉菜單視窗</span>
+                </button>
                 <div class="menu-modal__header">
                     <p class="menu-modal__subtitle">餐點菜單</p>
                     <h2 id="menu-modal-title" class="menu-modal__title">{{ activeMenuFacility?.name || '' }}</h2>
