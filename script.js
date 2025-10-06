@@ -198,11 +198,36 @@ createApp({
                     const facilitiesList = Object.values(grouped[categoryName]).sort((a, b) =>
                         a.name.localeCompare(b.name, 'zh-Hant')
                     );
+
+                    const restaurantFacilities = facilitiesList.filter(facility => facility.isRestaurant);
+                    const otherFacilities = facilitiesList.filter(facility => !facility.isRestaurant);
+                    const facilitiesWithGrouping = [];
+
+                    if (restaurantFacilities.length > 0) {
+                        facilitiesWithGrouping.push({
+                            id: `category-${categoryName}-restaurants`,
+                            name: '餐廳',
+                            nameLower: '餐廳',
+                            isGroup: true,
+                            hasMenu: false,
+                            menuList: [],
+                            locations: [],
+                            visibleLocations: [],
+                            visible: true,
+                            showSublist: false,
+                            zoneClass: zoneClassMap[categoryName] || '',
+                            childFacilities: restaurantFacilities,
+                            visibleChildFacilities: restaurantFacilities
+                        });
+                    }
+
+                    facilitiesWithGrouping.push(...otherFacilities);
+
                     return {
                         name: categoryName,
                         zoneClass: zoneClassMap[categoryName] || '',
-                        facilities: facilitiesList,
-                        visibleFacilities: facilitiesList,
+                        facilities: facilitiesWithGrouping,
+                        visibleFacilities: facilitiesWithGrouping,
                         visible: true,
                         isCollapsed: false
                     };
@@ -224,27 +249,65 @@ createApp({
             state.categories.forEach(category => {
                 let hasVisibleFacility = false;
                 category.facilities.forEach(facility => {
-                    const nameMatch = facility.nameLower.includes(term);
-                    let locationMatch = false;
+                    if (facility.isGroup) {
+                        let hasVisibleChild = false;
 
-                    facility.locations.forEach(location => {
-                        const locationMatches = term ? location.fullNameLower.includes(term) : true;
-                        location.visible = locationMatches;
-                        if (locationMatches && term) {
-                            locationMatch = true;
+                        facility.childFacilities.forEach(childFacility => {
+                            const childNameMatch = childFacility.nameLower.includes(term);
+                            let childLocationMatch = false;
+
+                            childFacility.locations.forEach(location => {
+                                const locationMatches = term ? location.fullNameLower.includes(term) : true;
+                                location.visible = locationMatches;
+                                if (locationMatches && term) {
+                                    childLocationMatch = true;
+                                }
+                            });
+
+                            childFacility.visible = term ? (childNameMatch || childLocationMatch) : true;
+                            childFacility.visibleLocations = childFacility.locations.filter(loc => loc.visible);
+
+                            if (term && childLocationMatch) {
+                                childFacility.showSublist = true;
+                            } else if (!term && childFacility.locations.length <= 1) {
+                                childFacility.showSublist = false;
+                            }
+
+                            hasVisibleChild = hasVisibleChild || childFacility.visible;
+                        });
+
+                        facility.visibleChildFacilities = facility.childFacilities.filter(child => child.visible);
+                        facility.visible = facility.visibleChildFacilities.length > 0;
+                        if (!facility.visible) {
+                            facility.showSublist = false;
+                        } else if (term) {
+                            facility.showSublist = true;
                         }
-                    });
 
-                    facility.visible = term ? (nameMatch || locationMatch) : true;
-                    facility.visibleLocations = facility.locations.filter(loc => loc.visible);
+                        hasVisibleFacility = hasVisibleFacility || facility.visible;
+                    } else {
+                        const nameMatch = facility.nameLower.includes(term);
+                        let locationMatch = false;
 
-                    if (term && locationMatch) {
-                        facility.showSublist = true;
-                    } else if (!term && facility.locations.length <= 1) {
-                        facility.showSublist = false;
+                        facility.locations.forEach(location => {
+                            const locationMatches = term ? location.fullNameLower.includes(term) : true;
+                            location.visible = locationMatches;
+                            if (locationMatches && term) {
+                                locationMatch = true;
+                            }
+                        });
+
+                        facility.visible = term ? (nameMatch || locationMatch) : true;
+                        facility.visibleLocations = facility.locations.filter(loc => loc.visible);
+
+                        if (term && locationMatch) {
+                            facility.showSublist = true;
+                        } else if (!term && facility.locations.length <= 1) {
+                            facility.showSublist = false;
+                        }
+
+                        hasVisibleFacility = hasVisibleFacility || facility.visible;
                     }
-
-                    hasVisibleFacility = hasVisibleFacility || facility.visible;
                 });
 
                 category.visibleFacilities = category.facilities.filter(fac => fac.visible);
@@ -284,6 +347,11 @@ createApp({
         };
 
         const handleFacilityClick = (facility) => {
+            if (facility.isGroup) {
+                facility.showSublist = !facility.showSublist;
+                return;
+            }
+
             if (facility.locations.length > 1) {
                 facility.showSublist = !facility.showSublist;
                 state.activeFacilityId = facility.id;
@@ -296,6 +364,24 @@ createApp({
 
         const handleFacilityKey = (facility) => {
             handleFacilityClick(facility);
+        };
+
+        const handleNestedFacilityClick = (group, facility) => {
+            if (facility.locations.length > 1) {
+                facility.showSublist = !facility.showSublist;
+                state.activeFacilityId = facility.id;
+                state.activeLocationId = null;
+                if (!group.showSublist) {
+                    group.showSublist = true;
+                }
+                return;
+            }
+            const location = facility.visibleLocations[0] || facility.locations[0];
+            focusLocation(facility, location);
+        };
+
+        const handleNestedFacilityKey = (group, facility) => {
+            handleNestedFacilityClick(group, facility);
         };
 
         const openMenu = (facility) => {
@@ -564,6 +650,8 @@ createApp({
             },
             handleFacilityClick,
             handleFacilityKey,
+            handleNestedFacilityClick,
+            handleNestedFacilityKey,
             focusLocation,
             openMenu,
             closeMenu,

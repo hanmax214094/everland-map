@@ -85,33 +85,26 @@
                                 :class="[
                                     facility.zoneClass,
                                     {
-                                        'has-menu': facility.hasMenu,
-                                        'has-sublist': facility.locations.length > 1,
+                                        'has-menu': facility.hasMenu && !facility.isGroup,
+                                        'has-sublist': facility.isGroup || facility.locations.length > 1,
                                         expanded: facility.showSublist,
-                                        'is-active': activeFacilityId === facility.id
+                                        'is-active': facility.isGroup
+                                            ? facility.childFacilities.some(child => child.id === activeFacilityId)
+                                            : activeFacilityId === facility.id
                                     }
                                 ]"
                                 role="listitem"
                                 tabindex="0"
                                 :data-name="facility.name"
+                                :aria-expanded="(facility.isGroup || facility.locations.length > 1) ? facility.showSublist.toString() : undefined"
                                 @click="handleFacilityClick(facility)"
                                 @keydown.enter.prevent="handleFacilityKey(facility)"
                                 @keydown.space.prevent="handleFacilityKey(facility)"
                             >
-                                <div class="facility-item-row">
-                                    <button
-                                        v-if="facility.hasMenu"
-                                        type="button"
-                                        class="menu-trigger"
-                                        :aria-label="`查看${facility.name}菜單`"
-                                        title="查看菜單"
-                                        @click.stop="openMenu(facility)"
-                                    >
-                                        <span class="sr-only">查看菜單</span>
-                                    </button>
-                                    <span class="facility-item-name">{{ facility.name }}</span>
-                                </div>
-                                <template v-if="facility.locations.length > 1">
+                                <template v-if="facility.isGroup">
+                                    <div class="facility-item-row">
+                                        <span class="facility-item-name">{{ facility.name }}</span>
+                                    </div>
                                     <ul
                                         class="sub-list"
                                         :class="{ collapsed: !facility.showSublist }"
@@ -119,19 +112,99 @@
                                         :aria-hidden="(!facility.showSublist).toString()"
                                     >
                                         <li
-                                            v-for="(location, index) in facility.visibleLocations"
-                                            :key="location.id"
-                                            :data-lat="location.lat"
-                                            :data-lng="location.lng"
-                                            :data-parent-name="facility.name"
-                                            :class="{ 'is-active': activeLocationId === location.id }"
+                                            v-for="childFacility in facility.visibleChildFacilities"
+                                            :key="childFacility.id"
+                                            :class="[
+                                                childFacility.zoneClass,
+                                                {
+                                                    'has-menu': childFacility.hasMenu,
+                                                    'has-sublist': childFacility.locations.length > 1,
+                                                    expanded: childFacility.showSublist,
+                                                    'is-active': activeFacilityId === childFacility.id
+                                                }
+                                            ]"
                                             role="listitem"
                                             tabindex="0"
-                                            @click.stop="focusLocation(facility, location)"
-                                            @keydown.enter.prevent="focusLocation(facility, location)"
-                                            @keydown.space.prevent="focusLocation(facility, location)"
-                                        >{{ location.label }}</li>
+                                            :data-name="childFacility.name"
+                                            :aria-expanded="childFacility.locations.length > 1 ? childFacility.showSublist.toString() : undefined"
+                                            @click.stop="handleNestedFacilityClick(facility, childFacility)"
+                                            @keydown.enter.prevent="handleNestedFacilityKey(facility, childFacility)"
+                                            @keydown.space.prevent="handleNestedFacilityKey(facility, childFacility)"
+                                        >
+                                            <div class="facility-item-row">
+                                                <button
+                                                    v-if="childFacility.hasMenu"
+                                                    type="button"
+                                                    class="menu-trigger"
+                                                    :aria-label="`查看${childFacility.name}菜單`"
+                                                    title="查看菜單"
+                                                    @click.stop="openMenu(childFacility)"
+                                                >
+                                                    <span class="sr-only">查看菜單</span>
+                                                </button>
+                                                <span class="facility-item-name">{{ childFacility.name }}</span>
+                                            </div>
+                                            <template v-if="childFacility.locations.length > 1">
+                                                <ul
+                                                    class="sub-list"
+                                                    :class="{ collapsed: !childFacility.showSublist }"
+                                                    role="list"
+                                                    :aria-hidden="(!childFacility.showSublist).toString()"
+                                                >
+                                                    <li
+                                                        v-for="location in childFacility.visibleLocations"
+                                                        :key="location.id"
+                                                        :data-lat="location.lat"
+                                                        :data-lng="location.lng"
+                                                        :data-parent-name="childFacility.name"
+                                                        :class="{ 'is-active': activeLocationId === location.id }"
+                                                        role="listitem"
+                                                        tabindex="0"
+                                                        @click.stop="focusLocation(childFacility, location)"
+                                                        @keydown.enter.prevent="focusLocation(childFacility, location)"
+                                                        @keydown.space.prevent="focusLocation(childFacility, location)"
+                                                    >{{ location.label }}</li>
+                                                </ul>
+                                            </template>
+                                        </li>
                                     </ul>
+                                </template>
+                                <template v-else>
+                                    <div class="facility-item-row">
+                                        <button
+                                            v-if="facility.hasMenu"
+                                            type="button"
+                                            class="menu-trigger"
+                                            :aria-label="`查看${facility.name}菜單`"
+                                            title="查看菜單"
+                                            @click.stop="openMenu(facility)"
+                                        >
+                                            <span class="sr-only">查看菜單</span>
+                                        </button>
+                                        <span class="facility-item-name">{{ facility.name }}</span>
+                                    </div>
+                                    <template v-if="facility.locations.length > 1">
+                                        <ul
+                                            class="sub-list"
+                                            :class="{ collapsed: !facility.showSublist }"
+                                            role="list"
+                                            :aria-hidden="(!facility.showSublist).toString()"
+                                        >
+                                            <li
+                                                v-for="(location, index) in facility.visibleLocations"
+                                                :key="location.id"
+                                                :data-lat="location.lat"
+                                                :data-lng="location.lng"
+                                                :data-parent-name="facility.name"
+                                                :class="{ 'is-active': activeLocationId === location.id }"
+                                                role="listitem"
+                                                tabindex="0"
+                                                @click.stop="focusLocation(facility, location)"
+                                                @keydown.enter.prevent="focusLocation(facility, location)"
+                                                @keydown.space.prevent="focusLocation(facility, location)"
+                                            >{{ location.label }}</li>
+                                        </ul>
+                                    </template>
                                 </template>
                             </li>
                         </ul>
