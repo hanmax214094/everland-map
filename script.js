@@ -113,13 +113,23 @@ createApp({
             }
         };
 
+        const getTrimmedText = (value) => (typeof value === 'string' ? value.trim() : '');
+
         const formatMenuName = (menuItem) => {
-            const candidates = [menuItem?.menuDescrtCN, menuItem?.menuDescrtEng, menuItem?.menuDescrt];
-            return candidates.find(text => typeof text === 'string' && text.trim().length > 0)?.trim() || '餐點';
+            const chineseName = getTrimmedText(menuItem?.menuDescrtCN);
+            const englishName = getTrimmedText(menuItem?.menuDescrtEng);
+            const koreanName = getTrimmedText(menuItem?.menuDescrt);
+            return chineseName || englishName || koreanName || '餐點';
+        };
+
+        const formatMenuKoreanName = (menuItem) => {
+            const koreanName = getTrimmedText(menuItem?.menuDescrt);
+            const mainName = formatMenuName(menuItem);
+            return koreanName && koreanName !== mainName ? koreanName : '';
         };
 
         const formatMenuSubtitle = (menuItem) => {
-            const englishName = typeof menuItem?.menuDescrtEng === 'string' ? menuItem.menuDescrtEng.trim() : '';
+            const englishName = getTrimmedText(menuItem?.menuDescrtEng);
             const mainName = formatMenuName(menuItem);
             return englishName && englishName !== mainName ? englishName : '';
         };
@@ -657,6 +667,7 @@ createApp({
             closeMenu,
             selectZone,
             formatMenuName,
+            formatMenuKoreanName,
             formatMenuSubtitle,
             formatMenuPrice,
             resetFilters,
