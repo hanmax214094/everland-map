@@ -271,6 +271,7 @@
                             >
                             <div class="menu-card__content">
                                 <h4 class="menu-card__title">{{ formatMenuName(menuItem) }}</h4>
+                                <p v-if="formatMenuKorean(menuItem)" class="menu-card__subtitle">{{ formatMenuKorean(menuItem) }}</p>
                                 <p v-if="formatMenuSubtitle(menuItem)" class="menu-card__subtitle">{{ formatMenuSubtitle(menuItem) }}</p>
                                 <p v-if="formatMenuPrice(menuItem.menuPrice)" class="menu-card__price">價格：{{ formatMenuPrice(menuItem.menuPrice) }}</p>
                             </div>

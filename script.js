@@ -118,10 +118,17 @@ createApp({
             return candidates.find(text => typeof text === 'string' && text.trim().length > 0)?.trim() || '餐點';
         };
 
+        const formatMenuKorean = (menuItem) => {
+            const koreanName = typeof menuItem?.menuDescrt === 'string' ? menuItem.menuDescrt.trim() : '';
+            const mainName = formatMenuName(menuItem);
+            return koreanName && koreanName !== mainName ? koreanName : '';
+        };
+
         const formatMenuSubtitle = (menuItem) => {
             const englishName = typeof menuItem?.menuDescrtEng === 'string' ? menuItem.menuDescrtEng.trim() : '';
             const mainName = formatMenuName(menuItem);
-            return englishName && englishName !== mainName ? englishName : '';
+            const koreanName = formatMenuKorean(menuItem);
+            return englishName && englishName !== mainName && englishName !== koreanName ? englishName : '';
         };
 
         const formatMenuPrice = (price) => {
@@ -657,6 +664,7 @@ createApp({
             closeMenu,
             selectZone,
             formatMenuName,
+            formatMenuKorean,
             formatMenuSubtitle,
             formatMenuPrice,
             resetFilters,
